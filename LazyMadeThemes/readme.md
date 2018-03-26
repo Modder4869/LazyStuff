@@ -3,7 +3,7 @@ Customizable default discord theme ***Not User Friendly***
 
 `Download it , Copy it to themes folder , Reload Discord (Ctrl +R), Enable it`
 
-** it is the default gray Edit the vars in theme fille or copy one of the example to custom css and click save then update** 
+**it is the default gray Edit the vars in theme fille or copy one of the example to custom css and click save then update** 
 
 If you want easier way to decide values then after you enable theme , press `Ctrl` + `Shift` + `I` then click on `<html`
 and change values (use mouse wheel or something) then select that and copy it to theme file or custom css whatever

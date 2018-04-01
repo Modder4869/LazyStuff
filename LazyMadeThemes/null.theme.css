@@ -1,11 +1,14 @@
-//META{"name":"null","description":"null","author":"Modder4869","version":"1.0"}*//{}
+//META{"name":"null","description":"null , lost? https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes","author":"Modder4869","version":"1.0.1"}*//{}
+/* default colors*/
+/* check https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes for examples*/
  :root {
     --hue: (1) + (0);
     --saturation: (1) + (0%);
     --lightness: (1) + (0%);
     --alpha: 1;
-    --text-color: hsl(218, 5%, 47%);
+    --text-color: hsl(218, 5%, 47%); /*text,accent,tooltips*/
 }
+
 
 .theme-dark .friends-table,
 .theme-dark .messages-wrapper {
@@ -2563,4 +2566,47 @@ h2 {
 #permissions-modal-wrapper .header{
 	   background: hsla(calc(213 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha))) !important;
 
+}
+/*later*/
+/* update stuff 01/04/2018 */
+.theme-dark .member-2FrNV0.popout-open .content-3JzEqq,.theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq {
+    background-color: hsla(calc(217 * var(--hue)),calc(8% * var(--saturation)),calc(34% * var(--lightness)),calc(0.6 * var(--alpha))) ;
+}
+
+.theme-dark .member-2FrNV0.popout-open .content-3JzEqq .status-2Devx1,.theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq .status-2Devx1 {
+    border-color: hsla(calc(218 * var(--hue)),calc(8% * var(--saturation)),calc(28% * var(--lightness)),calc(1 * var(--alpha)))
+}
+
+.theme-dark .member-2FrNV0:hover .content-3JzEqq {
+    background-color: hsla(calc(220 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)))
+}
+
+.theme-dark .member-2FrNV0:hover .content-3JzEqq .status-2Devx1 {
+    border-color: hsla(calc(220 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)))
+}
+
+.theme-dark .status-2Devx1 {
+    border-color: hsla(calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha)))
+}
+/* observer thing i am too lazy*/
+/* maybe looks bad */
+
+.tooltip {
+  background: var(--text-color) !important;
+}
+.tooltip-bottom::after {
+  border-bottom-color: var(--text-color) !important;
+}
+.tooltip-right::after {
+  border-right-color: var(--text-color) !important;
+}
+.tooltip-left::after {
+  border-left-color: var(--text-color) !important;
+}
+.tooltip-top::after {
+  border-top-color: var(--text-color) !important;
+}
+.tipsy-inner {
+    background-color:var(--text-color) !important;
+    color: white;
 }

@@ -1,4 +1,4 @@
-# Null - Theme [Dark Example by Default]
+# Null - Theme [Dark] [Default Discord](https://github.com/Modder4869/LazyStuff/blob/master/LazyMadeThemes/readme.md#default)
 Customizable default discord theme ***Not User Friendly*** 
 
 `Download it , Copy it to themes folder , Reload Discord (Ctrl +R), Enable it`

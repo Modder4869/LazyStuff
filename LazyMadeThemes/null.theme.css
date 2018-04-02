@@ -1,14 +1,13 @@
-//META{"name":"null","description":"null , lost? https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes","author":"Modder4869","version":"1.0.1"}*//{}
-/* default colors*/
-/* check https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes for examples*/
- :root {
-    --hue: (1) + (0);
-    --saturation: (1) + (0%);
-    --lightness: (1) + (0%);
-    --alpha: 1;
-    --text-color: hsl(218, 5%, 47%); /*text,accent,tooltips*/
+//META{"name":"null","description":"null , lost? https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes","author":"Modder4869","version":"1.0.2"}*//{}
+/* dark example*/
+/* check https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes for examples / how to*/
+:root {
+    --hue: (1) + (380);
+    --saturation: (1) + (-102%);
+    --lightness: (1) + (-6%);
+    --alpha: (1) + (0);
+    --text-color: hsl(343, 38%, 40%); /*text,accent,tooltips*/
 }
-
 
 .theme-dark .friends-table,
 .theme-dark .messages-wrapper {
@@ -2609,4 +2608,41 @@ h2 {
 .tipsy-inner {
     background-color:var(--text-color) !important;
     color: white;
+}
+/* missing stuff */
+.theme-dark .private-channel-recipients-invite .friend.selected, .theme-dark .private-channel-recipients-invite .friend:hover {
+    background: -webkit-gradient(linear,left top,right top,color-stop(85%,hsla((calc(218 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha))))),to(hsl(223, 7%, 20%)));
+    background: linear-gradient(90deg,hsla((calc(218 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)))) 85%,hsla((calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha)))));
+}
+
+.theme-dark .private-channel-recipients-invite .friend {
+    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha))) !important;
+}
+
+.scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track,.theme-dark .scrollerWrap-2uBjct.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track,.theme-light .scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track {
+    background-color: hsla(calc(210 * var(--hue)),calc(10% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha)));
+}
+
+.bd-modal-wrapper .bd-modal-body {
+    background-color: hsla(calc(220 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha))) !important;
+}
+
+.bd-modal-wrapper .header {
+    background-color: hsla(calc(213 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha))) !important;
+}
+
+.bd-modal-wrapper .footer button:hover ,.private-channel-recipients-invite .footer button:hover {
+       background-color: var(--text-color);
+            filter:saturate(1);
+}
+
+.bd-modal-wrapper .footer button ,.private-channel-recipients-invite .footer button{
+     filter:saturate(1.3);
+    background-color: var(--text-color);
+}
+.theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
+    background-color: var(--text-color)
+}
+.theme-dark #friends .tab-bar .tab-bar-item.selected .badge{
+    background-color:var(--text-color);
 }

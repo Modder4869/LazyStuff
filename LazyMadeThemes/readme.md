@@ -44,7 +44,7 @@ so if it is 50 then final result is for hue in hsla will be 100
 } 
 ```
 ![Imgur](https://i.imgur.com/wiLwEhp.png)
-# something else ?
+# Purple 
 
 ```css
 :root {
@@ -56,3 +56,15 @@ so if it is 50 then final result is for hue in hsla will be 100
 }
 ```
 ![Imgur](https://i.imgur.com/Sv8Q1IS.png)
+# Green
+
+```css
+:root {
+    --hue: (1) + (380);
+    --saturation: (1) + (0%);
+    --lightness: (1) + (-6%);
+    --alpha: (1) + (0);
+    --text-color: hsl(109, 38%, 40%);
+}
+```
+![Imgur](https://i.imgur.com/nIyJ7Tq.png)

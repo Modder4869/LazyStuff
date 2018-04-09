@@ -11,7 +11,7 @@ and change values (use mouse wheel or something) then select that and copy it to
 
 Like This
 
-https://i.imgur.com/Dt6dWV9.gifv
+![https://i.imgur.com/Dt6dWV9.gif](https://i.imgur.com/Dt6dWV9.gif)
 ```css
 --hue: (1) + (50);
 ```

@@ -1,27 +1,35 @@
-//META{"name":"null","description":"null , lost? https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes","author":"Modder4869","version":"1.0.3"}*//{}
+//META{"name":"null","description":"null , lost? https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes","author":"Modder4869","version":"1.0.4"}*//{}
+
 /* dark example*/
+
+
 /* check https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes for examples / how to*/
 
 
-
 /*--------------------------------------------------------------------------*/
+
+
 /* import css file for minor changes */
+
 @import url(https://modder4869.github.io/themes/fixes.css);
 
+
 /*--------------------------------------------------------------------------*/
+
 :root {
     --hue: (1) + (380);
     --saturation: (1) + (-102%);
     --lightness: (1) + (-6%);
     --alpha: (1) + (0);
-    --text-color: hsl(343, 38%, 40%); /*text,accent,tooltips*/
+    --text-color: hsl(343, 38%, 40%);
+    /*text,accent,tooltips*/
 }
 
 
 
 .theme-dark .friends-table,
 .theme-dark .messages-wrapper {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 h2 {
@@ -41,7 +49,7 @@ h2 {
 }
 
 .theme_dark-2FtE3l {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .lookFilled-luDKDo.colorWhite-1IbOTe {
@@ -49,27 +57,30 @@ h2 {
 }
 
 .lookFilled-luDKDo.colorWhite-1IbOTe .spinnerItem-2VtahD {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .lookInverted-2lPGe7.colorWhite-1IbOTe {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .lookFilled-luDKDo.hoverWhite-2K9fsu.hasHover-FPgGm-:hover,
 .theme-light .lookFilled-luDKDo.hoverWhite-2K9fsu.hasHover-FPgGm-:hover {
     color: var(--text-color);
 }
+
 .theme-dark .lookFilled-luDKDo.hoverWhite-2K9fsu.hasHover-FPgGm-:active,
 .theme-light .lookFilled-luDKDo.hoverWhite-2K9fsu.hasHover-FPgGm-:active {
     color: var(--text-color);
 }
 
 .theme-dark .lookFilled-luDKDo.colorPrimary-2KuK5O {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .lookFilled-luDKDo.colorPrimary-2KuK5O:active,
 .theme-dark .lookFilled-luDKDo.colorPrimary-2KuK5O:hover {
-    background-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .lookInverted-2lPGe7.colorPrimary-2KuK5O {
@@ -77,27 +88,32 @@ h2 {
 }
 
 .theme-dark .lookInverted-2lPGe7.colorPrimary-2KuK5O .spinnerItem-2VtahD {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .theme-dark .lookFilled-luDKDo.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover,
 .theme-dark .theme-light .lookFilled-luDKDo.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .theme-dark .lookFilled-luDKDo.hoverPrimary-3sUr-C.hasHover-FPgGm-:active,
 .theme-dark .theme-light .lookFilled-luDKDo.hoverPrimary-3sUr-C.hasHover-FPgGm-:active {
-    background-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .theme-dark .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover,
 .theme-dark .theme-light .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover {
     color: var(--text-color);
 }
+
 .theme-dark .theme-dark .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:active,
 .theme-dark .theme-light .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:active {
     color: var(--text-color);
 }
+
 .theme-dark .theme-dark .lookOutlined-1c5nhl.hoverPrimary-3sUr-C.hasHover-FPgGm-:active,
 .theme-dark .theme-light .lookOutlined-1c5nhl.hoverPrimary-3sUr-C.hasHover-FPgGm-:active {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .lookFilled-luDKDo.colorPrimary-2KuK5O {
@@ -105,33 +121,39 @@ h2 {
 }
 
 .theme-light .lookFilled-luDKDo.colorPrimary-2KuK5O .spinnerItem-2VtahD {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .lookInverted-2lPGe7.colorPrimary-2KuK5O {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-light .lookInverted-2lPGe7.colorPrimary-2KuK5O:hover {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-light .lookInverted-2lPGe7.colorPrimary-2KuK5O:active {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-light .theme-dark .lookFilled-luDKDo.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover,
 .theme-light .theme-light .lookFilled-luDKDo.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover {
     color: var(--text-color);
 }
+
 .theme-light .theme-dark .lookFilled-luDKDo.hoverPrimary-3sUr-C.hasHover-FPgGm-:active,
 .theme-light .theme-light .lookFilled-luDKDo.hoverPrimary-3sUr-C.hasHover-FPgGm-:active {
     color: var(--text-color);
 }
+
 .theme-light .theme-dark .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover,
 .theme-light .theme-light .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-light .theme-dark .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:active,
 .theme-light .theme-light .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:active {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .lookFilled-luDKDo.colorTransparent-3tmoR7 {
@@ -139,25 +161,27 @@ h2 {
 }
 
 .theme-light .lookFilled-luDKDo.colorTransparent-3tmoR7 .spinnerItem-2VtahD {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .lookInverted-2lPGe7.colorTransparent-3tmoR7 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .lookOutlined-1c5nhl.colorTransparent-3tmoR7 {
     color: var(--text-color);
 }
+
 .theme-light .lookOutlined-1c5nhl.colorTransparent-3tmoR7:hover {
     border-color: hsla(216, 7%, 33%, 1);
 }
+
 .theme-light .lookOutlined-1c5nhl.colorTransparent-3tmoR7:active {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .lookOutlined-1c5nhl.colorTransparent-3tmoR7 .spinnerItem-2VtahD {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .lookGhost-GyT-k0.colorTransparent-3tmoR7 {
@@ -165,43 +189,49 @@ h2 {
 }
 
 .theme-light .lookGhost-GyT-k0.colorTransparent-3tmoR7 .spinnerItem-2VtahD {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .lookLink-3VWONr.colorTransparent-3tmoR7 {
     color: var(--text-color);
 }
+
 .theme-light .lookLink-3VWONr.colorTransparent-3tmoR7:hover .contents-4L4hQM {
-    background-image: linear-gradient(0deg,transparent,transparent 1px,hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha))) 0,hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha))) 2px,transparent 0);
+    background-image: linear-gradient(0deg, transparent, transparent 1px, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) 0, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) 2px, transparent 0);
 }
 
 .theme-light .lookLink-3VWONr.colorTransparent-3tmoR7 .spinnerItem-2VtahD {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-light .theme-dark .lookFilled-luDKDo.hoverTransparent-FT41NK.hasHover-FPgGm-:hover,
 .theme-light .theme-light .lookFilled-luDKDo.hoverTransparent-FT41NK.hasHover-FPgGm-:hover {
     color: var(--text-color);
 }
+
 .theme-light .theme-dark .lookFilled-luDKDo.hoverTransparent-FT41NK.hasHover-FPgGm-:active,
 .theme-light .theme-light .lookFilled-luDKDo.hoverTransparent-FT41NK.hasHover-FPgGm-:active {
     color: var(--text-color);
 }
+
 .theme-light .theme-dark .lookOutlined-1c5nhl.hoverTransparent-FT41NK.hasHover-FPgGm-:hover,
 .theme-light .theme-light .lookOutlined-1c5nhl.hoverTransparent-FT41NK.hasHover-FPgGm-:hover {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
     color: var(--text-color);
 }
+
 .theme-light .theme-dark .lookOutlined-1c5nhl.hoverTransparent-FT41NK.hasHover-FPgGm-:active,
 .theme-light .theme-light .lookOutlined-1c5nhl.hoverTransparent-FT41NK.hasHover-FPgGm-:active {
     color: var(--text-color);
 }
+
 .theme-light .theme-dark .lookGhost-GyT-k0.hoverTransparent-FT41NK.hasHover-FPgGm-:active,
 .theme-light .theme-light .lookGhost-GyT-k0.hoverTransparent-FT41NK.hasHover-FPgGm-:active {
     color: var(--text-color);
 }
 
 .themeDark-3Vp7Ff {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .themeLight-3lYrqG {
@@ -233,11 +263,11 @@ h2 {
 }
 
 .dataPoint-1wXGs_ {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .guildIcon-2Oo1tK {
-    border: 4px solid hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border: 4px solid hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .cardPrimary-ZVL9Jr a {
@@ -245,27 +275,28 @@ h2 {
 }
 
 .theme-dark .cardPrimary-ZVL9Jr {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .cardPrimaryEditable-2IQ7-V {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .invite-1_xgj9 {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .elevated-3pg9ul {}
 
 .card-m3Looc {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .scrollerThemed-19vinI.themeDark-BdSAwu .scroller-fzNley::-webkit-scrollbar-thumb,
 .theme-dark .scrollerWrap-2uBjct .scroller-fzNley::-webkit-scrollbar-thumb,
 .theme-light .scrollerThemed-19vinI.themeDark-BdSAwu .scroller-fzNley::-webkit-scrollbar-thumb {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .scrollerThemed-19vinI.themeDark-BdSAwu .scrollbar-2so3Ly,
@@ -274,21 +305,21 @@ h2 {
 .theme-dark .scrollerWrap-2uBjct .scrollbar-2so3Ly .pad-3D5tOh,
 .theme-light .scrollerThemed-19vinI.themeDark-BdSAwu .scrollbar-2so3Ly,
 .theme-light .scrollerThemed-19vinI.themeDark-BdSAwu .scrollbar-2so3Ly .pad-3D5tOh {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .scrollerThemed-19vinI.themeDark-BdSAwu .scrollbar-2so3Ly .thumb-3VsfAI,
 .theme-dark .scrollerWrap-2uBjct .scrollbar-2so3Ly .thumb-3VsfAI,
 .theme-light .scrollerThemed-19vinI.themeDark-BdSAwu .scrollbar-2so3Ly .thumb-3VsfAI {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .modal-3HOjGZ {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .footer-1PYmcw {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .close-3ejNTg {
@@ -306,22 +337,25 @@ h2 {
 .theme-light .input-2YozMi {
     color: var(--text-color);
 }
+
 .theme-dark .input-2YozMi::-webkit-input-placeholder {
     color: var(--text-color);
 }
+
 .theme-dark .input-2YozMi:-ms-input-placeholder {
     color: var(--text-color);
 }
+
 .theme-dark .input-2YozMi::placeholder {
     color: var(--text-color);
 }
 
 .theme-dark .input-2YozMi.disabled-3-J0Hk {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .spinnerItem-3oTbTx {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .activityActivityFeed-2gIGSa .content-P9ThHS,
@@ -342,15 +376,15 @@ h2 {
 }
 
 .theme-light .themedPagination-V0v6Ea .dot-2Ih-4D {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .emptyUser-34aCrC {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .moreUsers-3NykMh {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .subtitle-1KXyje {
@@ -358,15 +392,15 @@ h2 {
 }
 
 .news-2speFs {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .info-CdF_ik {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .gamePopout-1rWPXV {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .publisher-16jX0X {
@@ -374,15 +408,15 @@ h2 {
 }
 
 .theme-dark .body-35FeGh {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .playersHeaderLine-1NQM6k {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .playerOverflow-EcFDW9 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .gameName-OGPSKf,
@@ -397,34 +431,39 @@ h2 {
 .theme-light .playerOverflow-EcFDW9 {
     color: var(--text-color);
 }
+
 .theme-dark .scrollbarDefault-3oTVtP::-webkit-scrollbar-thumb {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .note-2AtC_s textarea:focus {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark #autocomplete-popout .autocomplete-arrow,
 .theme-dark #autocomplete-popout .autocomplete-header-background {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark #autocomplete-popout h2 {
     color: var(--text-color);
 }
+
 .theme-dark #autocomplete-popout input[type=text]::-webkit-input-placeholder {
     color: var(--text-color);
 }
+
 .theme-dark #autocomplete-popout input[type=text]:-ms-input-placeholder {
     color: var(--text-color);
 }
+
 .theme-dark #autocomplete-popout input[type=text]::placeholder {
     color: var(--text-color);
 }
 
 .theme-dark #autocomplete-popout section {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
-    color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark #autocomplete-popout .row.selected {}
@@ -445,6 +484,7 @@ h2 {
 .theme-light #autocomplete-popout .row a {
     color: var(--text-color);
 }
+
 .theme-light #autocomplete-popout .row.selected a,
 .theme-light #autocomplete-popout .row:hover a {
     color: var(--text-color);
@@ -459,12 +499,12 @@ h2 {
 }
 
 .theme-dark .actionButton-2mkkT2 {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .overflowRolesPopout-2yPrHB,
 .theme-dark .overflowRolesPopoutArrow-1ZyyKA {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .actionButton-2mkkT2 {
@@ -476,12 +516,12 @@ h2 {
 }
 
 .theme-dark .headerNormal-3Vn9nT {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .body-3ljq11,
 .theme-dark .footer-2wFs91 {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .headerNormal-3Vn9nT .headerName-3U6eDn,
@@ -490,28 +530,31 @@ h2 {
 }
 
 .theme-dark .contextMenu-uoJTbz {
-    background: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .item-1XYaYf:hover {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .itemSubMenu-3ZgIw- {
-    background: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha))) url("/assets/1988164a7c55346d32117b151f4e319d.svg") no-repeat 155px 50%;
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/1988164a7c55346d32117b151f4e319d.svg") no-repeat 155px 50%;
 }
+
 .theme-dark .itemSubMenu-3ZgIw-:hover {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha))) url("/assets/e4afe52f6863408a35654a6e5fd69ba9.svg") no-repeat 155px 50%;
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/e4afe52f6863408a35654a6e5fd69ba9.svg") no-repeat 155px 50%;
 }
 
 .theme-light .bubble-17BwqU {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-light .bubble-17BwqU:before {
-    border-top-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    border-top-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .bar-2cFRGz {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .markValue-235z9M {
@@ -519,35 +562,37 @@ h2 {
 }
 
 .theme-dark .markDash-3j1QxS {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .bubble-17BwqU {
-    background-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .bubble-17BwqU:before {
-    border-top-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    border-top-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .maxLength-1NjdA0 {
     color: var(--text-color);
 }
 
-.theme-light .select-3JqNgs .has-value.is-pseudo-focused.Select--single >.Select-control .Select-value .Select-value-label,
-.theme-light .select-3JqNgs .has-value.Select--single >.Select-control .Select-value .Select-value-label,
+.theme-light .select-3JqNgs .has-value.is-pseudo-focused.Select--single>.Select-control .Select-value .Select-value-label,
+.theme-light .select-3JqNgs .has-value.Select--single>.Select-control .Select-value .Select-value-label,
 .theme-light .select-3JqNgs .Select-value-label {
     color: var(--text-color);
 }
+
 .theme-light .select-3JqNgs .Select-control:hover .Select-arrow {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha))) transparent transparent;
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) transparent transparent;
 }
 
 .theme-light .select-3JqNgs .is-focused .Select-control .Select-arrow {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha))) transparent transparent;
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) transparent transparent;
 }
 
 .theme-light .select-3JqNgs .is-open .Select-control .Select-arrow {
-    border-color: transparent transparent hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: transparent transparent hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .select-3JqNgs .Select-input input {
@@ -559,18 +604,19 @@ h2 {
 }
 
 .theme-dark .select-3JqNgs .Select-control .Select-arrow {
-    border-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha))) transparent transparent;
+    border-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha))) transparent transparent;
 }
 
 .theme-dark .select-3JqNgs .is-disabled .Select-control {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .select-3JqNgs .is-disabled .Select-control:hover .Select-arrow {
-    border-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha))) transparent transparent;
+    border-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha))) transparent transparent;
 }
 
 .theme-dark .select-3JqNgs .Select-menu-outer {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .description-3MVziF,
@@ -579,7 +625,7 @@ h2 {
 }
 
 .themeDefault-3M0dJU {
-    background-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .title-3i-5G_ {
@@ -587,29 +633,30 @@ h2 {
 }
 
 .theme-dark .to-1B1cnC {}
+
 .scroller-wrap.dark .scrollbar,
 .scroller-wrap.dark .scrollbar:after {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .scroller-wrap.dark .scrollbar .thumb {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 #oauth2-message {
-    background-color: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 #oauth2-authorize {
-    background-color: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .radio .radio-inner {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .popout-2Py-_h .section-3y_XWs {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .avatarDefault-3jtQoc {}
@@ -633,7 +680,7 @@ h2 {
 }
 
 .theme-dark .number-30pAHE {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .form-deprecated .control-group input[type=email],
@@ -659,13 +706,13 @@ h2 {
     color: var(--text-color);
 }
 
-.form-deprecated .Select-option,
-.form.deprecated .Select-option {
+.form-deprecated .Select-option-1MvVr1,
+.form.deprecated .Select-option-1MvVr1 {
     color: var(--text-color);
 }
 
-.form-deprecated .Select-option.is-focused,
-.form.deprecated .Select-option.is-focused {
+.form-deprecated .Select-option-1MvVr1.is-focused,
+.form.deprecated .Select-option-1MvVr1.is-focused {
     color: var(--text-color);
 }
 
@@ -673,14 +720,15 @@ h2 {
 .colorMutedVoice-2FZw4C {
     color: var(--text-color);
 }
+
 .contentHoveredText-2HYGIY,
 .contentHoveredVoice-3qGNKh:active,
 .contentSelectedVoice-gTtYM9:active {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .contentSelectedText-3j5CXt {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .nameDefaultText-QoumjC,
@@ -696,8 +744,8 @@ h2 {
 }
 
 .wrapper-2ldvyE {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
-    color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .iconCollapsed-1INdMX,
@@ -713,38 +761,41 @@ h2 {
 }
 
 .container-2-NHa8 {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
+
 .guildInner-3SWl8A {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .calls-Sjz543:after {
-    border-bottom: 1px solid hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    border-bottom: 1px solid hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .guildInner-h7tzcy {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .controls-2TQLij {
-    background: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
-    border-bottom: 1px solid hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
+    border-bottom: 1px solid hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .container-3lnMWU {
-    border-bottom: 1px solid hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-bottom: 1px solid hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .auth-tiling-bg {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .auth-background {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .auth-inner .auth-name:after {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .keybindShortcut-tTramc {
@@ -752,11 +803,12 @@ h2 {
 }
 
 .dark-2Ll8iS span {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .keybindShortcutTipsSelect-2VHe9M:last-of-type:before {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .keyboard-shortcuts-modal .modal-title {
@@ -771,8 +823,9 @@ h2 {
 .theme-light .content-3KEfmo ul li {
     color: var(--text-color);
 }
+
 .theme-light .content-3KEfmo ul li:before {
-    background-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .embedAuthorName-29phCh {
@@ -788,7 +841,7 @@ h2 {
 }
 
 .theme-dark .embedPill-3sYS1X {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .embedFooterSeparator-Gty9gv {
@@ -798,20 +851,23 @@ h2 {
 .theme-light .date-1aJe8- {
     color: var(--text-color);
 }
+
 .theme-light .avatar-uploader .remove-button:hover {
     color: var(--text-color);
 }
+
 .theme-dark .avatar-uploader .remove-button:hover {
     color: var(--text-color);
 }
 
 .theme-dark .checkbox-1QwaS4 {
-    border-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .radioGroup-2P3MJo {
     color: var(--text-color);
 }
+
 
 /* .theme-dark .desc-2dKaro {
     color: var(--text-color);
@@ -836,19 +892,19 @@ h2 {
 }
 
 .theme-dark .button-1qrA-N {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .ui-standard-sidebar-view {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .ui-standard-sidebar-view .sidebar-region {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .ui-standard-sidebar-view .content-region {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .ui-standard-sidebar-view .esc-text {
@@ -856,7 +912,7 @@ h2 {
 }
 
 .theme-dark .ui-standard-sidebar-view .btn-close {
-    border-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .header-1-f9X5 {
@@ -867,32 +923,36 @@ h2 {
 .theme-light .itemHover-3rojsB {
     color: var(--text-color);
 }
+
 .theme-light .side-2nYO0F .itemDefault-3NDwnY:hover,
 .theme-light .side-2nYO0F .itemHover-3rojsB:hover {
     color: var(--text-color);
 }
+
 .theme-light .top-2qoLb2 .itemDefault-3NDwnY:hover,
 .theme-light .top-2qoLb2 .itemHover-3rojsB:hover {
     color: var(--text-color);
 }
 
 .theme-light .top-2qoLb2 .itemSelected-3XxAMf {
-    border-bottom-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
-    color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-bottom-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .input-1aITJk {
     color: var(--text-color);
 }
+
 .theme-dark .flag-1rIgNi.vip-2RT5DH:after {
-    border-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .auditLog-1XsYCj {
     color: var(--text-color);
 }
+
 .theme-light .auditLog-1XsYCj:hover .expandForeground-16UqCM {
-    stroke: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    stroke: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .auditLog-1XsYCj strong {
@@ -908,12 +968,12 @@ h2 {
 }
 
 .theme-dark .auditLog-1XsYCj {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
-    color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .divider-ShvCWe {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .timestamp-5LpvaA {
@@ -926,7 +986,7 @@ h2 {
 }
 
 .theme-light .expandIconForeground-3XL8Rh {
-    stroke: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    stroke: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .selectableItem-3PW5_y {
@@ -942,28 +1002,32 @@ h2 {
 }
 
 .theme-dark .quickSelectPopout-3KoYgk {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .searchBar-YMJBu9 .input-yt44Uw {
     color: var(--text-color);
 }
+
 .theme-light .searchBar-YMJBu9 .input-yt44Uw::-webkit-input-placeholder {
     color: var(--text-color);
 }
+
 .theme-light .searchBar-YMJBu9 .input-yt44Uw:-ms-input-placeholder {
     color: var(--text-color);
 }
+
 .theme-light .searchBar-YMJBu9 .input-yt44Uw::placeholder {
     color: var(--text-color);
 }
 
 .theme-dark .searchBar-YMJBu9 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
-.theme-dark .searchAnswer-yD90ey,
+
+.theme-dark .searchanswer-9L5NhD-yD90ey,
 .theme-dark .searchFilter-1fJ0cd {
-    background-color: hsla(calc(213 * var(--hue)),calc(8% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(8% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .popoutListEmpty-3P4cYF {
@@ -971,12 +1035,13 @@ h2 {
 }
 
 .theme-dark .popoutList-2NT_IY {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .auditLogMembersIconFg-398cLq {
-    fill: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-light .prefixInput-1R-5Xw:hover {
     border-color: hsla(216, 7%, 33%, 1);
 }
@@ -984,12 +1049,15 @@ h2 {
 .theme-light .prefixInputInput-3HeXQS {
     color: var(--text-color);
 }
+
 .theme-dark .prefixInputInput-3HeXQS::-webkit-input-placeholder {
     color: var(--text-color);
 }
+
 .theme-dark .prefixInputInput-3HeXQS:-ms-input-placeholder {
     color: var(--text-color);
 }
+
 .theme-dark .prefixInputInput-3HeXQS::placeholder {
     color: var(--text-color);
 }
@@ -1030,28 +1098,28 @@ h2 {
 }
 
 .theme-light .guild-settings-members-member .overflow-icon-fg {
-    fill: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .colorPickerCustom-1sJLDt {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .colorPickerSwatch-2aTUJ5.noColor-2FK4UT .colorPickerDropperFg-3mpsS6 {
-    fill: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .icon-1KOuXc {
-    fill: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .notAllowedIcon-1yfE1y {
-    fill: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .topSectionNormal-2LlRG1 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha))) !important;
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .userInfoSectionHeader-pmdPGs {
@@ -1063,15 +1131,16 @@ h2 {
 }
 
 .theme-dark .body-3_tdh6 {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .connectedAccount-3mKaTA,
-.theme-dark .userInfoSection-2WJxMm +.userInfoSection-2WJxMm {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+.theme-dark .userInfoSection-2WJxMm+.userInfoSection-2WJxMm {
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .root-2sNHUF .note-39NEdV textarea:focus {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .topSectionNormal-2LlRG1 .username-24t9uh {
@@ -1079,8 +1148,8 @@ h2 {
 }
 
 .theme-light .topSectionNormal-2LlRG1 .tab-bar.tabBar-2z50ux .tabBarItem-1Lg555.selected {
-    border-bottom-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
-    color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-bottom-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .connectedAccountName-3EFj01 {
@@ -1090,6 +1159,7 @@ h2 {
 .theme-light .listRow-1wEi-U {
     color: var(--text-color);
 }
+
 .theme-light .listRow-1wEi-U:hover {
     color: var(--text-color);
 }
@@ -1140,11 +1210,11 @@ h2 {
 }
 
 .theme-dark .quickswitcher-2NdiGJ {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .input-MwQhcX {
-    background-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .emptyStateNote-_gUBTA {
@@ -1169,12 +1239,12 @@ h2 {
 }
 
 .theme-light .selected-2A0WXO {
-    border-bottom: 2px solid hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
-    color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    border-bottom: 2px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .tiles-3jKTg9 {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .tile-2GUmAV {
@@ -1206,14 +1276,15 @@ h2 {
 }
 
 .theme-dark .attachPopout-gjwHsr {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .attachPopoutRow-elxASe:hover {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .attachButtonPlus-2l1NEU {
-    fill: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .attachPopout-gjwHsr {
@@ -1225,7 +1296,7 @@ h2 {
 }
 
 .theme-light .attachPopoutIconForeground-3304UT {
-    fill: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .body-1CRKjz {}
@@ -1243,7 +1314,7 @@ h2 {
 }
 
 .container-2oOGIt {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .problemsText-3RO4MF {
@@ -1255,30 +1326,33 @@ h2 {
 }
 
 .verifyConnectedAccount-vxkIji {
-    background-color: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .verifyConnectedAccount-vxkIji .btn-3shIQ4:disabled {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .buttonInner-2iK3OX {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .button-25MJ3e:active .buttonInner-2iK3OX {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .notice-2Q2b6H {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .gameBackgroundOverlay-1UB_hZ {
-    background-image: linear-gradient(90deg,hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha))),hsla(216, 7%, 13%, 1));
+    background-image: linear-gradient(90deg, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))), hsla(216, 7%, 13%, 1));
 }
 
 .noticePremium-2x9Tv2 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .noticePremium-2x9Tv2 .button-2TvR03:hover {
     color: var(--text-color);
 }
@@ -1286,19 +1360,21 @@ h2 {
 .unread-2TDDFN {
     background-color: hsla(218, 5%, 47%, 1);
 }
+
 .unread-2TDDFN:hover {
-    background-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .guilds-wrapper {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .guilds-wrapper .guilds .guild .guild-inner {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha))) !important;
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
+
 .guilds-wrapper .guild-separator:after {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .subHeader-2pJc0Z {
@@ -1318,7 +1394,7 @@ h2 {
 }
 
 .theme-light .phoneField-36t5MB .phoneFieldExpand-sPOFCF {
-    stroke: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    stroke: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .phoneFieldPopout-ix8zib .countryName-3SsYmz {
@@ -1330,15 +1406,15 @@ h2 {
 }
 
 .theme-dark .phoneField-36t5MB {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .phoneField-36t5MB .countryButton-wNQiPa {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .phoneField-36t5MB .inputField-3os-YM {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .input-3_iTLI {
@@ -1346,7 +1422,7 @@ h2 {
 }
 
 .theme-dark .input-3_iTLI {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .phoneVerificationModal-9lrF8A .title-13IDyK {
@@ -1370,19 +1446,22 @@ h2 {
 .theme-light .userSettingsSecurity-1hjwAn .codeCheckbox-1U8Ddc {
     color: var(--text-color);
 }
+
 .theme-light .multiInputLast-1aMJ4U:before {
-    border-right-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    border-right-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-light .accountBtnInner-3zsU2z:hover {
-    border-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .accountBtnInner-3zsU2z {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .accountBtnInner-3zsU2z:hover {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .header-ygd_5b {
@@ -1390,11 +1469,11 @@ h2 {
 }
 
 .theme-dark .moreUsers-kKQjNO {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .partyMemberEmpty-2qTY0H {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .header-ygd_5b {
@@ -1407,7 +1486,7 @@ h2 {
 }
 
 .theme-light .helpIcon-WaXXVy {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .textLink-3OYObV,
@@ -1420,7 +1499,7 @@ h2 {
 }
 
 .theme-dark .preview-1mYYph {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .subHeader-11w1JS {
@@ -1440,7 +1519,7 @@ h2 {
 }
 
 .theme-light .iconForeground-1U-F96 {
-    fill: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .description-YnaVYa,
@@ -1449,11 +1528,11 @@ h2 {
 }
 
 .theme-dark .autocomplete-1TnWNR {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .selectorSelected-2M0IGv {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .divider-2JwdCF {
@@ -1465,7 +1544,7 @@ h2 {
 }
 
 .theme-dark .iconForeground-1U-F96 {
-    fill: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .description-YnaVYa,
@@ -1474,7 +1553,7 @@ h2 {
 }
 
 .theme-dark .avatarStatus-3VdB8Y {
-    border-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-brand .contentTitle-sL6DrN {
@@ -1490,7 +1569,7 @@ h2 {
 }
 
 .theme-brand .iconForeground-1U-F96 {
-    fill: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-brand .description-YnaVYa,
@@ -1499,7 +1578,7 @@ h2 {
 }
 
 .search-bar-tag {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .search-bar-light .search-bar-tag {
@@ -1507,7 +1586,7 @@ h2 {
 }
 
 .search-bar {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .premiumPromoTitle-q7xvT_ {
@@ -1528,11 +1607,11 @@ h2 {
 }
 
 .theme-dark .wrapper-GhVnpx {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .noIcon-1WB-Um {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .guildName-C1hTEs {
@@ -1544,7 +1623,7 @@ h2 {
 }
 
 .theme-dark .guildIconImage-12ar3e {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .guildDetail-1-o1X5 {
@@ -1563,16 +1642,16 @@ h2 {
 }
 
 .theme-dark .message-25xg43 {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .container-a2vS7i,
 .theme-dark .reactors-2PjMP0 {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .sidebar-32BRdp {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .discriminator-3d3E8U {
@@ -1607,9 +1686,10 @@ h2 {
 }
 
 .theme-dark .user-settings-games .game {}
+
 .theme-dark .user-settings-games .game-name-input:focus,
 .theme-dark .user-settings-games .game-name-input:hover {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .user-settings-games .last-played,
@@ -1618,15 +1698,15 @@ h2 {
 }
 
 .theme-dark .user-settings-games .overlay-toggle-icon-on .fill {
-    fill: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .user-settings-games .divider-vertical {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .add-game-popout {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .notificationsSound-3TXEoH {}
@@ -1640,8 +1720,8 @@ h2 {
 }
 
 .theme-dark .userSettingsVoice-TvPQ80 .previewOverlay-2vHj3H {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .header-3gFhoT {
@@ -1663,9 +1743,11 @@ h2 {
 .premium-settings .payment-subhead {
     color: var(--text-color);
 }
+
 .theme-light .link-13ZMYi:hover .foreground-3yJWZE {
-    fill: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    fill: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .members-1bid1J .member.popout-open,
 .members-1bid1J .member:hover {
     color: var(--text-color);
@@ -1682,17 +1764,17 @@ h2 {
 .theme-dark .message-group.is-local-bot-message {}
 
 .theme-dark .message-group .comment .markup pre {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .message-group .comment .markup code.inline,
 .theme-dark .message-group .comment .markup pre code {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .typing-3eiiL_ {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .messages-popout .channel-separator .channel-name {
@@ -1700,20 +1782,21 @@ h2 {
 }
 
 .theme-dark .popout .messages-popout-wrap {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .popout .messages-popout-wrap .header {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .popout .messages-popout-wrap .has-more button {
-    border: 1px solid hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border: 1px solid hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .popout .messages-popout-wrap .messages-popout .message-group {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .popout .messages-popout-wrap .messages-popout .message-group:hover .action-buttons {}
 
 .theme-dark .theme-light .calendarPicker-16Q6sl .react-datepicker__current-month,
@@ -1732,32 +1815,32 @@ h2 {
 }
 
 .theme-dark .calendarPicker-16Q6sl .react-datepicker {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .calendarPicker-16Q6sl .react-datepicker__header {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
-.search-popout .option .answer {
+.option-1MvVr1 .answer-9L5NhD {
     color: var(--text-color);
 }
 
-.search-popout .option strong {
+.option-1MvVr1 strong {
     color: var(--text-color);
 }
 
-.search-popout .search-option .filter {
+.search-option-1MvVr1 .filter-3kZ3tT {
     color: var(--text-color);
 }
 
-.search-popout .search-query .search-for strong {
+.searchQuery-3o17HLy .search-for strong {
     color: var(--text-color);
 }
 
-.theme-light .searchAnswer-yD90ey,
+.theme-light .searchanswer-9L5NhD-yD90ey,
 .theme-light .searchFilter-1fJ0cd {
-    background-color: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .search .DraftEditor-root {
@@ -1774,11 +1857,11 @@ h2 {
 }
 
 .theme-dark .headerBar-cxbhPD {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .iconBadge-1FYlQB {
-    border-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .private-channel-recipients-invite .friend {
@@ -1786,19 +1869,19 @@ h2 {
 }
 
 .theme-dark .private-channel-call {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .video-3lOWa6 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .callAvatarWrapper-u74Q16 .ripple-2djlB0 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .callAvatar-i2aKmR.voice-3qolcc .callAvatarStatus-2ybelh {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .title-2lS8Wf {
@@ -1810,7 +1893,7 @@ h2 {
 }
 
 .theme-dark .footer-XPgXYX {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .regionSelectName-3TFrf4 {
@@ -1818,7 +1901,7 @@ h2 {
 }
 
 .search-results-wrap .search-header .spinner-wrapper .spinner .path {
-    stroke: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    stroke: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .search-results-wrap .channel-separator .channel-name {
@@ -1830,43 +1913,59 @@ h2 {
 }
 
 .theme-dark .search-results-wrap {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
-    background-color: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)))!important;
+    background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))!important;
 }
+
 .theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb {
-    border: 3px solid hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)))!important;
+    border: 3px solid hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)))!important;
 }
 
 .theme-dark .search-results-wrap .search-header {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .search-results-wrap .channel-separator .channel-name {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
-.theme-dark .search-results-wrap .search-result:before {}
-.theme-dark .search-results-wrap .search-result:after {}
 
-.theme-dark .search-results-wrap .search-result .hit {}
+.theme-dark .search-results-wrap .search-result:before {
+    background-image: linear-gradient(180deg, hsla(223, 7%, 20%, 0), hsla(223, 7%, 20%, 0));
+}
+
+.theme-dark .search-results-wrap .search-result:after {
+    background-image: linear-gradient(180deg, hsla(223, 7%, 20%, 0), hsla(223, 7%, 20%, 0));
+}
+
+.theme-dark .search-results-wrap .search-result .search-result-message.hit,
+.theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit {
+    border: 1px double var(--text-color);
+}
+
+.theme-dark .search-results-wrap .search-result.expanded {
+    border: 2px solid hsla(calc(208 * var(--hue)), calc(21% * var(--saturation)), calc(14% * var(--lightness)), calc(0.6 * var(--alpha)));
+}
 
 .theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .gameDefault-2SBp6B:focus,
 .theme-dark .gameDefault-2SBp6B:hover {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .gameSelected-31teRt {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .separator-3Ozi37 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .title-2mmhgH {
@@ -1876,6 +1975,7 @@ h2 {
 .theme-light .description-15n-1L {
     color: var(--text-color);
 }
+
 .title-qAcLxz .input-autosize-input:focus,
 .titleCall-3X0yGQ .input-autosize-input:focus {
     color: var(--text-color);
@@ -1886,7 +1986,7 @@ h2 {
 }
 
 .aka-2Ba14Z {
-    background: hsla(calc(218 * var(--hue)),calc(4% * var(--saturation)),calc(46% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(46% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .channelName-1G03vu,
@@ -1897,22 +1997,23 @@ h2 {
 }
 
 .theme-dark .noChannel-2EQ0a9 {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .title-qAcLxz {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .input-autosize-input:focus {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .lfg-3xoFkI {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark #friends {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark #friends .tab-bar .tab-bar-item .badge {
@@ -1922,49 +2023,54 @@ h2 {
 .theme-dark #friends .tab-bar .tab-bar-item.selected {
     color: var(--text-color);
 }
+
 .theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected) {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark #friends .tab-bar .tab-bar-item:hover:not(.selected) .badge {
     color: var(--text-color);
 }
 
 .theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark #friends .friends-table .friends-row .friends-column-actions .friends-action:hover {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .channelNotices-3AUnoM .channelNotice-cQsVXw.guildMFAWarning-3XQius {
-    background: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha))) url("/assets/916a384814e3bbd2a84e2a1b352a17c3.svg") no-repeat center 20px;
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/916a384814e3bbd2a84e2a1b352a17c3.svg") no-repeat center 20px;
 }
 
 .channelNotices-3AUnoM .channelNotice-cQsVXw.invite-1D-l1h,
 .channelNotices-3AUnoM .channelNotice-cQsVXw.lfg-3h9KFj {
-    background: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha))) url("/assets/bf625d222187f542b9d7179109422e2c.svg") no-repeat center 20px;
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/bf625d222187f542b9d7179109422e2c.svg") no-repeat center 20px;
 }
 
 .channelNotices-3AUnoM .channelNotice-cQsVXw.quickswitcher-3-ck0i {
-    background: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha))) url("/assets/8fdb69b7684b8e1ecb3fdde909daca41.svg") no-repeat center 35px;
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/8fdb69b7684b8e1ecb3fdde909daca41.svg") no-repeat center 35px;
 }
 
 .channelNotices-3AUnoM .channelNotice-cQsVXw .message-1SsTiA .btn-3y-iNt {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .container-RYiLUQ {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .private-channels .status {
-    border: 2px solid hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border: 2px solid hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .private-channels .channel:hover a {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .private-channels .channel:hover .status {
-    border-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .private-channels .channel.selected a {
@@ -1972,15 +2078,15 @@ h2 {
 }
 
 .headerButtonColor-2ZJMqn {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .card-2WxYqG {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .header-1qeJfQ {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .card-2WxYqG {
@@ -1988,7 +2094,7 @@ h2 {
 }
 
 .theme-dark .sectionLine-3fsQAf {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .sectionTitle-le2fuz {
@@ -1996,15 +2102,15 @@ h2 {
 }
 
 .news-2C2kok {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .overflowUserOverflow-1i067A {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .player-SAAFSX {
-    border-bottom-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-bottom-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .discriminator-3wkphO,
@@ -2021,7 +2127,7 @@ h2 {
 }
 
 .carousel-K6OrVA {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .headerManageIcon-14qizS {
@@ -2032,9 +2138,11 @@ h2 {
 .theme-light .headerManageIcon-14qizS {
     color: var(--text-color);
 }
+
 .theme-light .headerManageIcon-14qizS:hover {
     color: var(--text-color);
 }
+
 .theme-light .headerManageIcon-14qizS:active {
     color: var(--text-color);
 }
@@ -2052,11 +2160,11 @@ h2 {
 }
 
 .theme-dark .partyMemberOverflow-1KPQrR {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .partyMemberBackground-2fL5nF {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .partyMemberUnknownIcon-1XyPZD {
@@ -2076,7 +2184,7 @@ h2 {
 }
 
 .theme-dark .bottomSeparator-dSVoAY {
-    border-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .playTime-2KDQrS {
@@ -2084,7 +2192,7 @@ h2 {
 }
 
 .theme-dark .guildIconEmptyBackground-1vkexE {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .headerTitle-1uDg0s {
@@ -2118,7 +2226,7 @@ h2 {
 }
 
 .article-2abys7 {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .articleType-2EgwJa {
@@ -2134,7 +2242,7 @@ h2 {
 }
 
 .theme-dark .emptyState-1HDDkN {
-    border-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .subtitle-1diHGV {
@@ -2142,24 +2250,25 @@ h2 {
 }
 
 .theme-dark .activityFeed-HeiGwL {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .listeningAlongList-ESfwTE {
-    border-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .listeningAlongList-ESfwTE:before {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
-    border-bottom-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
-    border-right-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+    border-bottom-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    border-right-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .header-9Qyhnu {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .content-1EHejo {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .discriminator-3kG9yL {
@@ -2180,33 +2289,35 @@ h2 {
 }
 
 .channels-3g2vYe {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .inviteRowName-uHzNmr {
     color: var(--text-color);
 }
+
 .theme-dark .inviteRow-1OabNn:hover {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
 }
-.option-popout .btn-item:hover {
+
+.option-1MvVr1-popout .btn-item:hover {
     color: var(--text-color);
 }
 
 .theme-dark .chat {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .chat .has-more button {
-    border: 1px solid hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border: 1px solid hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .chat form {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
-.theme-dark .chat >.content {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+.theme-dark .chat>.content {
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .incomingCallInner-1LQbjf .subtitle-3es__m {
@@ -2214,7 +2325,7 @@ h2 {
 }
 
 .theme-dark .incomingCallInner-1LQbjf {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .incomingCallInner-1LQbjf .members-39w8ve {
@@ -2222,11 +2333,11 @@ h2 {
 }
 
 .overlay-3hR73C {
-    border: 1px solid hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .pictureInPictureVideo-2w62Uz {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .item-OAPdSG {
@@ -2238,8 +2349,8 @@ h2 {
 }
 
 .theme-dark .videoPreview-3IIfvB {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
-    border: 1px solid hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+    border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .verification-3gqNNa .title-1fw3H_ {
@@ -2256,23 +2367,24 @@ h2 {
 }
 
 .theme-dark .verificationBlock-3CCVQ8 {
-    border: 1px solid hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .verificationBlock-3CCVQ8:hover {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .layer-kosS71,
 .theme-dark .layers-20RVFW {
-    background: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .onboarding-navigation {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .onboarding-navigation .onboarding-navigation-controls {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .title-h1,
@@ -2284,134 +2396,143 @@ h2 {
 }
 
 .onboarding-slide.claim-account .claim-success {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .app.fake {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .app.fake .channels-wrap {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .friends-table,
 .theme-dark .messages-wrapper {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar .thumb,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar:after,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar .thumb,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar:after {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar .track,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar .track {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
 .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
-    border-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece,
 .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar:after,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar:after {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar .thumb,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar .thumb {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .friends-table .messages .divider:before,
 .theme-dark .friends-table .messages .divider span,
 .theme-dark .messages-wrapper .messages .divider:before,
 .theme-dark .messages-wrapper .messages .divider span {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .friends-table .messages .message-group-blocked,
 .theme-dark .messages-wrapper .messages .message-group-blocked {
-    border-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .friends-table .messages .message-group-blocked.revealed,
 .theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
-    border-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .members-1bid1J {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .members-1bid1J .avatar-small .status {
-    border-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .members-1bid1J .member.popout-open,
 .theme-dark .members-1bid1J .member:hover {
 
-    background: -webkit-gradient(linear,left top,right top,color-stop(85% ,hsla(calc(218 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)))),to hsla(calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha))));
+    background: -webkit-gradient(linear, left top, right top, color-stop(85%, hsla(calc(218 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))), to hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))));
 }
+
 .theme-dark .members-1bid1J .member.popout-open .status,
 .theme-dark .members-1bid1J .member:hover .status {
-    border-color: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .themed-popout {
-    background-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .themed-popout .header {
-    background-color: hsla(calc(213 * var(--hue)),calc(7% * var(--saturation)),calc(22% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(213 * var(--hue)), calc(7% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .private-channel-recipients-invite .friend {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .private-channel-recipients-invite .friend .avatar-small .status {
-    border-color: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .private-channel-recipients-invite .friend.selected,
 .theme-dark .private-channel-recipients-invite .friend:hover {}
+
 .theme-dark .private-channel-recipients-invite .friend.selected .avatar-small .status,
 .theme-dark .private-channel-recipients-invite .friend:hover .avatar-small .status {
-    border-color: hsla(calc(217 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .appMount-14L89u {
-    background-color: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark.contextMenu-uoJTbz {
-    background: hsla(calc(216 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 #dv-mount {
-    background: hsla(calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha))) !important;
+    background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .theme-dark .search-results-wrap .search-result .hit {
-    background-color: hsla(calc(218 * var(--hue)),calc(7% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     /*     box-shadow: 0 0 10px 6px hsla(calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha))); */
     ;
 }
+
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
 .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
-    background-color: hsla(calc(210 * var(--hue)),calc(9% * var(--saturation)),calc(13% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(218 * var(--hue)),calc(7% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(210 * var(--hue)), calc(9% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .base-3AoPqv {
@@ -2419,51 +2540,53 @@ h2 {
 }
 
 .unread-2TDDFN {
-    background-color: hsla(calc(218 * var(--hue)),calc(5% * var(--saturation)),calc(47% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(5% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .quickMessage-OCo-Q0 {
-    background-color: hsla(calc(220 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)));
-    border-color: hsla(calc(214 * var(--hue)),calc(9% * var(--saturation)),calc(15% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(214 * var(--hue)), calc(9% * var(--saturation)), calc(15% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .gamePreview-4pQzIA {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(4% * var(--lightness)),calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(4% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .body-_3kd4C {
-    background-color: hsla(calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .headerPlaying-2Q7mBy.header-3budic.size16-3IvaX_,
 .topSectionPlaying-3jAH9b {
-    background-color: hsla(calc(227 * var(--hue)),calc(1% * var(--saturation)),calc(33% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(227 * var(--hue)), calc(1% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
     /* background-color: rgba(193, 24, 24, 0.41); */
     /* box-shadow: inset 0px 0px 6px 5px black; */
 }
 
 .chat .new-messages-bar {
-    background-color: hsla(calc(227 * var(--hue)),calc(58% * var(--saturation)),calc(65% * var(--lightness)),calc(0.9 * var(--alpha)));
+    background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(0.9 * var(--alpha)));
 }
 
 .theme-dark .chat .jump-to-present-bar {
-    background-color: hsla(calc(212 * var(--hue)),calc(10% * var(--saturation)),calc(50% * var(--lightness)),calc(0.9 * var(--alpha)));
+    background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(0.9 * var(--alpha)));
 }
+
 .theme-dark .chat .jump-to-present-bar:hover {
-    background-color: hsla(calc(212 * var(--hue)),calc(10% * var(--saturation)),calc(50% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark #friends .friends-table .friends-row:hover {
-    background: hsla(calc(217 * var(--hue)),calc(6% * var(--saturation)),calc(27% * var(--lightness)),calc(1 * var(--alpha)));
-
+    background: hsla(calc(217 * var(--hue)), calc(6% * var(--saturation)), calc(27% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .container-iksrDt {
-    background: hsla(calc(216 * var(--hue)),calc(7% * var(--saturation)),calc(14% * var(--lightness)),calc(0.3 * var(--alpha)));
-
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(14% * var(--lightness)), calc(0.3 * var(--alpha)));
 }
 
 .themeDefault-3M0dJU.valueChecked-3Bzkbm {
     background: var(--text-color);
 }
+
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
     background: var(--text-color);
     border-color: var(--text-color);
@@ -2480,6 +2603,7 @@ h2 {
 .themeDefault-3M0dJU.valueChecked-3Bzkbm {
     background: var(--text-color);
 }
+
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
     background: var(--text-color);
     border-color: var(--text-color);
@@ -2496,6 +2620,7 @@ h2 {
 .themeDefault-3M0dJU.valueChecked-3Bzkbm {
     background: var(--text-color);
 }
+
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
     background: var(--text-color);
     border-color: var(--text-color);
@@ -2512,6 +2637,7 @@ h2 {
 .themeDefault-3M0dJU.valueChecked-3Bzkbm {
     background: var(--text-color);
 }
+
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
     background: var(--text-color);
     border-color: var(--text-color);
@@ -2523,7 +2649,7 @@ h2 {
 }
 
 .checked-2TahvT,
- {
+{
     border-color: var(--text-color) !important;
 }
 
@@ -2531,129 +2657,298 @@ h2 {
 #bd-settings-sidebar .ui-tab-bar-item.selected {
     background: var(--text-color);
 }
+
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {
     background: var(--text-color) !important;
-} 
-
-#bd-settingspane-container button,.button-2t3of8:not([class*="colorGreen-22At8E"]):not([class*="colorRed-3HTNPV"]):not([class*="colorLink-Ttelix"]){
-    background: var(--text-color)!important;
 }
+
+#bd-settingspane-container button,
+.button-2t3of8:not([class*="colorGreen-22At8E"]):not([class*="colorRed-3HTNPV"]):not([class*="colorLink-Ttelix"]) {
+    background: rgba(0, 0, 0, 0.3)
+}
+
 .barFill-18ABna {
     background: var(--text-color);
 }
+
 .chat .new-messages-bar:hover {
-    background-color: hsla(calc(227 * var(--hue)),calc(58% * var(--saturation)),calc(65% * var(--lightness)),calc(1 * var(--alpha)));
+    background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(1 * var(--alpha)));
 }
+
 .theme-dark .popout .messages-popout-wrap .messages-popout .message-group:hover .action-buttons,
 .search-results-wrap .action-buttons {
-    -webkit-box-shadow: 0 0 6px 4px hsla(calc(218 * var(--hue)),calc(7% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)));
-    background-color: hsla(calc(218 * var(--hue)),calc(7% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)));
-    box-shadow: 0 0 6px 4pxhsla(calc(218 * var(--hue)),calc(7% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)));
+    -webkit-box-shadow: 0 0 6px 4px hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    box-shadow: 0 0 6px 4pxhsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .popout .messages-popout-wrap .messages-popout .message-group .action-buttons .jump-button,
 .search-results-wrap .action-buttons .jump-button {
-    background-color: hsla(calc(220 * var(--hue)),calc(3% * var(--saturation)),calc(34% * var(--lightness)),calc(1 * var(--alpha)));
-    color: hsla(0,0%,100%,.6);
+    background-color: hsla(calc(220 * var(--hue)), calc(3% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(0, 0%, 100%, .6);
 }
+
 .theme-dark .search-results-wrap .search-header {
-    -webkit-box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)),calc(0% * var(--saturation)),calc(0% * var(--lightness)),calc(0.2 * var(--alpha)));
-    background-color: hsla(calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha)));
-    box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)),calc(0% * var(--saturation)),calc(0% * var(--lightness)),calc(0.2 * var(--alpha)));
+    -webkit-box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0% * var(--saturation)), calc(0% * var(--lightness)), calc(0.2 * var(--alpha)));
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0% * var(--saturation)), calc(0% * var(--lightness)), calc(0.2 * var(--alpha)));
 }
+
 .premiumPaymentModal-w4sE7z {
     background: var(--text-color);
-    filter:saturate(0);
+    filter: saturate(0);
 }
+
+
 /* plugins stuff*/
-.bf-toolbar:before , #permissions-modal-wrapper .role-side {
-    background: hsla(calc(214 * var(--hue)),calc(5% * var(--saturation)),calc(27% * var(--lightness)),calc(1 * var(--alpha))) !important;
-}
-#permissions-modal-wrapper .perm-side{
-   background: hsla(calc(220 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha))) !important;
-} 
-#permissions-modal-wrapper .header{
-     background: hsla(calc(213 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha))) !important;
 
+.bf-toolbar:before,
+#permissions-modal-wrapper .role-side {
+    background: hsla(calc(214 * var(--hue)), calc(5% * var(--saturation)), calc(27% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
+
+#permissions-modal-wrapper .perm-side {
+    background: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
+}
+
+#permissions-modal-wrapper .header {
+    background: hsla(calc(213 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
+}
+
+
 /*later*/
+
+
 /* update stuff 01/04/2018 */
-.theme-dark .member-2FrNV0.popout-open .content-3JzEqq,.theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq {
-    background-color: hsla(calc(217 * var(--hue)),calc(8% * var(--saturation)),calc(34% * var(--lightness)),calc(0.6 * var(--alpha))) ;
+
+.theme-dark .member-2FrNV0.popout-open .content-3JzEqq,
+.theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq {
+    background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(0.6 * var(--alpha)));
 }
 
-.theme-dark .member-2FrNV0.popout-open .content-3JzEqq .status-2Devx1,.theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq .status-2Devx1 {
-    border-color: hsla(calc(218 * var(--hue)),calc(8% * var(--saturation)),calc(28% * var(--lightness)),calc(1 * var(--alpha)))
+.theme-dark .member-2FrNV0.popout-open .content-3JzEqq .status-2Devx1,
+.theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq .status-2Devx1 {
+    border-color: hsla(calc(218 * var(--hue)), calc(8% * var(--saturation)), calc(28% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .member-2FrNV0:hover .content-3JzEqq {
-    background-color: hsla(calc(220 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)))
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .member-2FrNV0:hover .content-3JzEqq .status-2Devx1 {
-    border-color: hsla(calc(220 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha)))
+    border-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .status-2Devx1 {
-    border-color: hsla(calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha)))
+    border-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
+
+
 /* observer thing i am too lazy*/
+
+
 /* maybe looks bad */
 
 .tooltip {
-  background: var(--text-color) !important;
+    filter: grayscale(60%);
+    background: var(--text-color) !important;
 }
+
 .tooltip-bottom::after {
-  border-bottom-color: var(--text-color) !important;
+    border-bottom-color: var(--text-color) !important;
 }
+
 .tooltip-right::after {
-  border-right-color: var(--text-color) !important;
+    border-right-color: var(--text-color) !important;
 }
+
 .tooltip-left::after {
-  border-left-color: var(--text-color) !important;
+    border-left-color: var(--text-color) !important;
 }
+
 .tooltip-top::after {
-  border-top-color: var(--text-color) !important;
+    border-top-color: var(--text-color) !important;
 }
+
 .tipsy-inner {
-    background-color:var(--text-color) !important;
+    background-color: var(--text-color) !important;
     color: white;
 }
+
+
 /* missing stuff */
-.theme-dark .private-channel-recipients-invite .friend.selected, .theme-dark .private-channel-recipients-invite .friend:hover {
-    background: -webkit-gradient(linear,left top,right top,color-stop(85%,hsla((calc(218 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha))))),to(hsl(223, 7%, 20%)));
-    background: linear-gradient(90deg,hsla((calc(218 * var(--hue)),calc(9% * var(--saturation)),calc(17% * var(--lightness)),calc(1 * var(--alpha)))) 85%,hsla((calc(223 * var(--hue)),calc(7% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha)))));
+
+.theme-dark .private-channel-recipients-invite .friend.selected,
+.theme-dark .private-channel-recipients-invite .friend:hover {
+    background: -webkit-gradient(linear, left top, right top, color-stop(85%, hsla((calc(218 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))))), to(hsl(223, 7%, 20%)));
+    background: linear-gradient(90deg, hsla((calc(218 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))) 85%, hsla((calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))));
 }
 
 .theme-dark .private-channel-recipients-invite .friend {
-    background: hsla(calc(222 * var(--hue)),calc(6% * var(--saturation)),calc(19% * var(--lightness)),calc(1 * var(--alpha))) !important;
+    background: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
-.scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track,.theme-dark .scrollerWrap-2uBjct.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track,.theme-light .scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track {
-    background-color: hsla(calc(210 * var(--hue)),calc(10% * var(--saturation)),calc(20% * var(--lightness)),calc(1 * var(--alpha)));
+.scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track,
+.theme-dark .scrollerWrap-2uBjct.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track,
+.theme-light .scrollerThemed-19vinI.themeDark-BdSAwu.scrollerTrack-3hhmU0>.scroller-fzNley::-webkit-scrollbar-track {
+    background-color: hsla(calc(210 * var(--hue)), calc(10% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .bd-modal-wrapper .bd-modal-body {
-    background-color: hsla(calc(220 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha))) !important;
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .bd-modal-wrapper .header {
-    background-color: hsla(calc(213 * var(--hue)),calc(8% * var(--saturation)),calc(23% * var(--lightness)),calc(1 * var(--alpha))) !important;
+    background-color: hsla(calc(213 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
-.bd-modal-wrapper .footer button:hover ,.private-channel-recipients-invite .footer button:hover {
-       background-color: var(--text-color);
-            filter:saturate(1);
+.bd-modal-wrapper .footer button:hover,
+.private-channel-recipients-invite .footer button:hover {
+    background: rgba(0, 0, 0, 0.5)
 }
 
-.bd-modal-wrapper .footer button ,.private-channel-recipients-invite .footer button{
-     filter:saturate(1.3);
-    background-color: var(--text-color);
+.bd-modal-wrapper .footer button,
+.private-channel-recipients-invite .footer button {
+    background: rgba(0, 0, 0, 0.2)
 }
+
 .theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
     background-color: var(--text-color)
 }
-.theme-dark #friends .tab-bar .tab-bar-item.selected .badge{
-    background-color:var(--text-color);
+
+.theme-dark #friends .tab-bar .tab-bar-item.selected .badge {
+    background-color: var(--text-color);
 }
+
+
 /* more missing stuff */
+
+
+/* 14/4/2018 */
+
+.theme-dark .searchPopout-38pRYh {
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    border: 1px solid rgba(28, 36, 43, .6);
+}
+
+.theme-dark .resultsGroup-2qzvNj: before {
+
+    border-top: 1px solid hsla(calc(225 * var(--hue)), calc(8% * var(--saturation)), calc(10% * var(--lightness)), calc(0.3 * var(--alpha)));
+}
+
+.theme-dark .option-1MvVr1.selected-_bTXUG {
+    background-color: var(--text-color) !important;
+}
+
+.theme-dark .searchQuery-3o17HL.selected-_bTXUG {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.theme-dark .datePicker-1RD4eT .datePickerHint-1iW7Wz {
+    border-top: 1px solid hsla(calc(225 * var(--hue)), calc(8% * var(--saturation)), calc(10% * var(--lightness)), calc(0.3 * var(--alpha)))
+}
+
+.theme-dark .datePicker-1RD4eT .datePickerHint-1iW7Wz .hintValue-45YyWZ: hover {
+    background-color: var(--text-color) !important;
+}
+
+.theme-dark .searchAnswer-yD90ey,
+.theme-dark .searchFilter-1fJ0cd {
+    background-color: hsla(calc(213 * var(--hue)), calc(8% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha)));
+}
+
+.react-datepicker__day.react-datepicker__day--tue.react-datepicker__day--outside-month,
+.theme-dark .calendarPicker-16Q6sl .react-datepicker__day--disabled,
+.theme-dark .calendarPicker-16Q6sl .react-datepicker__day--outside-month {
+    background-color: hsla(calc(223* var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important;
+}
+
+.theme-dark .calendarPicker-16Q6sl .react-datepicker__day.react-datepicker__day--selected:hover,
+.theme-dark .calendarPicker-16Q6sl .react-datepicker__day:hover {
+    background-color: var(--text-color);
+    color: hsl(0, 0%, 100%);
+}
+
+.theme-dark .keyboardShortcutsModal-2JhH0L {
+    background-color: hsla(calc(220* var(--hue)), calc(8% * var(--saturation)), calc(22% * var(--lightness)), calc(1 * var(--alpha))) !important;
+}
+
+.theme-dark .keyboardShortcutList-3VNIxQ .keybindGroup-BB3G2K .keybindDescription-NKubnb {
+    color: var(--text-color);
+}
+
+
+/*more stuff */
+
+.markup::selection {
+    background: var(--text-color)
+}
+
+.container-2OU7Cz {
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+}
+
+.uploadModalIn-14sS7w .uploadDropModal-BpFgz7 .bgScale-1i4Cp3,
+.uploadModal-2KN6Mm {
+
+    background-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+}
+
+.uploadModal-2KN6Mm .footer-4pOKm8 {
+    background-color: hsla(0, 0%, 0%, 0.2);
+}
+
+.uploadModal-2KN6Mm .footer-4pOKm8 .button:nth-of-type(1) {
+    background-color: hsla(0, 0%, 2%, 0);
+}
+
+.theme-brand .inner-3if5cm,
+.uploadModal-2KN6Mm .inner-1-09ZV {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.1);
+}
+
+.mention {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: var(--text-color)
+}
+
+.mention:hover {
+    color: var(--text-color) !important;
+}
+
+.theme-dark .message-group .mentioned .message-text {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+/*fixes file*/
+
+
+#memberCount {
+    background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important;
+}
+
+.theme-dark .friends-table .messages .message-group-blocked.revealed,
+.theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
+    background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    border-color: hsla(calc(222 * var(--hue)), calc(6% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha))) !important;
+}
+
+.theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn,
+.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+    background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    color: var(--text-color)
+}
+
+
+
+/*spotify*/
+
+button.button-fb2MQS.button-2t3of8.lookOutlined-1c5nhl.colorWhite-1IbOTe.sizeSmall-3g6RX8.grow-25YQ8u {
+    background: none !important;
+}
+
+
+/*end*/
+

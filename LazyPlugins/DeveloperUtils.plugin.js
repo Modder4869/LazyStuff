@@ -7,7 +7,7 @@ class DeveloperUtils {
         return 'devutils';
     }
     getDescription() {
-        return 'allows you to inspect elements with Ctrl + RightClick , and adds shortcut in context menu';
+        return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
         return '0.0.3';

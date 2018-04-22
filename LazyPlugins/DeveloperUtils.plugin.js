@@ -15,6 +15,9 @@ class DeveloperUtils {
     getAuthor() {
         return 'Modder4869';
     }
+    getLink() {
+        return 'https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/DeveloperUtils.plugin.js'
+    }
     constructor() {
 
         this.currentWindow = require('electron').remote.getCurrentWindow();
@@ -42,6 +45,7 @@ class DeveloperUtils {
     }
 
     initialize() {
+        PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
         this.addContextMenuEvent()
         this.initialized = true;
     }

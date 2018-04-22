@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.0.4';
+        return '0.0.5';
     }
     getAuthor() {
         return 'Modder4869';

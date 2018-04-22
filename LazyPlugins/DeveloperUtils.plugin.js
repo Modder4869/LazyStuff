@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with Ctrl + RightClick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.0.1';
+        return '0.0.2';
     }
     getAuthor() {
         return 'Modder4869';
@@ -88,6 +88,7 @@ class DeveloperUtils {
                 callback: () => {
                     if (!currentWin.isDevToolsOpened()) {
                         currentWin.openDevTools()
+                        debugger;
                     }
 
                     debugger;

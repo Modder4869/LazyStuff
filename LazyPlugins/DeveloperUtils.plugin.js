@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.0.3';
+        return '0.0.4';
     }
     getAuthor() {
         return 'Modder4869';
@@ -24,6 +24,19 @@ class DeveloperUtils {
         this.initialized = false;
         this.remote = require('electron').remote;
         this.clipboard = require('electron').clipboard;
+        this.defaultSettings = {
+            DevUtils: {
+                KeyCombinationEnabled: true
+            }
+        };
+        this.settings = this.defaultSettings;
+    }
+    loadSettings() {
+        this.settings = PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
+    }
+
+    saveSettings() {
+        PluginUtilities.saveSettings(this.getName(), this.settings);
     }
     load() {
 
@@ -46,17 +59,22 @@ class DeveloperUtils {
 
     initialize() {
         PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
+        this.loadSettings();
         this.addContextMenuEvent()
         this.initialized = true;
     }
     addContextMenuEvent() {
         $(document).on('contextmenu.' + this.getName(), (e) => {
-            if (e.altKey) {
-                let context = document.querySelector(".contextMenu-uoJTbz");
-                $(context).hide()
-                this.inspectAt(e)
+            if (!this.settings.DevUtils.KeyCombinationEnabled) {
+                this.addContextMenuEvent(e);
+            } else {
+                if (e.altKey) {
+                    let context = document.querySelector(".contextMenu-uoJTbz");
+                    $(context).hide()
+                    this.inspectAt(e)
+                }
             }
-            this.addContextMenuItems(e)
+
         })
 
     }
@@ -88,7 +106,9 @@ class DeveloperUtils {
                 callback: () => {
                     if (!currentWin.isDevToolsOpened()) {
                         currentWin.openDevTools()
-                         setTimeout(() => { debugger }, 3e3)
+                        setTimeout(() => {
+                            debugger
+                        }, 3e3)
                     }
 
                     debugger;
@@ -117,5 +137,25 @@ class DeveloperUtils {
 
         let testGroup = new PluginContextMenu.ItemGroup().addItems(subMenu);
         $(context).find('.itemGroup-oViAgA').first().append(testGroup.element);
+    }
+    getSettingsPanel() {
+        var panel = $("<form>").addClass("form").css("width", "100%");
+        if (this.initialized) this.generateSettings(panel);
+        return panel[0];
+    }
+
+    generateSettings(panel) {
+
+        new PluginSettings.ControlGroup("DevUtilites Options", () => {
+            this.saveSettings();
+        }, {
+            shown: true
+        }).appendTo(panel).append(
+            new PluginSettings.PillButton("Use Shortcut Key", "enable / disable the inspect element shorcut [Alt + Right Click]", " context menu only", "use alt key + right click",
+                this.settings.DevUtils.KeyCombinationEnabled, (checked) => {
+                    this.settings.DevUtils.KeyCombinationEnabled = checked;
+                }
+            )
+        );
     }
 }

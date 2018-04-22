@@ -65,14 +65,15 @@ class DeveloperUtils {
     }
     addContextMenuEvent() {
         $(document).on('contextmenu.' + this.getName(), (e) => {
+            this.addContextMenuItems(e);
             if (!this.settings.DevUtils.KeyCombinationEnabled) {
-                this.addContextMenuEvent(e);
-            } else {
-                if (e.altKey) {
-                    let context = document.querySelector(".contextMenu-uoJTbz");
-                    $(context).hide()
-                    this.inspectAt(e)
-                }
+                return;
+            }
+            if (e.altKey) {
+                let context = document.querySelector(".contextMenu-uoJTbz");
+                $(context).hide()
+                this.inspectAt(e)
+
             }
 
         })

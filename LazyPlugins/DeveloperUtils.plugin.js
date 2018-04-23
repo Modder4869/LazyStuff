@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.0.5';
+        return '0.0.6';
     }
     getAuthor() {
         return 'Modder4869';
@@ -26,7 +26,8 @@ class DeveloperUtils {
         this.clipboard = require('electron').clipboard;
         this.defaultSettings = {
             DevUtils: {
-                KeyCombinationEnabled: true
+                KeyCombinationEnabled: true,
+                delay: 3000
             }
         };
         this.settings = this.defaultSettings;
@@ -71,8 +72,8 @@ class DeveloperUtils {
             }
             if (e.altKey) {
                 let context = document.querySelector(".contextMenu-uoJTbz");
-                $(context).hide()
-                this.inspectAt(e)
+                $(context).hide();
+                this.inspectAt(e);
 
             }
 
@@ -81,7 +82,7 @@ class DeveloperUtils {
     }
     stop() {
         this.initialized = false;
-        $(document).off('contextmenu.' + this.getName())
+        $(document).off('contextmenu.' + this.getName());
     }
 
     inspectAt(e) {
@@ -90,20 +91,16 @@ class DeveloperUtils {
         this.currentWindow.inspectElement(x, y);
     }
 
-    getCSS(e) {
-        let CSSRules = null;
-        CSSRules = (getMatchedCSSRules(e.toElement))
-        this.CSSRule = CSSRules.item(CSSRules.length - 1)
-    }
 
     addContextMenuItems(e) {
+        let CSSRules = getMatchedCSSRules(e.toElement);
         let context = document.querySelector(".contextMenu-uoJTbz");
-        if (!context) return;
-        this.getCSS(e);
+        if (!CSSRules) return;
+        let CSSRule = CSSRules.item(CSSRules.length - 1);
         let currentWin = this.currentWindow;
         let subMenu = new PluginContextMenu.SubMenuItem("DevUtils", new PluginContextMenu.Menu(false).addItems(
 
-            new PluginContextMenu.TextItem("Debugger", {
+            new PluginContextMenu.TextItem("debugger", {
                 callback: () => {
                     if (!currentWin.isDevToolsOpened()) {
                         currentWin.openDevTools()
@@ -115,28 +112,50 @@ class DeveloperUtils {
                     debugger;
                 }
             }),
-            new PluginContextMenu.TextItem("Copy CSS Rule", {
+            new PluginContextMenu.TextItem("copy selector", {
                 callback: () => {
-                    this.clipboard.writeText(this.CSSRule.selectorText);
+                    this.clipboard.writeText(CSSRule.selectorText);
                     $(context).hide();
                 }
             }),
-            new PluginContextMenu.TextItem("Copy CSS Text", {
+            new PluginContextMenu.TextItem("copy declaration", {
                 callback: () => {
-                    this.clipboard.writeText(this.CSSRule.cssText);
+                    this.clipboard.writeText(CSSRule.style.cssText);
+                    $(context).hide();
+                }
+            }),
+            new PluginContextMenu.TextItem("copy rule-set", {
+                callback: () => {
+                    this.clipboard.writeText(CSSRule.cssText);
                     $(context).hide();
                 }
             }),
             new PluginContextMenu.TextItem("Inspect", {
                 callback: () => {
-                    this.inspectAt(e)
+                    this.inspectAt(e);
                     $(context).hide();
+                }
+            }),
+            new PluginContextMenu.TextItem("debugger (timeout)", {
+                callback: () => {
+                    setTimeout(() => {
+                        debugger
+                    }, this.settings.DevUtils.delay)
                 }
             })
 
         ));
 
         let testGroup = new PluginContextMenu.ItemGroup().addItems(subMenu);
+        let newMenu = new PluginContextMenu.Menu();
+        if (!context) {
+            context = newMenu.element;
+            newMenu.addGroup(testGroup);
+
+            newMenu.show(e.clientX, e.clientY);
+            return;
+        }
+
         $(context).find('.itemGroup-oViAgA').first().append(testGroup.element);
     }
     getSettingsPanel() {
@@ -146,17 +165,20 @@ class DeveloperUtils {
     }
 
     generateSettings(panel) {
-
-        new PluginSettings.ControlGroup("DevUtilites Options", () => {
+        new PluginSettings.ControlGroup("Settings", () => {
             this.saveSettings();
         }, {
             shown: true
         }).appendTo(panel).append(
-            new PluginSettings.PillButton("Use Shortcut Key", "enable / disable the inspect element shorcut [Alt + Right Click]", " context menu only", "use alt key + right click",
+            new PluginSettings.PillButton("Shortcut", "use shortcut for quick inspect", " Context Menu Only", " Key + rightClick",
                 this.settings.DevUtils.KeyCombinationEnabled, (checked) => {
                     this.settings.DevUtils.KeyCombinationEnabled = checked;
-                }
-            )
+                }),
+            new PluginSettings.Slider("Timeout", "set value for the delay before it pauses , default is 3000 = 3 sec", 0, 10000, 500,
+                this.settings.DevUtils.delay, (val) => {
+                    this.settings.DevUtils.delay = val;
+                }).setLabelUnit('ms')
+
         );
     }
 }

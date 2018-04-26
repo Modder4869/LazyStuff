@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.0.6';
+        return '0.0.7';
     }
     getAuthor() {
         return 'Modder4869';
@@ -94,13 +94,13 @@ class DeveloperUtils {
 
     addContextMenuItems(e) {
         let CSSRules = getMatchedCSSRules(e.toElement);
-        let context = document.querySelector(".contextMenu-uoJTbz");
+        let context = document.querySelector('.contextMenu-uoJTbz');
         if (!CSSRules) return;
         let CSSRule = CSSRules.item(CSSRules.length - 1);
         let currentWin = this.currentWindow;
         let subMenu = new PluginContextMenu.SubMenuItem("DevUtils", new PluginContextMenu.Menu(false).addItems(
 
-            new PluginContextMenu.TextItem("debugger", {
+            new PluginContextMenu.TextItem("Debugger", {
                 callback: () => {
                     if (!currentWin.isDevToolsOpened()) {
                         currentWin.openDevTools()
@@ -112,19 +112,19 @@ class DeveloperUtils {
                     debugger;
                 }
             }),
-            new PluginContextMenu.TextItem("copy selector", {
+            new PluginContextMenu.TextItem("Copy Selector", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.selectorText);
                     $(context).hide();
                 }
             }),
-            new PluginContextMenu.TextItem("copy declaration", {
+            new PluginContextMenu.TextItem("Copy Declaration", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.style.cssText);
                     $(context).hide();
                 }
             }),
-            new PluginContextMenu.TextItem("copy rule-set", {
+            new PluginContextMenu.TextItem("Copy Rule-Set", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.cssText);
                     $(context).hide();
@@ -136,7 +136,7 @@ class DeveloperUtils {
                     $(context).hide();
                 }
             }),
-            new PluginContextMenu.TextItem("debugger (timeout)", {
+            new PluginContextMenu.TextItem("Debugger (timeout)", {
                 callback: () => {
                     setTimeout(() => {
                         debugger
@@ -155,8 +155,8 @@ class DeveloperUtils {
             newMenu.show(e.clientX, e.clientY);
             return;
         }
-
-        $(context).find('.itemGroup-oViAgA').first().append(testGroup.element);
+        if (context.classList.contains("plugin-context-menu")) return;
+        $(context).find('.itemGroup-oViAgA').first().prepend(testGroup.element);
     }
     getSettingsPanel() {
         var panel = $("<form>").addClass("form").css("width", "100%");

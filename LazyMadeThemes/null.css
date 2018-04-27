@@ -1543,3 +1543,10 @@ span.mention:hover {
 .ace-monokai .ace_indent-guide {
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAACCAYAAACZgbYnAAAAEklEQVQImWPQ0FD0ZXBzd/wPAAjVAoxeSgNeAAAAAElFTkSuQmCC) right repeat-y
 }
+/* fix */
+.theme-dark .member-2FrNV0-2FrNV0.popout-2RRwAO-open .content-3JzEqq,
+.theme-dark .member-2FrNV0-2FrNV0.popout-2RRwAO-open:hover .content-3JzEqq,
+.theme-dark .member-2FrNV0:hover .content-3JzEqq, 
+.theme-dark .member-2FrNV0.popout-open .content-3JzEqq, .theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq{
+    background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(0.6 * var(--alpha))) !important;
+}

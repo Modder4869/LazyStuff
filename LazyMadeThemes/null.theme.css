@@ -1,4 +1,4 @@
-//META{"name":"null","description":"null , lost? https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes","author":"Modder4869","version":"1.0.6"}*//{}
+//META{"name":"null","description":"null , lost? https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes","author":"Modder4869","version":"1.0.7"}*//{}
 /* dark example*/
 
 /* check https://github.com/Modder4869/LazyStuff/tree/master/LazyMadeThemes for examples / how to*/
@@ -7,7 +7,7 @@
 
 /* import css file */
 
-@import url(https://modder4869.github.io/themes/null.css);
+@import url('https://modder4869.github.io/LazyStuff/LazyMadeThemes/null.css');
 /*--------------------------------------------------------------------------*/
 
 :root {

@@ -68,3 +68,15 @@ so if it is 50 then final result is for hue in hsla will be 100
 }
 ```
 ![Imgur](https://i.imgur.com/nIyJ7Tq.png)
+# Blue
+
+```css
+:root {
+    --hue: (1) + (25555);
+    --saturation: (1) + (44%);
+    --lightness: (1) + (17%);
+    --alpha: (1) + (-0);
+    --text-color: hsl(207, 143%, 36%);
+}
+```
+![Imgur](https://i.imgur.com/EEGcglI.png)

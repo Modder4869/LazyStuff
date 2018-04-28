@@ -610,7 +610,7 @@
 .theme-dark .popout-2RRwAO .messagesPopoutWrap-1VBR-j .messagesPopout-MzE43I .message-group .actionButtons-LKmOj2 .jumpButton-1CVJpO,
 .search-results-wrap .actionButtons-LKmOj2 .jumpButton-1CVJpO {
     background-color: hsla(calc(220 * var(--hue)), calc(3% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
-    color: hsla(0, 0, 100%, .6)
+    color: hsla(0, 0%, 100%, .6)
 }
 
 .theme-dark .search-results-wrap .search-header {
@@ -732,11 +732,11 @@
 }
 
 .theme-dark .datePicker-1RD4eT .datePickerHint-1iW7Wz,
-.theme-dark .resultsGroup-2qzvNj: before {
+.theme-dark .resultsGroup-2qzvNj:before {
     border-top: 1px solid hsla(calc(225 * var(--hue)), calc(8% * var(--saturation)), calc(10% * var(--lightness)), calc(0.3 * var(--alpha)))
 }
 
-.theme-dark .datePicker-1RD4eT .datePickerHint-1iW7Wz .hintValue-45YyWZ: hover,
+.theme-dark .datePicker-1RD4eT .datePickerHint-1iW7Wz .hintValue-45YyWZ:hover,
 .theme-dark .option-1MvVr1.selected-_bTXUG {
     background-color: var(--text-color) !important
 }
@@ -756,7 +756,7 @@
 .theme-dark .calendarPicker-16Q6sl .react-datepicker__day.react-datepicker__day--selected:hover,
 .theme-dark .calendarPicker-16Q6sl .react-datepicker__day:hover {
     background-color: var(--text-color);
-    color: hsl(0, 0, 100%)
+    color: hsl(0, 0%, 100%)
 }
 
 .theme-dark .keyboardShortcutsModal-2JhH0L {
@@ -1190,17 +1190,17 @@
 }
 
 .uploadModal-2KN6Mm .footer-4pOKm8 {
-    background-color: hsla(0, 0, 0, 0.2)
+    background-color: hsla(0, 0%, 0%, 0.2);
 }
 
 .uploadModal-2KN6Mm .footer-4pOKm8 .button:nth-of-type(1) {
-    background-color: hsla(0, 0, 2%, 0)
+    background-color: hsla(0, 0%, 2%, 0)
 }
 
 .theme-brand .inner-3if5cm,
 .uploadModal-2KN6Mm .inner-1-09ZV {
     background-color: rgba(0, 0, 0, 0.2);
-    border-color: rgba(0, 0, 0, 0.1)
+    border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .mention {
@@ -1257,7 +1257,7 @@ button.button-fb2MQS.button-2t3of8.lookOutlined-1c5nhl.colorWhite-1IbOTe.sizeSma
 .content-region #bd-customcss-attach-controls,
 #bd-customcss-detach-container #bd-customcss-attach-controls {
     background: rgba(5, 5, 5, 0.616);
-    color: hsl(0, 0, 100%);
+    color: hsl(0, 0%, 100%);
     border: 0;
     box-shadow: 0 1px 0 0 #2f3129 inset;
 }
@@ -1325,7 +1325,7 @@ span.mention:hover {
 }
 
 #bda-qem button {
-    box-shadow: var(--text-color) 1px 0 0 0:;
+    box-shadow: var(--text-color) 1px 0 0 0;
     color: var(--text-color);
     border-left: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
@@ -1392,10 +1392,13 @@ span.mention:hover {
     background: initial;
     border-color: initial;
 }
+
 /* fix */
+
 .theme-dark .member-2FrNV0-2FrNV0.popout-2RRwAO-open .content-3JzEqq,
 .theme-dark .member-2FrNV0-2FrNV0.popout-2RRwAO-open:hover .content-3JzEqq,
-.theme-dark .member-2FrNV0:hover .content-3JzEqq, 
-.theme-dark .member-2FrNV0.popout-open .content-3JzEqq, .theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq{
+.theme-dark .member-2FrNV0:hover .content-3JzEqq,
+.theme-dark .member-2FrNV0.popout-open .content-3JzEqq,
+.theme-dark .member-2FrNV0.popout-open:hover .content-3JzEqq {
     background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(0.6 * var(--alpha))) !important;
 }

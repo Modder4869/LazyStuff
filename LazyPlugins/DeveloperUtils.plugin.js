@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.0.7';
+        return '0.0.8';
     }
     getAuthor() {
         return 'Modder4869';
@@ -71,7 +71,7 @@ class DeveloperUtils {
                 return;
             }
             if (e.altKey) {
-                let context = document.querySelector(".contextMenu-uoJTbz");
+                let context = document.querySelector(".contextMenu-HLZMGh");
                 $(context).hide();
                 this.inspectAt(e);
 
@@ -94,7 +94,7 @@ class DeveloperUtils {
 
     addContextMenuItems(e) {
         let CSSRules = getMatchedCSSRules(e.toElement);
-        let context = document.querySelector('.contextMenu-uoJTbz');
+        let context = document.querySelector('.contextMenu-HLZMGh .theme-dark');
         if (!CSSRules) return;
         let CSSRule = CSSRules.item(CSSRules.length - 1);
         let currentWin = this.currentWindow;
@@ -148,6 +148,7 @@ class DeveloperUtils {
 
         let testGroup = new PluginContextMenu.ItemGroup().addItems(subMenu);
         let newMenu = new PluginContextMenu.Menu();
+
         if (!context) {
             context = newMenu.element;
             newMenu.addGroup(testGroup);
@@ -156,7 +157,7 @@ class DeveloperUtils {
             return;
         }
         if (context.classList.contains("plugin-context-menu")) return;
-        $(context).find('.itemGroup-oViAgA').first().prepend(testGroup.element);
+        $(context).find('.itemGroup-oViAgA').last().append(testGroup.element);
     }
     getSettingsPanel() {
         var panel = $("<form>").addClass("form").css("width", "100%");

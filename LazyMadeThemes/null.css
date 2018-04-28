@@ -1,4 +1,4 @@
-.wrapper-1XTKlU {
+.wrapper-1prNyd {
     overflow: hidden
 }
 
@@ -339,7 +339,7 @@
 .theme-dark .lookInverted-2lPGe7.colorPrimary-2KuK5O .spinnerItem-2VtahD,
 .theme-dark .lookFilled-luDKDo.colorPrimary-2KuK5O,
 .lookInverted-2lPGe7.colorWhite-1IbOTe,
-.lookFilled-luDKDo.colorWhite-1IbOTe .spinnerItem-2VtahD {
+.lookFilled-1Gx00P.colorWhite-rEQuAQ .spinnerItem-3GlVyU {
     background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
@@ -510,7 +510,7 @@
     background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark.contextMenu-uoJTbz {
+.theme-dark.contextMenu-HLZMGh {
     background: hsla(calc(216 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
@@ -543,7 +543,7 @@
     box-shadow: 0 1px 0 0 var(--text-color);
 }
 
-.theme-dark .gamePreview-4pQzIA {
+.theme-dark .gamePreview-9weYR2 {
     background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(4% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
@@ -1250,7 +1250,7 @@ button.button-fb2MQS.button-2t3of8.lookOutlined-1c5nhl.colorWhite-1IbOTe.sizeSma
 .barFill-18ABna,
 .side-2nYO0F .itemSelected-3XxAMf,
 #bd-settings-sidebar .ui-tab-bar-item.selected,
-.themeDefault-3M0dJU.valueChecked-3Bzkbm {
+.themeDefault-24hCdX.valueChecked-m-4IJZ {
     background: var(--text-color) !important;
 }
 
@@ -1337,7 +1337,7 @@ span.mention:hover {
     background-color: rgba(55, 53, 53, 0.69)
 }
 
-.emojiPicker-3g68GS .dimmer-jySV_v.visible-1CGy1m {
+.emojiPicker-3m1S-j .dimmer-3iH-5D.visible-3k45bQ {
     background-color: hsla(0, 2%, 4%, 0.41);
     pointer-events: auto
 }
@@ -1359,7 +1359,7 @@ span.mention:hover {
 
 /* 27/4/2018*/
 
-.theme-dark .menu-3BZuDT {
+.theme-dark .menu-Sp6bN1 {
     background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
@@ -1379,7 +1379,7 @@ span.mention:hover {
 .iconDefault-xzclSQ,
 .nameCollapsed-3_ChMu,
 .nameDefault-Lnjrwm,
-.membersGroup-3_dP5E {
+.membersGroup-v9BXpm {
     color: var(--text-color) !important;
 }
 

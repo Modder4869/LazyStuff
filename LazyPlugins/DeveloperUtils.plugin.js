@@ -94,7 +94,7 @@ class DeveloperUtils {
 
     addContextMenuItems(e) {
         let CSSRules = getMatchedCSSRules(e.toElement);
-        let context = document.querySelector('.contextMenu-HLZMGh .theme-dark');
+        let context = document.querySelector('.contextMenu-HLZMGh');
         if (!CSSRules) return;
         let CSSRule = CSSRules.item(CSSRules.length - 1);
         let currentWin = this.currentWindow;
@@ -157,7 +157,7 @@ class DeveloperUtils {
             return;
         }
         if (context.classList.contains("plugin-context-menu")) return;
-        $(context).find('.itemGroup-oViAgA').last().append(testGroup.element);
+        $(context).find('.itemGroup-1tL0uz').last().append(testGroup.element);
     }
     getSettingsPanel() {
         var panel = $("<form>").addClass("form").css("width", "100%");

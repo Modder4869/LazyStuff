@@ -109,12 +109,12 @@
     border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.topSectionNormal-2LlRG1 {
+.topSectionNormal-2-vo2m {
     background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
-.theme-light .topSectionNormal-2LlRG1 .tab-bar.tabBar-2z50ux .tabBarItem-1Lg555.selected,
-.theme-light .top-2qoLb2 .itemSelected-3XxAMf {
+.theme-light .topSectionNormal-2-vo2m .tab-bar.tabBar-2z50ux .tabBarItem-1Lg555.selected,
+.theme-light .top-28JiJ- .itemSelected-1qLhcL {
     border-bottom-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
@@ -150,7 +150,7 @@
 
 .theme-light .accountBtnInner-3zsU2z:hover,
 .theme-dark .ui-standard-sidebar-view .btn-close,
-.theme-dark .checkbox-1QwaS4 {
+.theme-dark .checkbox-1ix_J3 {
     border-color: var(--text-color)
 }
 
@@ -358,7 +358,7 @@
     border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .verificationBlock-3CCVQ8,
+.theme-dark .verificationBlock-1Chfpc,
 .overlay-3hR73C {
     border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
@@ -477,7 +477,7 @@
 }
 
 .appMount-3VJmYg,
-.theme-dark .verificationBlock-3CCVQ8:hover,
+.theme-dark .verificationBlock-1Chfpc:hover,
 .theme-dark .pictureInPictureVideo-2w62Uz,
 .theme-dark .header-9Qyhnu,
 .article-2abys7,
@@ -573,7 +573,7 @@
     background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(14% * var(--lightness)), calc(0.3 * var(--alpha))) !important;
 }
 
-.item-2zi_5J[style='padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);'] {
+.item-26Dhrx[style='padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);'] {
     background-color: var(--text-color) !important;
     border-color: rgba(0, 0, 0, 0.37) !important;
 }
@@ -770,9 +770,9 @@
 .theme-light .title-h3,
 .theme-light .title-h5,
 .theme-light .title-h6,
-.theme-light .verificationBlock-3CCVQ8 .body-3yTG1G,
-.theme-light .verification-3gqNNa .body-3yTG1G,
-.theme-light .verification-3gqNNa .footer-2HiYjS,
+.theme-light .verificationBlock-1Chfpc .body-3ROqbj,
+.theme-light .verification-3gqNNa .body-3ROqbj,
+.theme-light .verification-3gqNNa .footer-1eZumv,
 .theme-light .verification-3gqNNa .title-1fw3H_,
 .theme-light .itemValue-2MZR07,
 .theme-light .item-OAPdSG,
@@ -954,7 +954,7 @@
 .theme-light .listRow-1wEi-U:hover,
 .theme-light .listRow-1wEi-U,
 .theme-light .connectedAccountName-3EFj01,
-.theme-light .topSectionNormal-2LlRG1 .username-24t9uh,
+.theme-light .topSectionNormal-2-vo2m .username-24t9uh,
 .emptyText-AUFSH0,
 .userInfoSectionHeader-pmdPGs,
 .theme-light .guild-settings-members-member .name,
@@ -988,10 +988,10 @@
 .theme-light .auditLog-1XsYCj strong,
 .theme-light .auditLog-1XsYCj,
 .theme-light .input-1aITJk,
-.theme-light .top-2qoLb2 .itemDefault-3NDwnY:hover,
-.theme-light .top-2qoLb2 .itemHover-3rojsB:hover,
-.theme-light .side-2nYO0F .itemDefault-3NDwnY:hover,
-.theme-light .side-2nYO0F .itemHover-3rojsB:hover,
+.theme-light .top-28JiJ- .itemDefault-3NDwnY:hover,
+.theme-light .top-28JiJ- .itemHover-3rojsB:hover,
+.theme-light .side-8zPYf6 .itemDefault-3NDwnY:hover,
+.theme-light .side-8zPYf6 .itemHover-3rojsB:hover,
 .theme-light .itemDefault-3NDwnY,
 .theme-light .itemHover-3rojsB,
 .theme-dark .header-1-f9X5,
@@ -1249,7 +1249,7 @@ button.button-fb2MQS.button-2t3of8.lookOutlined-1c5nhl.colorWhite-1IbOTe.sizeSma
 .ui-standard-sidebar-view #bd-customcss-attach-controls button,
 .bd-detached-css-editor #bd-customcss-attach-controls button,
 .barFill-18ABna,
-.side-2nYO0F .itemSelected-3XxAMf,
+.side-8zPYf6 .itemSelected-1qLhcL,
 #bd-settings-sidebar .ui-tab-bar-item.selected,
 .themeDefault-24hCdX.valueChecked-m-4IJZ {
     background: var(--text-color) !important;

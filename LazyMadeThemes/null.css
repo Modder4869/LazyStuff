@@ -433,7 +433,7 @@
 .theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit,
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker__header,
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker,
-.theme-dark .messagesPopoutWrap-1MQ1bW-j .messagesPopout-24nkyi.message-group,
+.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi.message-group,
 .theme-dark .popout-3dRSmE .header-ykumBX,
 .theme-dark .typing-2GQL18,
 .theme-dark .add-game-popout,
@@ -465,14 +465,20 @@
 .invite-1_xgj9,
 .theme-light .theme-dark .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover,
 .theme-light .theme-light .lookInverted-2lPGe7.hoverPrimary-3sUr-C.hasHover-FPgGm-:hover,
-.theme-light .lookInverted-2D7oAl.colorPrimary-3b3xI6:hover {
+.theme-light .lookInverted-2D7oAl.colorPrimary-3b3xI6:hover,
+.contentHoveredText-2D9B-x,
+.contentHoveredVoice-3p_NEO:active,
+.contentSelectedVoice-1WDIBM:active,
+.theme-dark .messagesPopoutWrap-1MQ1bW,
+.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group {
     background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .theme-dark .private-channel-recipients-invite .friend.selected .avatar-small .status,
 .theme-dark .private-channel-recipients-invite .friend:hover .avatar-small .status,
 .theme-dark .members-1998pB .member-3W1lQa.popout-3dRSmE-open .status,
-.theme-dark .members-1998pB .member-3W1lQa:hover .status {
+.theme-dark .members-1998pB .member-3W1lQa:hover .status,
+.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group {
     border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
@@ -485,7 +491,8 @@
 .news-2C2kok,
 .video-1FfuMD,
 .theme-dark .private-channel-call,
-.theme-dark .mediaBarInteraction-37i2O4,.mediaBarInteractionDragging-2QurIZ,
+.theme-dark .mediaBarInteraction-37i2O4,
+.mediaBarInteractionDragging-2QurIZ,
 .guilds-wrapper,
 .noticePremium-12Zvj9,
 .notice-RSKmnp,
@@ -601,14 +608,14 @@
     background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW-j .messagesPopout-24nkyi.message-group:hover .actionButtons-1sUUug,
+.theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi.message-group:hover .actionButtons-1sUUug,
 .search-results-wrap .actionButtons-1sUUug {
     -webkit-box-shadow: 0 0 6px 4px hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     box-shadow: 0 0 6px 4pxhsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW-j .messagesPopout-24nkyi.message-group .actionButtons-1sUUug .jumpButton-1CVJpO,
+.theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi.message-group .actionButtons-1sUUug .jumpButton-1CVJpO,
 .search-results-wrap .actionButtons-1sUUug .jumpButton-1CVJpO {
     background-color: hsla(calc(220 * var(--hue)), calc(3% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
     color: hsla(0, 0%, 100%, .6)
@@ -738,7 +745,8 @@
 }
 
 .theme-dark .datePicker--XZbmJ .datePickerHint-1iW7Wz .hintValue-45YyWZ:hover,
-.theme-dark .option-96V44q.selected-_bTXUG {
+.theme-dark .option-96V44q.selected-_bTXUG,
+.theme-dark .option-96V44q {
     background-color: var(--text-color) !important
 }
 
@@ -1163,7 +1171,7 @@
 .theme-dark .search-results-wrap .channelSeparator-1MxuvT .channelName-3kBz6H,
 .theme-dark .search-results-wrap,
 .theme-dark .footer-2VgWkh,
-.theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW-j,
+.theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW,
 .noIcon-1a_FrS,
 .search-bar,
 .theme-dark .autocomplete-1vrmpx,
@@ -1187,7 +1195,7 @@
 .theme-dark .footer-2yfCgX,
 .themeDark-3BOwlz,
 .theme_dark-2FtE3l {
-    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .uploadModal-2ifh8j .footer-4pOKm8 {

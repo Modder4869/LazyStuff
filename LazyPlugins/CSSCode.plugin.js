@@ -16,21 +16,22 @@ class CSSCode {
         return 'Modder4869';
     }
     getLink() {
-        return 'https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/CSSCode.plugin.js'
+        return `https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/${this.getName()}.plugin.js`;
     }
     constructor() {
         this.initialized = false;
+        this.previewSheet;
     }
     load() {
 
     }
     start() {
-        var libraryScript = document.getElementById('zeresLibraryScript');
-        var previewSheet = document.getElementById('CSSCode')
-        if (!previewSheet) {
-            previewSheet = document.createElement('style')
-            previewSheet.setAttribute('id', 'CSSCode')
-            document.body.appendChild(previewSheet);
+        let libraryScript = document.getElementById('zeresLibraryScript');
+        this.previewSheet = document.getElementById('CSSCode');
+        if (!this.previewSheet) {
+            this.previewSheet = document.createElement('style');
+            this.previewSheet.setAttribute('id', 'CSSCode');
+            document.body.appendChild(this.previewSheet);
         }
 
 
@@ -43,70 +44,61 @@ class CSSCode {
         }
 
         if (typeof window.ZeresLibrary !== 'undefined') this.initialize();
-        else libraryScript.addEventListener('load', () => {
-            this.initialize();
-        });
+        else libraryScript.addEventListener('load', () => this.initialize());
     }
     initialize() {
         PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
         this.addKeyListener()
         this.addContextMenuEvent()
         this.initialized = true;
-
     }
-    addKeyListener() {
-        $(document).on("keydown." + this.getName(), (e) => {
-            if (e.altKey && e.which == '82') {
-                this.clearCSS()
+    addListeners() {
+        $(document).on(`keydown.${this.getName()}`, (e) => {
+            if (e.altKey && e.which === 82) {
+                this.clearCSS();
             }
-        })
-
-    }
-    addContextMenuEvent() {
-        $(document).on('contextmenu.' + this.getName(), (e) => {
+        });
+        $(document).on(`contextmenu.${this.getName()}`, (e) => {
             if (e.toElement.tagName === "CODE" && e.toElement.className.toLowerCase().includes('css')) {
-
-                this.addContextMenuItems(e)
+                this.addContextMenuItems(e);
             }
-
-        })
+        });
+    }
+    removeListeners() {
+        $(document).off(`contextmenu.${this.getName()}`);
+        $(document).off(`keydown.${this.getName()}`);
     }
     clearCSS() {
-        let previewSheet = document.getElementById('CSSCode')
-        if (!previewSheet) return
-        previewSheet.innerHTML = ''
+        if(!document.contains(this.previewSheet)) return;
+        this.previewSheet.innerHTML = '';
     }
     addContextMenuItems(e) {
-        let previewSheet = document.getElementById('CSSCode')
-        if (!previewSheet) return;
+        if(!document.contains(this.previewSheet)) return;
         let context = document.querySelector('.contextMenu-HLZMGh');
-        let CSSRule = e.toElement.innerText;
-        let item
-        if (previewSheet.innerText.length === 0) {
-
-            this.item = new PluginContextMenu.TextItem("Preview CSS", {
+        let item;
+        if (this.previewSheet.innerText.length === 0) {
+            item = new PluginContextMenu.TextItem('Preview CSS', {
                 callback: () => {
-
-                    previewSheet.innerHTML = CSSRule
                     $(context).hide();
+                    this.previewSheet.innerHTML = e.toElement.innerText;
                 }
             });
         } else {
-            this.item = new PluginContextMenu.TextItem("Disable CSS Preview", {
+            item = new PluginContextMenu.TextItem('Disable CSS Preview', {
                 callback: () => {
                     $(context).hide();
-                    this.clearCSS()
+                    this.clearCSS();
                 },
-                'hint': "Alt+R"
+                hint: 'Alt+R'
             });
         }
-        $(context).find('.itemGroup-1tL0uz').first().append(this.item.element);
+        $(context).find('.itemGroup-1tL0uz').first().append(item.element);
     }
     stop() {
-        let previewSheet = document.getElementById('CSSCode')
+        if(document.contains(this.previewSheet)) {
+            previewSheet.remove();
+        }
+        this.removeListeners();
         this.initialized = false;
-        $(document).off('contextmenu.' + this.getName());
-        $(document).off('keydown.' + this.getName());
-        previewSheet.remove();
     }
 }

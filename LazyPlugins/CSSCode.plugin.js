@@ -26,7 +26,7 @@ class CSSCode {
     constructor() {
         this.initialized = false;
         this.default = { delay: false, ms: 3000 };
-        this.settings = this.default;
+        this.settings = { delay: false, ms: 3000 };
         this.previewSheet;
     }
     load() {
@@ -53,7 +53,7 @@ class CSSCode {
     }
     initialize() {
         PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
-        this.settings = PluginUtilities.loadSettings(this.getName(), this.default);
+        PluginUtilities.loadSettings(this.getName(), this.settings);
         this.addListeners();
         this.initialized = true;
     }
@@ -126,7 +126,9 @@ class CSSCode {
 			text: 'Reset To Default',
 			style: 'float: right;'
         }).on('click.reset', () => {
-            this.settings = this.default;
+            for(const key in this.default) {
+				this.settings[key] = this.default[key];
+			}
 			PluginUtilities.saveSettings(this.getName(), this.settings);
 			panel.empty();
 			this.generatePanel(panel);

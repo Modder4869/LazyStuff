@@ -7,7 +7,7 @@ class CSSCode {
         return 'CSSCode';
     }
     getDescription() {
-        return 'Preview css codeblock using context menu';
+        return 'Preview CSS inside codeblock using context menu';
     }
     getVersion() {
         return '0.0.1';
@@ -48,6 +48,7 @@ class CSSCode {
         });
     }
     initialize() {
+        PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
         this.addKeyListener()
         this.addContextMenuEvent()
         this.initialized = true;

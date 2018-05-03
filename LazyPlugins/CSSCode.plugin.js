@@ -74,11 +74,11 @@ class CSSCode {
         $(document).off(`keydown.${this.getName()}`);
     }
     clearCSS() {
-        if(!document.contains(this.previewSheet)) return;
+        if (!document.contains(this.previewSheet)) return;
         this.previewSheet.innerHTML = '';
     }
     addContextMenuItems(e) {
-        if(!document.contains(this.previewSheet)) return;
+        if (!document.contains(this.previewSheet)) return;
         const context = document.querySelector('.contextMenu-HLZMGh');
         let item;
         if (this.previewSheet.innerText.length === 0) {
@@ -135,7 +135,7 @@ class CSSCode {
         panel.append(resetButton);
     }
     stop() {
-        if(document.contains(this.previewSheet)) {
+        if (document.contains(this.previewSheet)) {
             this.previewSheet.remove();
         }
         this.removeListeners();

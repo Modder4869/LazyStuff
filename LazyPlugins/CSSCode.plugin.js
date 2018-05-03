@@ -129,7 +129,7 @@ class CSSCode {
             this.settings = this.default;
 			PluginUtilities.saveSettings(this.getName(), this.settings);
 			panel.empty();
-			this.genSettingsPanel(panel);
+			this.generatePanel(panel);
         });
         
         panel.append(resetButton);

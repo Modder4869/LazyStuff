@@ -96,7 +96,7 @@ class CSSCode {
     }
     stop() {
         if(document.contains(this.previewSheet)) {
-            previewSheet.remove();
+            this.previewSheet.remove();
         }
         this.removeListeners();
         this.initialized = false;

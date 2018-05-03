@@ -127,7 +127,7 @@ class CSSCode {
 			style: 'float: right;'
         }).on('click.reset', () => {
             this.settings = this.default;
-			PluginUtilities.saveSettings(this.name, this.settings);
+			PluginUtilities.saveSettings(this.getName(), this.settings);
 			panel.empty();
 			this.genSettingsPanel(panel);
         });

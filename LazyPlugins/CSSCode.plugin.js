@@ -15,7 +15,7 @@ class CSSCode {
 		return panel[0];
     }
     getVersion() {
-        return '0.0.1';
+        return '0.0.2';
     }
     getAuthor() {
         return 'Modder4869';

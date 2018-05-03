@@ -9,6 +9,11 @@ class CSSCode {
     getDescription() {
         return 'Preview CSS inside codeblock using context menu';
     }
+    getSettingsPanel() {
+        const panel = $('<form>').addClass('form').css('width', '100%');
+		if (this.initialized) this.generatePanel(panel);
+		return panel[0];
+    }
     getVersion() {
         return '0.0.1';
     }
@@ -20,6 +25,8 @@ class CSSCode {
     }
     constructor() {
         this.initialized = false;
+        this.default = { delay: false, ms: 3000 };
+        this.settings = this.default;
         this.previewSheet;
     }
     load() {
@@ -33,8 +40,6 @@ class CSSCode {
             this.previewSheet.setAttribute('id', 'CSSCode');
             document.body.appendChild(this.previewSheet);
         }
-
-
         if (!libraryScript) {
             libraryScript = document.createElement('script');
             libraryScript.setAttribute('type', 'text/javascript');
@@ -48,8 +53,8 @@ class CSSCode {
     }
     initialize() {
         PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
-        this.addKeyListener()
-        this.addContextMenuEvent()
+        this.settings = PluginUtilities.loadSettings(this.getName(), this.default);
+        this.addListeners();
         this.initialized = true;
     }
     addListeners() {
@@ -74,25 +79,60 @@ class CSSCode {
     }
     addContextMenuItems(e) {
         if(!document.contains(this.previewSheet)) return;
-        let context = document.querySelector('.contextMenu-HLZMGh');
+        const context = document.querySelector('.contextMenu-HLZMGh');
         let item;
         if (this.previewSheet.innerText.length === 0) {
             item = new PluginContextMenu.TextItem('Preview CSS', {
                 callback: () => {
-                    $(context).hide();
+                    if (context) {
+                        $(context).hide();
+                    }
                     this.previewSheet.innerHTML = e.toElement.innerText;
+                    if (this.settings.delay) {
+                        setTimeout(() => (this.previewSheet.innerHTML = ''), this.settings.ms);
+                    }
                 }
             });
         } else {
             item = new PluginContextMenu.TextItem('Disable CSS Preview', {
                 callback: () => {
-                    $(context).hide();
+                    if (context) {
+                        $(context).hide();
+                    }
                     this.clearCSS();
                 },
                 hint: 'Alt+R'
             });
         }
         $(context).find('.itemGroup-1tL0uz').first().append(item.element);
+    }
+    generatePanel(panel) {
+        new PluginSettings.ControlGroup('Preview Settings', () => PluginUtilities.saveSettings(this.getName(), this.settings)).appendTo(panel).append(
+            new PluginSettings.Checkbox('Preview Reset', 'Automatically reset the CSS Preview after a delay.', this.settings.delay, (i) => {
+                this.settings.delay = i;
+                this.removeListeners();
+                this.addListeners();
+            }),
+            new PluginSettings.Slider('Preview Reset Delay', 'How long to wait before resetting the CSS Preview. Default is 3000ms, 1000ms = 1 second.', 0, 10000, 500, this.settings.ms, (i) => {
+                this.settings.ms = i;
+                this.removeListeners();
+                this.addListeners();
+            })
+            .setLabelUnit('ms')
+        );
+        
+        const resetButton = $('<button>', {
+            type: 'button',
+			text: 'Reset To Default',
+			style: 'float: right;'
+        }).on('click.reset', () => {
+            this.settings = this.default;
+			PluginUtilities.saveSettings(this.name, this.settings);
+			panel.empty();
+			this.genSettingsPanel(panel);
+        });
+        
+        panel.append(resetButton);
     }
     stop() {
         if(document.contains(this.previewSheet)) {

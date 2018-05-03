@@ -64,7 +64,7 @@ class CSSCode {
             }
         });
         $(document).on(`contextmenu.${this.getName()}`, (e) => {
-            if (e.toElement.tagName === "CODE" && e.toElement.className.toLowerCase().includes('css')) {
+            if (e.toElement.tagName === 'CODE' && e.toElement.className.toLowerCase().includes('css')) {
                 this.addContextMenuItems(e);
             }
         });

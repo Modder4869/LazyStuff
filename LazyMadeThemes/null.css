@@ -1,127 +1,127 @@
 .wrapper-1prNyd {
-  overflow: hidden
+    overflow: hidden
 }
 
 .theme-light .lookLink-9FtZy-.colorTransparent-1ewNp9:hover .contents-18-Yxp {
-  background-image: linear-gradient(0deg, transparent, transparent 1px, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) 0, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) 2px, transparent 0)
+    background-image: linear-gradient(0deg, transparent, transparent 1px, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) 0, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) 2px, transparent 0)
 }
 
 .theme-light .theme-dark .lookOutlined-3sRXeN.hoverTransparent-2Lz5CN.hasHover-3X1-zV:hover,
 .theme-light .theme-light .lookOutlined-3sRXeN.hoverTransparent-2Lz5CN.hasHover-3X1-zV:hover {
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
-  color: var(--text-color)
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
+    color: var(--text-color)
 }
 
 .theme-dark .guildIcon-2Oo1tK {
-  border: 4px solid hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    border: 4px solid hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .card-m3Looc {
-  background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark #autocomplete-popout section {
-  background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
-  color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .actionButton-VzECiy,
 .theme-light .lookOutlined-3sRXeN.colorTransparent-1ewNp9:active,
 .theme-dark .theme-dark .lookOutlined-3sRXeN.hoverPrimary-2D1j2r.hasHover-3X1-zV:active,
 .theme-dark .theme-light .lookOutlined-3sRXeN.hoverPrimary-2D1j2r.hasHover-3X1-zV:active {
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .contextMenu-1Yvehc {
-  background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .itemSubMenu-1vN_Yn- {
-  background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .itemSubMenu-1vN_Yn-:hover {
-  background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-light .bubble-3we2di:before {
-  border-top-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    border-top-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .bubble-3we2di:before {
-  border-top-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    border-top-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-light .select-2TCrqx .is-focused .Select-control .Select-arrow,
 .theme-light .select-2TCrqx .Select-control:hover .Select-arrow {
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) transparent transparent
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha))) transparent transparent
 }
 
 .theme-light .select-2TCrqx .is-open .Select-control .Select-arrow {
-  border-color: transparent transparent hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: transparent transparent hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .select-2TCrqx .is-disabled .Select-control:hover .Select-arrow,
 .theme-dark .select-2TCrqx .Select-control .Select-arrow {
-  border-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha))) transparent transparent
+    border-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha))) transparent transparent
 }
 
 .wrapper-2NJDcI {
-  background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .calls-1asJWc:after {
-  border-bottom: 1px solid hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
+    border-bottom: 1px solid hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .controls-2NrGNJ {
-  background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
-  border-bottom: 1px solid hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)));
+    border-bottom: 1px solid hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .container-1UB9sr {
-  border-bottom: 1px solid hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    border-bottom: 1px solid hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .dark-2P8byF span {
-  background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-light .auditLog-3jNbM6:hover .expandForeground-1nZ4VR {
-  stroke: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    stroke: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .auditLog-3jNbM6 {
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
-  color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-light .prefixInput-14nUik:hover,
 .theme-light .lookOutlined-3sRXeN.colorTransparent-1ewNp9:hover {
-  border-color: hsla(216, 7%, 33%, 1)
+    border-color: hsla(216, 7%, 33%, 1)
 }
 
 .theme-dark .colorPickerCustom-2CWBn2 {
-  background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .topSectionNormal-2-vo2m {
-  background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .theme-light .topSectionNormal-2-vo2m .tab-bar.tabBar-2MuP6- .tabBarItem-1b8RUP.selected,
 .theme-light .top-28JiJ- .itemSelected-1qLhcL {
-  border-bottom-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    border-bottom-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-light .selected-P8xTeN {
-  border-bottom: 2px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
-  color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    border-bottom: 2px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-light .attachPopoutIconForeground-OohRrL,
@@ -131,37 +131,39 @@
 .theme-light .colorPickerSwatch-5GX3Ve.noColor-1pdBDm .colorPickerDropperFg-3jYKWI,
 .theme-light .guild-settings-members-member .overflow-icon-fg,
 .theme-light .auditLogMembersIconFg-2dfgB- {
-  fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    fill: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .verifyConnectedAccount-3WFmtE,
 #oauth2-authorize,
 #oauth2-message {
-  background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .gameBackgroundOverlay-10Ux9G {
-  background-image: linear-gradient(90deg, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))), hsla(216, 7%, 13%, 1))
+    background-image: linear-gradient(90deg, hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))), hsla(216, 7%, 13%, 1))
 }
 
 .theme-light .multiInputLast-1aQ3YA:before {
-  border-right-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    border-right-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-light .accountBtnInner-sj5jLs:hover,
 .theme-dark .ui-standard-sidebar-view .btn-close,
-.theme-dark .checkbox-1ix_J3 {
-  border-color: var(--text-color)
+.theme-dark .checkbox-1ix_J3,
+#app-mount .input-cIJ7To:focus,
+#app-mount .input-cIJ7To.focused-1mmYsC {
+    border-color: var(--text-color);
 }
 
 .theme-dark .accountBtnInner-sj5jLs {
-  background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .userSettingsVoice-iwdUCU .previewOverlay-2O7_KC {
-  background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-light .link-1IoFq-:hover .foreground-26ym5y,
@@ -169,12 +171,12 @@
 .theme-brand .iconForeground-1w5n7R,
 .theme-dark .iconForeground-1w5n7R,
 .theme-light .iconForeground-1w5n7R {
-  fill: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    fill: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .message-group .comment .markup pre {
-  background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .message-group .comment .markup code.inline,
@@ -185,7 +187,7 @@
 .theme-dark .ui-standard-sidebar-view .sidebar-region,
 .guildInner-8UFXi4,
 .dataPoint-1wXGs_ {
-  background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-light .searchanswer-1n6g43-yD90ey,
@@ -199,72 +201,72 @@
 .theme-dark .theme-light .lookFilled-1Gx00P.hoverPrimary-2D1j2r.hasHover-3X1-zV:active,
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:active,
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6:hover {
-  background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .search-results-wrap .search-header .spinner-wrapper .spinner .path,
 .theme-light .phoneField-38N1bJ .phoneFieldExpand-2DzY5G,
 .theme-light .expandIconForeground-1h4s61 {
-  stroke: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    stroke: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-track-piece {
-  background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .theme-dark .search-results-wrap .scroller-wrap .scroller::-webkit-scrollbar-thumb {
-  border: 3px solid hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
+    border: 3px solid hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .theme-dark .search-results-wrap .search-result:after,
 .theme-dark .search-results-wrap .search-result:before {
-  background-image: linear-gradient(180deg, hsla(223, 7%, 20%, 0), hsla(223, 7%, 20%, 0))
+    background-image: linear-gradient(180deg, hsla(223, 7%, 20%, 0), hsla(223, 7%, 20%, 0))
 }
 
 .theme-dark .search-results-wrap .search-result .search-result-message.hit,
 .theme-dark .search-results-wrap .search-result.expanded .search-result-message.hit {
-  border: 1px double var(--text-color)
+    border: 1px double var(--text-color)
 }
 
 .theme-dark .search-results-wrap .search-result.expanded {
-  border: 2px solid hsla(calc(208 * var(--hue)), calc(21% * var(--saturation)), calc(14% * var(--lightness)), calc(0.6 * var(--alpha)))
+    border: 2px solid hsla(calc(208 * var(--hue)), calc(21% * var(--saturation)), calc(14% * var(--lightness)), calc(0.6 * var(--alpha)))
 }
 
 .theme-dark .gameDefault-2SBp6B:focus,
 .theme-dark .gameDefault-2SBp6B:hover {
-  background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .gameSelected-31teRt {
-  background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .aka-1mqp34 {
-  background: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .channelNotices-41mJbj .channelNotice-1-XFjC.guildMFAWarning-3GEzs8 {
-  background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/916a384814e3bbd2a84e2a1b352a17c3.svg") no-repeat center 20px
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/916a384814e3bbd2a84e2a1b352a17c3.svg") no-repeat center 20px
 }
 
 .channelNotices-41mJbj .channelNotice-1-XFjC.invite-OjTXrW,
 .channelNotices-41mJbj .channelNotice-1-XFjC.lfg-3h9KFj {
-  background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/bf625d223187f542b9d7179109422e2c.svg") no-repeat center 20px
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/bf625d223187f542b9d7179109422e2c.svg") no-repeat center 20px
 }
 
 .channelNotices-41mJbj .channelNotice-1-XFjC.quickswitcher-35bYg4 {
-  background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/8fdb69b7684b8e1ecb3fdde909daca41.svg") no-repeat center 35px
+    background: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) url("/assets/8fdb69b7684b8e1ecb3fdde909daca41.svg") no-repeat center 35px
 }
 
 .private-channels .status {
-  border: 2px solid hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
+    border: 2px solid hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .private-channels .channel.selected a,
 .theme-dark .divider-23swzi {
-  background-color: rgba(17, 17, 17, 0.363)
+    background-color: rgba(17, 17, 17, 0.363)
 }
 
 .headerButtonColor-G7_f-V,
@@ -273,11 +275,11 @@
 .theme-dark .markDash-3hAolZ,
 .theme-dark .bar-2Qqk5Z,
 .emptyUser-3FRJaF {
-  background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .player-SAAFSX {
-  border-bottom-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    border-bottom-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .listeningAlongList-2ajzb_,
@@ -288,19 +290,19 @@
 .theme-dark .input-cIJ7To.disabled-2BKQFm,
 .theme-dark .cardPrimaryEditable-3KtE4g,
 .theme-dark .cardPrimary-1Hv-to {
-  background-color: rgba(0, 0, 0, 0.05) !important;
-  border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !Important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
+    border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !Important;
 }
 
 .theme-dark .select-2TCrqx .Select-menu-outer,
 .theme-dark .select-2TCrqx .is-disabled .Select-control {
-  background-color: var(--text-color)
+    background-color: var(--text-color)
 }
 
 .theme-dark .listeningAlongList-2ajzb_:before {
-  background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
-  border-bottom-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
-  border-right-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    border-bottom-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    border-right-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .inviteRow-1OabNn:hover,
@@ -340,27 +342,27 @@
 .theme-dark .lookFilled-1Gx00P.colorPrimary-3b3xI6,
 .lookInverted-2D7oAl.colorWhite-rEQuAQ,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ .spinnerItem-3GlVyU {
-  background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .chat .hasMore-sul95G button,
 .theme-dark .popout-3dRSmE .hasMore-sul95G button {
-  border: 1px solid hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
+    border: 1px solid hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .incomingCallInner-2rV0UJ,
 .theme-dark .item-1Yvehc:hover {
-  background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .videoPreview-22khDR {
-  background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
-  border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .verificationBlock-1Chfpc,
 .overlay-1NmNEg {
-  border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    border: 1px solid hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .layer-3QrUeG,
@@ -375,7 +377,7 @@
 .theme-dark .ui-standard-sidebar-view,
 .guildInner-1SgG,
 .theme-dark .number-3ceIrJ {
-  background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
@@ -384,25 +386,25 @@
 .private-channels .channel:hover .status,
 .theme-dark .iconBadge-2dji3k,
 .theme-dark .flag-16iIBd.vip-3pFIN8:after {
-  border-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece,
 .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar .track,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar .track {
-  background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar .thumb,
 .theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar .thumb {
-  background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .member-3W1lQa:hover .content-OzHfo4.theme-dark .member-3W1lQa:hover .content-OzHfo4 {
-  background: rgba(55, 53, 53, 0.69)
+    background: rgba(55, 53, 53, 0.69)
 }
 
 .theme-dark .themed-popout .header,
@@ -471,7 +473,7 @@
 .contentSelectedVoice-1WDIBM:active,
 .theme-dark .messagesPopoutWrap-1MQ1bW,
 .theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group {
-  background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .theme-dark .private-channel-recipients-invite .friend.selected .avatar-small .status,
@@ -479,7 +481,7 @@
 .theme-dark .members-1998pB .member-3W1lQa.popout-3dRSmE-open .status,
 .theme-dark .members-1998pB .member-3W1lQa:hover .status,
 .theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group {
-  border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .appMount-3VJmYg,
@@ -515,152 +517,153 @@
 .theme-light .theme-dark .lookInverted-2D7oAl.hoverPrimary-2D1j2r.hasHover-3X1-zV:active,
 .theme-light .theme-light .lookInverted-2D7oAl.hoverPrimary-2D1j2r.hasHover-3X1-zV:active,
 .theme-light .lookInverted-2D7oAl.colorPrimary-3b3xI6:active {
-  background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark.contextMenu-HLZMGh {
-  background: hsla(calc(216 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) !important;
+.theme-dark.contextMenu-HLZMGh,
+.itemSubMenu-1vN_Yn {
+    background: hsla(calc(216 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .theme-dark .search-results-wrap .search-result .hit {
-  background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
 .theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
-  background-color: hsla(calc(210 * var(--hue)), calc(9% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(210 * var(--hue)), calc(9% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .unread-1xRYoj {
-  background-color: hsla(calc(218 * var(--hue)), calc(5% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(218 * var(--hue)), calc(5% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .quickMessage-1yeL4E {
-  background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  border-color: hsla(calc(214 * var(--hue)), calc(9% * var(--saturation)), calc(15% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    border-color: hsla(calc(214 * var(--hue)), calc(9% * var(--saturation)), calc(15% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .card-FDVird:before {
-  background-color: rgba(0, 0, 0, 0.05);
-  border-color: var(--text-color)
+    background-color: rgba(0, 0, 0, 0.05);
+    border-color: var(--text-color)
 }
 
 .theme-dark .user-settings-games .game {
-  -webkit-box-shadow: 0 1px 0 0 var(--text-color);
-  box-shadow: 0 1px 0 0 var(--text-color);
+    -webkit-box-shadow: 0 1px 0 0 var(--text-color);
+    box-shadow: 0 1px 0 0 var(--text-color);
 }
 
 .theme-dark .gamePreview-9weYR2 {
-  background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(4% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(4% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .headerPlaying-j0WQBV.header-2BwW8b.size16-14cGz5,
 .topSectionPlaying-1J5E4n {
-  background-color: hsla(calc(227 * var(--hue)), calc(1% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(227 * var(--hue)), calc(1% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .chat .new-messages-bar {
-  background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(0.9 * var(--alpha)))
+    background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(0.9 * var(--alpha)))
 }
 
 .theme-dark .chat .jump-to-present-bar {
-  background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(0.9 * var(--alpha)))
+    background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(0.9 * var(--alpha)))
 }
 
 .theme-dark .chat .jump-to-present-bar:hover {
-  background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark #friends .friends-table .friends-row:hover {
-  background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(27% * var(--lightness)), calc(1 * var(--alpha)))
+    background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(27% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .container-2Thooq {
-  background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(14% * var(--lightness)), calc(0.3 * var(--alpha))) !important;
+    background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(14% * var(--lightness)), calc(0.3 * var(--alpha))) !important;
 }
 
 .item-26Dhrx[style='padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);'] {
-  background-color: var(--text-color) !important;
-  border-color: rgba(0, 0, 0, 0.37) !important;
+    /* background-color: var(--text-color) !important; */
+    border-color: var(--text-color) !important;
 }
 
 .checkbox .checkbox-inner input[type=checkbox]:checked+span {
-  background: var(--text-color);
-  border-color: var(--text-color)
+    background: var(--text-color);
+    border-color: var(--text-color)
 }
 
 .checked-3_4uQ9 {
-  background-color: hsla(0, 0%, 0%, 0.33) !important;
-  border-color: var(--text-color) !important;
+    background-color: hsla(0, 0%, 0%, 0.33) !important;
+    border-color: var(--text-color) !important;
 }
 
 #bd-settingspane-container .ui-switch-item .ui-switch-wrapper .ui-switch.checked {
-  background: var(--text-color) !important
+    background: var(--text-color) !important
 }
 
 #bd-settingspane-container button,
 .button-38aScr:not([class*="colorGreen-29iAKY"]):not([class*="colorRed-1TFJan"]):not([class*="colorLink-35jkBc"]) {
-  background: rgba(0, 0, 0, 0.3)
+    background: rgba(0, 0, 0, 0.3)
 }
 
 .chat .new-messages-bar:hover {
-  background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi.message-group:hover .actionButtons-1sUUug,
 .search-results-wrap .actionButtons-1sUUug {
-  -webkit-box-shadow: 0 0 6px 4px hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  box-shadow: 0 0 6px 4pxhsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    -webkit-box-shadow: 0 0 6px 4px hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    box-shadow: 0 0 6px 4pxhsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi.message-group .actionButtons-1sUUug .jumpButton-3DTcS_,
 .search-results-wrap .actionButtons-1sUUug .jumpButton-3DTcS_ {
-  background-color: hsla(calc(220 * var(--hue)), calc(3% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
-  color: hsla(0, 0%, 100%, .6)
+    background-color: hsla(calc(220 * var(--hue)), calc(3% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
+    color: hsla(0, 0%, 100%, .6)
 }
 
 .theme-dark .search-results-wrap .search-header {
-  -webkit-box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0 * var(--saturation)), calc(0 * var(--lightness)), calc(0.2 * var(--alpha)));
-  background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
-  box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0 * var(--saturation)), calc(0 * var(--lightness)), calc(0.2 * var(--alpha)))
+    -webkit-box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0 * var(--saturation)), calc(0 * var(--lightness)), calc(0.2 * var(--alpha)));
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0 * var(--saturation)), calc(0 * var(--lightness)), calc(0.2 * var(--alpha)))
 }
 
 .premiumPaymentModal-3SpIbo {
-  background: var(--text-color);
-  filter: saturate(0)
+    background: var(--text-color);
+    filter: saturate(0)
 }
 
 .bf-toolbar:before,
 #permissions-modal-wrapper .role-side {
-  background: hsla(calc(214 * var(--hue)), calc(5% * var(--saturation)), calc(27% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background: hsla(calc(214 * var(--hue)), calc(5% * var(--saturation)), calc(27% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 #permissions-modal-wrapper .perm-side {
-  background: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 #permissions-modal-wrapper .header {
-  background: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .theme-dark .member-3W1lQa-3W1lQa.popout-3dRSmE-open .content-OzHfo4,
 .theme-dark .member-3W1lQa-3W1lQa.popout-3dRSmE-open:hover .content-OzHfo4 {
-  background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(0.6 * var(--alpha)))
+    background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(0.6 * var(--alpha)))
 }
 
 .theme-dark .member-3W1lQa-3W1lQa.popout-3dRSmE-open .content-OzHfo4 .status-2s6iDp,
 .theme-dark .member-3W1lQa-3W1lQa.popout-3dRSmE-open:hover .content-OzHfo4 .status-2s6iDp {
-  border-color: hsla(calc(218 * var(--hue)), calc(8% * var(--saturation)), calc(28% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: hsla(calc(218 * var(--hue)), calc(8% * var(--saturation)), calc(28% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .member-3W1lQa-3W1lQa:hover .content-OzHfo4 {
-  background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .member-3W1lQa-3W1lQa:hover .content-OzHfo4 .status-2s6iDp {
-  border-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .status-2s6iDp,
@@ -672,104 +675,103 @@
 .theme-dark .messages-wrapper .messages .message-group-blocked,
 .theme-dark .emptyState-2-sT0o,
 .theme-dark .avatarStatus-3jMZl_ {
-  border-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .tooltip-bottom::after {
-  border-bottom-color: var(--text-color) !important
+    border-bottom-color: var(--text-color) !important
 }
 
 .tooltip-right::after {
-  border-right-color: var(--text-color) !important
+    border-right-color: var(--text-color) !important
 }
 
 .tooltip-left::after {
-  border-left-color: var(--text-color) !important
+    border-left-color: var(--text-color) !important
 }
 
 .tooltip-top::after {
-  border-top-color: var(--text-color) !important
+    border-top-color: var(--text-color) !important
 }
 
 .tipsy-inner {
-  background-color: var(--text-color) !important;
-  color: white
+    background-color: var(--text-color) !important;
+    color: white
 }
 
 .theme-dark .private-channel-recipients-invite .friend.selected,
 .theme-dark .private-channel-recipients-invite .friend:hover {
-  background: linear-gradient(90deg, hsla((calc(218 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))) 85%, hsla((calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))))
+    background: linear-gradient(90deg, hsla((calc(218 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))) 85%, hsla((calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))))
 }
 
 .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-dark .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-light .scrollerThemed-2oenus.themeDark-2cjlUp.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
-  background-color: hsla(calc(210 * var(--hue)), calc(10% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(210 * var(--hue)), calc(10% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .bd-modal-wrapper .bd-modal-body {
-  background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .bd-modal-wrapper .header {
-  background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .bd-modal-wrapper .footer button:hover,
 .private-channel-recipients-invite .footer button:hover {
-  background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.5)
 }
 
 .bd-modal-wrapper .footer button,
 .private-channel-recipients-invite .footer button {
-  background: rgba(0, 0, 0, 0.2)
+    background: rgba(0, 0, 0, 0.2)
 }
 
 .theme-dark #friends .tab-bar .tab-bar-item.selected .badge,
 .theme-dark #friends .tab-bar .tab-bar-item.tab-bar-item-primary {
-  background-color: var(--text-color)
+    background-color: var(--text-color)
 }
 
 .theme-dark .searchPopout-1vUlP3 {
-  background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-  border: 1px solid rgba(28, 36, 43, .6)
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
+    border: 1px solid rgba(28, 36, 43, .6)
 }
 
 .theme-dark .searchQuery-1B7rtx.selected-rZcOL- {
-  background-color: rgba(0, 0, 0, 0.1) !important
+    background-color: rgba(0, 0, 0, 0.1) !important
 }
 
 .theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw,
 .theme-dark .resultsGroup-r_nuzN:before {
-  border-top: 1px solid hsla(calc(225 * var(--hue)), calc(8% * var(--saturation)), calc(10% * var(--lightness)), calc(0.3 * var(--alpha)))
+    border-top: 1px solid hsla(calc(225 * var(--hue)), calc(8% * var(--saturation)), calc(10% * var(--lightness)), calc(0.3 * var(--alpha)))
 }
 
 .theme-dark .datePicker--XZbmJ .datePickerHint-3Q1Udw .hintValue-29ny8Z:hover,
-.theme-dark .option-96V44q.selected-rZcOL-,
-.theme-dark .option-96V44q {
-  background-color: var(--text-color) !important
+.theme-dark .option-96V44q.selected-rZcOL- {
+    background-color: var(--text-color) !important
 }
 
 .theme-dark .searchAnswer-3Dz2-q,
 .theme-dark .searchFilter-2ESiM3,
 .theme-dark .searchanswer-1n6g43-yD90ey {
-  background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .react-datepicker__day.react-datepicker__day--tue.react-datepicker__day--outside-month,
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--disabled,
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day--outside-month {
-  background-color: hsla(calc(223* var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background-color: hsla(calc(223* var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day.react-datepicker__day--selected:hover,
 .theme-dark .calendarPicker-2yf6Ci .react-datepicker__day:hover {
-  background-color: var(--text-color);
-  color: hsl(0, 0%, 100%)
+    background-color: var(--text-color);
+    color: hsl(0, 0%, 100%)
 }
 
 .theme-dark .keyboardShortcutsModal-3piNz7 {
-  background-color: hsla(calc(220* var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background-color: hsla(calc(220* var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .theme-dark .keyboardShortcutList-13cQ-8 .keybindGroup--6Qp-w .keybindDescription-2RDbC2,
@@ -1141,12 +1143,12 @@
 .lookFilled-1Gx00P.colorWhite-rEQuAQ,
 .theme_light-3pFauF .note-450gs3,
 .theme_light-3pFauF {
-  color: var(--text-color)
+    color: var(--text-color)
 }
 
 .container-2lgZY8 {
-  background: transparent;
-  background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
+    background: transparent;
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .uploadModalIn-1z07Bv .uploadDropModal-2kTwbc .bgScale-1otPtc,
@@ -1195,63 +1197,63 @@
 .theme-dark .footer-2yfCgX,
 .themeDark-3BOwlz,
 .theme_dark-2FtE3l {
-  background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .uploadModal-2ifh8j .footer-3mqk7D {
-  background-color: hsla(0, 0%, 0%, 0.2);
+    background-color: hsla(0, 0%, 0%, 0.2);
 }
 
 .uploadModal-2ifh8j .footer-3mqk7D .button:nth-of-type(1) {
-  background-color: hsla(0, 0%, 2%, 0)
+    background-color: hsla(0, 0%, 2%, 0)
 }
 
 .theme-brand .inner-zqa7da,
 .uploadModal-2ifh8j .inner-3nWsbo {
-  background-color: rgba(0, 0, 0, 0.2);
-  border-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 .mention {
-  background: rgba(0, 0, 0, 0.3) !important;
-  color: var(--text-color)
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: var(--text-color)
 }
 
 .mention:hover,
 h2 {
-  color: var(--text-color) !important
+    color: var(--text-color) !important
 }
 
 .theme-dark .message-group .mentioned .message-text {
-  background: rgba(0, 0, 0, 0.5) !important
+    background: rgba(0, 0, 0, 0.5) !important
 }
 
 #memberCount,
 .theme-dark .private-channel-recipients-invite .friend,
 #dv-mount,
 .guilds-wrapper .guilds .guild .guild-inner {
-  background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .theme-dark .friends-table .messages .message-group-blocked.revealed,
 .theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
-  background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
-  border-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
+    background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    border-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
 .theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn,
 .theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
-  background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
-  color: var(--text-color)
+    background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    color: var(--text-color)
 }
 
 button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSmall-2cSMqn.grow-q77ONN {
-  background: none !important
+    background: none !important
 }
 
 .ui-standard-sidebar-view #bd-customcss-attach-controls button:hover,
 .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
-  background: inherit !important;
+    background: inherit !important;
 }
 
 .ui-standard-sidebar-view #bd-customcss-attach-controls button,
@@ -1260,58 +1262,58 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
 .side-8zPYf6 .itemSelected-1qLhcL,
 #bd-settings-sidebar .ui-tab-bar-item.selected,
 .themeDefault-24hCdX.valueChecked-m-4IJZ {
-  background: var(--text-color) !important;
+    background: var(--text-color) !important;
 }
 
 .content-region #bd-customcss-attach-controls,
 #bd-customcss-detach-container #bd-customcss-attach-controls {
-  background: rgba(5, 5, 5, 0.616);
-  color: hsl(0, 0%, 100%);
-  border: 0;
-  box-shadow: 0 1px 0 0 #2f3129 inset;
+    background: rgba(5, 5, 5, 0.616);
+    color: hsl(0, 0%, 100%);
+    border: 0;
+    box-shadow: 0 1px 0 0 #2f3129 inset;
 }
 
 .tooltip {
-  filter: none !important;
-  background: var(--text-color) !important;
+    filter: none !important;
+    background: var(--text-color) !important;
 }
 
 span.mention {
-  background: none !important;
-  color: var(--text-color)
+    background: none !important;
+    color: var(--text-color)
 }
 
 span.mention:hover {
-  color: hsla(226, 56%, 65%, 0.7) !important
+    color: hsla(226, 56%, 65%, 0.7) !important
 }
 
 .diversitySelector-tmmMv0 .popout-3dRSmE-2lja3I {
-  border: 1px solid var(--text-color);
-  background: rgba(0, 0, 0, 0.54)
+    border: 1px solid var(--text-color);
+    background: rgba(0, 0, 0, 0.54)
 }
 
 .bda-dark #bda-qem *,
 #bda-qem~*,
 .emojiPicker-3m1S-j .stickyHeader-1SS0JU,
 .search-bar.search-bar-light {
-  background: rgba(0, 0, 0, 0.54) !important
+    background: rgba(0, 0, 0, 0.54) !important
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece,
 .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece {
-  background: rgba(0, 0, 0, 0.05) !important;
-  border-color: transparent
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-color: transparent
 }
 
 .emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq.selected-39BZ4S {
-  border-bottom-color: var(--text-color)
+    border-bottom-color: var(--text-color)
 }
 
 .bda-dark .emoji-picker .category,
 .bda-dark .emojiPicker-3m1S-j .category-2U57w6,
 .emojiPicker-3m1S-j .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece,
 .base-3dtUhz {
-  background: transparent !important
+    background: transparent !important
 }
 
 .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb,
@@ -1319,36 +1321,36 @@ span.mention:hover {
 .theme-light .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb,
 .scroller-wrap .scroller::-webkit-scrollbar-thumb,
 .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-thumb {
-  background-color: var(--text-color);
-  border-color: initial
+    background-color: var(--text-color);
+    border-color: initial
 }
 
 .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-dark .scrollerThemed-2oenus.themeLight-1_DWyY.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track,
 .theme-light .scrollerWrap-2lJEkd.scrollerTrack-1ZIpsv>.scroller-2FKFPG::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0.05) !important
+    background: rgba(0, 0, 0, 0.05) !important
 }
 
 #bda-qem {
-  background: rgba(0, 0, 0, 0.54)
+    background: rgba(0, 0, 0, 0.54)
 }
 
 #bda-qem button {
-  box-shadow: var(--text-color) 1px 0 0 0;
-  color: var(--text-color);
-  border-left: 1px solid var(--text-color);
-  border-right: 1px solid var(--text-color);
-  background: rgba(0, 0, 0, 0.41);
+    box-shadow: var(--text-color) 1px 0 0 0;
+    color: var(--text-color);
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+    background: rgba(0, 0, 0, 0.41);
 }
 
 #bda-qem button:hover,
 #bda-qem button.active {
-  background-color: rgba(55, 53, 53, 0.69)
+    background-color: rgba(55, 53, 53, 0.69)
 }
 
 .emojiPicker-3m1S-j .dimmer-3iH-5D.visible-3k45bQ {
-  background-color: hsla(0, 2%, 4%, 0.41);
-  pointer-events: auto
+    background-color: hsla(0, 2%, 4%, 0.41);
+    pointer-events: auto
 }
 
 .bda-dark #bda-qem-favourite-container .scroller::-webkit-scrollbar,
@@ -1360,8 +1362,8 @@ span.mention:hover {
 .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar,
 .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar-track,
 .bda-dark .emojiPicker-3m1S-j .scroller-3vODG7::-webkit-scrollbar-track-piece {
-  background: rgba(0, 0, 0, 0.05) !important;
-  border-color: transparent !important
+    background: rgba(0, 0, 0, 0.05) !important;
+    border-color: transparent !important
 }
 
 /*end*/
@@ -1369,12 +1371,12 @@ span.mention:hover {
 /* 27/4/2018*/
 
 .theme-dark .menu-Sp6bN1 {
-  background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
+    background-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(19% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .item-1GzJrl:hover {
-  background-color: hsla(0, 1%, 6%, 0.21);
-  color: hsl(0, 0%, 100%);
+    background-color: hsla(0, 1%, 6%, 0.21);
+    color: hsl(0, 0%, 100%);
 }
 
 .theme-dark .description-3_Ncsb,
@@ -1389,17 +1391,17 @@ span.mention:hover {
 .nameCollapsed-34uFWo,
 .nameDefault-2DI02H,
 .membersGroup-v9BXpm {
-  color: var(--text-color) !important;
+    color: var(--text-color) !important;
 }
 
 .has-more button {
-  background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .scroller-wrap .scroller::-webkit-scrollbar-track-piece,
 .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece {
-  background: initial;
-  border-color: initial;
+    background: initial;
+    border-color: initial;
 }
 
 /* fix */
@@ -1409,9 +1411,9 @@ span.mention:hover {
 .theme-dark .member-3W1lQa:hover .content-OzHfo4,
 .theme-dark .member-3W1lQa.popout-open .content-OzHfo4,
 .theme-dark .member-3W1lQa.popout-open:hover .content-OzHfo4 {
-  background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(0.6 * var(--alpha))) !important;
+    background-color: hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(0.6 * var(--alpha))) !important;
 }
 
-.theme-dark .itemSubMenu-1vN_Yn {
-  background: rgba(10, 10, 10, 0.08) url(/assets/1988164a7c55346d32117b151f4e319d.svg) no-repeat 155px 50%;
+.checked-3_4uQ9 svg[name='Checkmark'] g polyline {
+    stroke: var(--text-color)
 }

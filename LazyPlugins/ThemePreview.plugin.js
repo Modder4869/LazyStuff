@@ -1,0 +1,153 @@
+//META{"name":"ThemePreview"}*//
+class ThemePreview {
+    getName() {
+        return 'ThemePreview';
+    }
+    getShortName() {
+        return 'ThemePreview';
+    }
+    getDescription() {
+        return 'Preview themes posted in #Theme-repo or any [https://betterdiscord.net/ghdl?id=] link using context menu';
+    }
+    getSettingsPanel() {
+        const panel = $('<form>').addClass('form').css('width', '100%');
+        if (this.initialized) this.generatePanel(panel);    
+        return panel[0];
+    }
+    getVersion() {
+        return '0.0.1';
+    }
+    getAuthor() {
+        return 'Modder4869';
+    }
+    getLink() {
+        return `https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/${this.getName()}.plugin.js`;
+    }
+    constructor() {
+        this.initialized = false;
+        this.default = {
+            delay: false,
+            ms: 3000
+        };
+        this.settings = {
+            delay: false,
+            ms: 3000
+        };
+        this.previewSheet;
+    }
+    load() {
+
+    }
+    start() {
+        let libraryScript = document.getElementById('zeresLibraryScript');
+        this.previewSheet = document.getElementById('ThemePreview');
+        if (!this.previewSheet) {
+            this.previewSheet = document.createElement('link');
+            this.previewSheet.setAttribute('id', 'ThemePreview');
+            this.previewSheet.setAttribute('rel', 'stylesheet');
+            document.body.appendChild(this.previewSheet);
+        }
+        if (!libraryScript) {
+            libraryScript = document.createElement('script');
+            libraryScript.setAttribute('type', 'text/javascript');
+            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BetterDiscordAddons/Plugins/PluginLibrary.js');
+            libraryScript.setAttribute('id', 'zeresLibraryScript');
+            document.head.appendChild(libraryScript);
+        }
+
+        if (typeof window.ZeresLibrary !== 'undefined') this.initialize();
+        else libraryScript.addEventListener('load', () => this.initialize());
+    }
+    initialize() {
+        PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
+        PluginUtilities.loadSettings(this.getName(), this.settings);
+        this.addListeners();
+        this.initialized = true;
+    }
+    addListeners() {
+        $(document).on(`keydown.${this.getName()}`, (e) => {
+            if (e.altKey && e.which === 84) {
+                this.clearTheme();
+            }
+        });
+        $(document).on(`contextmenu.${this.getName()}`, (e) => {
+            if (e.target.tagName === 'A' && e.target.href.includes('https://betterdiscord.net/ghdl?id')) {
+                this.addContextMenuItems(e);
+            }
+        });
+    }
+    removeListeners() {
+        $(document).off(`contextmenu.${this.getName()}`);
+        $(document).off(`keydown.${this.getName()}`);
+    }
+    clearTheme() {
+        if (!document.contains(this.previewSheet)) return;
+        this.previewSheet.removeAttribute('href');
+    }
+    addContextMenuItems(e) {
+        if (!document.contains(this.previewSheet)) return;
+        const context = document.querySelector('.contextMenu-HLZMGh');
+        let item;
+        if (!this.previewSheet.hasAttribute('href')) {
+            item = new PluginContextMenu.TextItem('Preview Theme', {
+                callback: () => {
+                    if (context) {
+                        $(context).hide();
+                    }
+                    this.previewSheet.setAttribute('href', e.target.href);
+                    if (this.settings.delay) {
+                        setTimeout(() => (this.previewSheet.removeAttribute('href')), this.settings.ms);
+                    }
+                }
+            });
+        } else {
+            item = new PluginContextMenu.TextItem('Disable Preview', {
+                callback: () => {
+                    if (context) {
+                        $(context).hide();
+                    }
+                    this.clearTheme();
+                },
+                hint: 'Alt+T'
+            });
+        }
+        $(context).find('.itemGroup-1tL0uz').first().append(item.element);
+    }
+    generatePanel(panel) {
+        new PluginSettings.ControlGroup('Preview Settings', () => PluginUtilities.saveSettings(this.getName(), this.settings)).appendTo(panel).append(
+            new PluginSettings.Checkbox('Preview Reset', 'Automatically reset the Theme Preview after a delay.', this.settings.delay, (i) => {
+                this.settings.delay = i;
+                this.removeListeners();
+                this.addListeners();
+            }),
+            new PluginSettings.Slider('Preview Reset Delay', 'How long to wait before resetting the Theme Preview. Default is 3000ms, 1000ms = 1 second.', 0, 10000, 500, this.settings.ms, (i) => {
+                this.settings.ms = i;
+                this.removeListeners();
+                this.addListeners();
+            })
+            .setLabelUnit('ms')
+        );
+
+        const resetButton = $('<button>', {
+            type: 'button',
+            text: 'Reset To Default',
+            style: 'float: right;'
+        }).on('click.reset', () => {
+            for (const key in this.default) {
+                this.settings[key] = this.default[key];
+            }
+            PluginUtilities.saveSettings(this.getName(), this.settings);
+            panel.empty();
+            this.generatePanel(panel);
+        });
+
+        panel.append(resetButton);
+    }
+    stop() {
+        if (document.contains(this.previewSheet)) {
+            this.previewSheet.remove();
+        }
+        this.removeListeners();
+        this.initialized = false;
+    }
+}

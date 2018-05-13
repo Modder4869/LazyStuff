@@ -1146,7 +1146,8 @@
     color: var(--text-color)
 }
 
-.container-2lgZY8 {
+.container-2lgZY8,
+#app-mount .search-results-wrap .channel-separator .channel-name {
     background: transparent;
     background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }

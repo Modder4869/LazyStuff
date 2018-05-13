@@ -11,11 +11,11 @@ class ThemePreview {
     }
     getSettingsPanel() {
         const panel = $('<form>').addClass('form').css('width', '100%');
-        if (this.initialized) this.generatePanel(panel);    
+        if (this.initialized) this.generatePanel(panel);
         return panel[0];
     }
     getVersion() {
-        return '0.0.1';
+        return '0.0.2';
     }
     getAuthor() {
         return 'Modder4869';
@@ -24,6 +24,7 @@ class ThemePreview {
         return `https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/${this.getName()}.plugin.js`;
     }
     constructor() {
+        this.request = require('request');
         this.initialized = false;
         this.default = {
             delay: false,
@@ -34,6 +35,8 @@ class ThemePreview {
             ms: 3000
         };
         this.previewSheet;
+        this.themeCSS;
+        this.themeUrl;
     }
     load() {
 
@@ -42,9 +45,8 @@ class ThemePreview {
         let libraryScript = document.getElementById('zeresLibraryScript');
         this.previewSheet = document.getElementById('ThemePreview');
         if (!this.previewSheet) {
-            this.previewSheet = document.createElement('link');
+            this.previewSheet = document.createElement('style');
             this.previewSheet.setAttribute('id', 'ThemePreview');
-            this.previewSheet.setAttribute('rel', 'stylesheet');
             document.body.appendChild(this.previewSheet);
         }
         if (!libraryScript) {
@@ -71,10 +73,36 @@ class ThemePreview {
             }
         });
         $(document).on(`contextmenu.${this.getName()}`, (e) => {
-            if (e.target.tagName === 'A' && e.target.href.includes('https://betterdiscord.net/ghdl?id')) {
-                this.addContextMenuItems(e);
+            if (e.toElement.tagName === 'A' && e.toElement.href.includes('github.com') && e.toElement.href.endsWith('.css') || e.toElement.tagName === 'A' && e.toElement.href.includes('betterdiscord.net/ghdl?id')) {
+                this.addContextMenuItems(e)
             }
+
         });
+    }
+    getThemeCSS() {
+
+        if (this.themeUrl.includes('github.com')) {
+            this.themeUrl = this.themeUrl.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
+
+        }
+        let url = this.themeUrl;
+        this.request({
+            url: url
+        }, (error, response, body) => {
+            this.themeCSS = body.substring(body.indexOf("\n") + 1);
+            PluginUtilities.showToast('loaded', {
+                type: "success"
+            });
+            this.previewSheet.innerHTML = this.themeCSS;
+            if (error) {
+                PluginUtilities.showToast(error, {
+                    type: "danger"
+                });
+                return;
+            }
+
+        })
+
     }
     removeListeners() {
         $(document).off(`contextmenu.${this.getName()}`);
@@ -82,21 +110,25 @@ class ThemePreview {
     }
     clearTheme() {
         if (!document.contains(this.previewSheet)) return;
-        this.previewSheet.removeAttribute('href');
+        this.previewSheet.innerHTML = '';
+        this.themeUrl = '';
+        this.themeCSS = '';
     }
     addContextMenuItems(e) {
         if (!document.contains(this.previewSheet)) return;
         const context = document.querySelector('.contextMenu-HLZMGh');
         let item;
-        if (!this.previewSheet.hasAttribute('href')) {
+        if (this.previewSheet.innerHTML.length === 0) {
             item = new PluginContextMenu.TextItem('Preview Theme', {
                 callback: () => {
                     if (context) {
                         $(context).hide();
                     }
-                    this.previewSheet.setAttribute('href', e.target.href);
+                    this.themeUrl = e.toElement.href;
+                    this.getThemeCSS();
+                    this.previewSheet.innerHTML = this.themeCSS;
                     if (this.settings.delay) {
-                        setTimeout(() => (this.previewSheet.removeAttribute('href')), this.settings.ms);
+                        setTimeout(() => (this.clearTheme()), this.settings.ms);
                     }
                 }
             });

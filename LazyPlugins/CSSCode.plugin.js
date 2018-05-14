@@ -15,7 +15,7 @@ class CSSCode {
         return panel[0];
     }
     getVersion() {
-        return '0.0.3';
+        return '0.0.4';
     }
     getAuthor() {
         return 'Modder4869';
@@ -34,7 +34,7 @@ class CSSCode {
             ms: 3000
         };
         this.previewSheet;
-
+        this.re;
     }
     load() {
 
@@ -65,14 +65,14 @@ class CSSCode {
         this.initialized = true;
     }
     addListeners() {
-        re = new RegExp('([#\.][a-z0-9]*?\.?.*?)\s?\{([^\{\}]*)\}', 'mgi');
+       this.re = new RegExp('([#\.][a-z0-9]*?\.?.*?)\s?\{([^\{\}]*)\}', 'mgi');
         $(document).on(`keydown.${this.getName()}`, (e) => {
             if (e.altKey && e.which === 82) {
                 this.clearCSS();
             }
         });
         $(document).on(`contextmenu.${this.getName()}`, (e) => {
-            if (e.toElement.tagName === 'CODE' && e.toElement.className.toLowerCase().includes('css') || re.test(e.toElement.innerText)) {
+            if (e.toElement.tagName === 'CODE' && e.toElement.className.toLowerCase().includes('css') || this.re.test(e.toElement.innerText)) {
                 this.addContextMenuItems(e);
             }
         });

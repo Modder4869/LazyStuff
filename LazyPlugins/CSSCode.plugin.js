@@ -11,11 +11,11 @@ class CSSCode {
     }
     getSettingsPanel() {
         const panel = $('<form>').addClass('form').css('width', '100%');
-		if (this.initialized) this.generatePanel(panel);
-		return panel[0];
+        if (this.initialized) this.generatePanel(panel);
+        return panel[0];
     }
     getVersion() {
-        return '0.0.2';
+        return '0.0.3';
     }
     getAuthor() {
         return 'Modder4869';
@@ -25,9 +25,16 @@ class CSSCode {
     }
     constructor() {
         this.initialized = false;
-        this.default = { delay: false, ms: 3000 };
-        this.settings = { delay: false, ms: 3000 };
+        this.default = {
+            delay: false,
+            ms: 3000
+        };
+        this.settings = {
+            delay: false,
+            ms: 3000
+        };
         this.previewSheet;
+
     }
     load() {
 
@@ -58,13 +65,14 @@ class CSSCode {
         this.initialized = true;
     }
     addListeners() {
+        re = new RegExp('([#\.][a-z0-9]*?\.?.*?)\s?\{([^\{\}]*)\}', 'mgi');
         $(document).on(`keydown.${this.getName()}`, (e) => {
             if (e.altKey && e.which === 82) {
                 this.clearCSS();
             }
         });
         $(document).on(`contextmenu.${this.getName()}`, (e) => {
-            if (e.toElement.tagName === 'CODE' && e.toElement.className.toLowerCase().includes('css')) {
+            if (e.toElement.tagName === 'CODE' && e.toElement.className.toLowerCase().includes('css') || re.test(e.toElement.innerText)) {
                 this.addContextMenuItems(e);
             }
         });
@@ -79,7 +87,7 @@ class CSSCode {
     }
     addContextMenuItems(e) {
         if (!document.contains(this.previewSheet)) return;
-        const context = document.querySelector('.contextMenu-HLZMGh');
+        const context =  document.querySelector(DiscordSelectors.ContextMenu.contextMenu);
         let item;
         if (this.previewSheet.innerText.length === 0) {
             item = new PluginContextMenu.TextItem('Preview CSS', {
@@ -120,20 +128,20 @@ class CSSCode {
             })
             .setLabelUnit('ms')
         );
-        
+
         const resetButton = $('<button>', {
             type: 'button',
-			text: 'Reset To Default',
-			style: 'float: right;'
+            text: 'Reset To Default',
+            style: 'float: right;'
         }).on('click.reset', () => {
-            for(const key in this.default) {
-				this.settings[key] = this.default[key];
-			}
-			PluginUtilities.saveSettings(this.getName(), this.settings);
-			panel.empty();
-			this.generatePanel(panel);
+            for (const key in this.default) {
+                this.settings[key] = this.default[key];
+            }
+            PluginUtilities.saveSettings(this.getName(), this.settings);
+            panel.empty();
+            this.generatePanel(panel);
         });
-        
+
         panel.append(resetButton);
     }
     stop() {

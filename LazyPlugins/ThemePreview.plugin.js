@@ -7,7 +7,7 @@ class ThemePreview {
         return 'ThemePreview';
     }
     getDescription() {
-        return 'Preview themes posted in #Theme-repo or any [https://betterdiscord.net/ghdl?id=] link using context menu';
+        return 'Preview themes posted in #Theme-repo , and  direct links that ends with CSS including directly uploaded files or [https://betterdiscord.net/ghdl?id=] link using context menu';
     }
     getSettingsPanel() {
         const panel = $('<form>').addClass('form').css('width', '100%');
@@ -15,7 +15,7 @@ class ThemePreview {
         return panel[0];
     }
     getVersion() {
-        return '0.0.2';
+        return '0.0.3';
     }
     getAuthor() {
         return 'Modder4869';
@@ -73,7 +73,7 @@ class ThemePreview {
             }
         });
         $(document).on(`contextmenu.${this.getName()}`, (e) => {
-            if (e.toElement.tagName === 'A' && e.toElement.href.includes('github.com') && e.toElement.href.endsWith('.css') || e.toElement.tagName === 'A' && e.toElement.href.includes('betterdiscord.net/ghdl?id')) {
+            if (e.toElement.tagName === 'A' && e.toElement.href.endsWith('.css') || e.toElement.tagName === 'A' && e.toElement.href.includes('betterdiscord.net/ghdl?id')) {
                 this.addContextMenuItems(e)
             }
 

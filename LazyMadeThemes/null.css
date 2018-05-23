@@ -281,9 +281,8 @@
 .theme-dark .player-SAAFSX {
     border-bottom-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
-
+/* something is def wrong here*/
 .theme-dark .listeningAlongList-2ajzb_,
-.theme-dark .callAvatar-v-u4BM.voice-2D-tt_ .callAvatarStatus-3y6S04,
 .theme-dark .preview-yX6Nx7,
 .theme-dark .connectedAccount-36nQx7,
 .theme-dark .userInfoSection-2acyCx+.userInfoSection-2acyCx,
@@ -517,7 +516,7 @@
 .theme-light .theme-dark .lookInverted-2D7oAl.hoverPrimary-2D1j2r.hasHover-3X1-zV:active,
 .theme-light .theme-light .lookInverted-2D7oAl.hoverPrimary-2D1j2r.hasHover-3X1-zV:active,
 .theme-light .lookInverted-2D7oAl.colorPrimary-3b3xI6:active {
-    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark.contextMenu-HLZMGh,

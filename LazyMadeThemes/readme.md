@@ -80,3 +80,15 @@ so if it is 50 then final result is for hue in hsla will be 100
 }
 ```
 ![Imgur](https://i.imgur.com/EEGcglI.png)
+# Another Dark 
+
+```css
+:root {
+      --hue: 0 + -134;
+    --saturation: 1 + -840%;
+    --lightness: 1 + -9%;
+    --alpha: 1 + 0;
+    --text-color: #3e3c3e;
+    }
+```
+![Imgur](https://i.imgur.com/8BgpzK3.png)

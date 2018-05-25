@@ -1489,3 +1489,9 @@ span.mention:hover {
 .form.deprecated .control-group textarea {
     color: var(--text-color) !important;
 }
+.create-guild-container.deprecated .action.create .btn{
+    background-color: rgba(114, 137, 218, 0.37);
+}
+.create-guild-container.deprecated .action.join .btn {
+    background-color: rgba(53, 100, 78, 0.37);
+}

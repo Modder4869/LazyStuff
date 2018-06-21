@@ -281,7 +281,9 @@
 .theme-dark .player-SAAFSX {
     border-bottom-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
+
 /* something is def wrong here*/
+
 .theme-dark .listeningAlongList-2ajzb_,
 .theme-dark .preview-yX6Nx7,
 .theme-dark .connectedAccount-36nQx7,
@@ -471,7 +473,8 @@
 .contentHoveredVoice-3p_NEO:active,
 .contentSelectedVoice-1WDIBM:active,
 .theme-dark .messagesPopoutWrap-1MQ1bW,
-.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group {
+.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group,
+.da-activityFeed {
     background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
@@ -602,8 +605,8 @@
 }
 
 #bd-settingspane-container button,
-.button-38aScr:not([class*="colorGreen-29iAKY"]):not([class*="colorRed-1TFJan"]):not([class*="colorLink-35jkBc"]) {
-    background: rgba(0, 0, 0, 0.3)
+.button-38aScr:not([class*="colorGreen-29iAKY"]):not([class*="colorRed-1TFJan"]):not([class*="colorLink-35jkBc"]):not("da-attachButton") {
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .chat .new-messages-bar:hover {
@@ -1421,6 +1424,7 @@ span.mention:hover {
 .checked-3_4uQ9 svg[name='Checkmark'] g polyline {
     stroke: var(--text-color)
 }
+
 .regionSelect-3lf4eE>* {
     border-color: var(--text-color) !Important;
 }
@@ -1489,9 +1493,11 @@ span.mention:hover {
 .form.deprecated .control-group textarea {
     color: var(--text-color) !important;
 }
-.create-guild-container.deprecated .action.create .btn{
+
+.create-guild-container.deprecated .action.create .btn {
     background-color: rgba(114, 137, 218, 0.37);
 }
+
 .create-guild-container.deprecated .action.join .btn {
     background-color: rgba(53, 100, 78, 0.37);
 }

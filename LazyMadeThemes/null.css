@@ -605,7 +605,7 @@
 }
 
 #bd-settingspane-container button,
-.button-38aScr:not([class*="colorGreen-29iAKY"]):not([class*="colorRed-1TFJan"]):not([class*="colorLink-35jkBc"]):not("da-attachButton") {
+.button-38aScr:not([class*="colorGreen-29iAKY"]):not([class*="colorRed-1TFJan"]):not([class*="colorLink-35jkBc"]):not(.da-attachButton) {
     background: rgba(0, 0, 0, 0.3);
 }
 

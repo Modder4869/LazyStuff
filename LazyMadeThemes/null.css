@@ -1148,7 +1148,7 @@
 .theme-light .lookFilled-1Gx00P.hoverWhite-2uUmXw.hasHover-3X1-zV:hover,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ,
 .theme_light-3pFauF .note-450gs3,
-.theme_light-3pFauF {
+.theme_light-3pFau{
     color: var(--text-color)
 }
 
@@ -1500,4 +1500,33 @@ span.mention:hover {
 
 .create-guild-container.deprecated .action.join .btn {
     background-color: rgba(53, 100, 78, 0.37);
+}
+
+/*Home*/
+
+.theme-dark .body-SKIE6r {
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(0.4 * var(--alpha)));
+}
+
+/*Game ( in settings )*/
+
+.theme-dark .user-settings-games .not-detected,
+.theme-light .user-settings-games .not-detected {
+    background-color: rgba(3, 3, 3, 0.25);
+}
+
+/*Custom CSS*/
+
+.ace_content {
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+}
+
+.ace_layer.ace_gutter-layer.ace_folding-enabled {
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+}
+
+/*Emoji Button*/
+
+.emojiButtonNormal-TdumYh.emojiButton-3uL3Aw.emojiButton-2wRZts.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.grow-q77ONN {
+    background: rgba(0, 0, 0, 0);
 }

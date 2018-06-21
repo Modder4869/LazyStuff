@@ -291,7 +291,7 @@
 .theme-dark .input-cIJ7To.disabled-2BKQFm,
 .theme-dark .cardPrimaryEditable-3KtE4g,
 .theme-dark .cardPrimary-1Hv-to {
-    background-color: rgba(0, 0, 0, 0.05) !important;
+    background-color: rgba(0, 0, 0, 0.19) !important;
     border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !Important;
 }
 
@@ -1148,7 +1148,7 @@
 .theme-light .lookFilled-1Gx00P.hoverWhite-2uUmXw.hasHover-3X1-zV:hover,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ,
 .theme_light-3pFauF .note-450gs3,
-.theme_light-3pFau{
+.theme_light-3pFau {
     color: var(--text-color)
 }
 

@@ -291,7 +291,7 @@
 .theme-dark .input-cIJ7To.disabled-2BKQFm,
 .theme-dark .cardPrimaryEditable-3KtE4g,
 .theme-dark .cardPrimary-1Hv-to {
-    background-color: rgba(0, 0, 0, 0.19) !important;
+    background-color: rgba(0, 0, 0, 0.05) !important;
     border-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !Important;
 }
 
@@ -1148,7 +1148,7 @@
 .theme-light .lookFilled-1Gx00P.hoverWhite-2uUmXw.hasHover-3X1-zV:hover,
 .lookFilled-1Gx00P.colorWhite-rEQuAQ,
 .theme_light-3pFauF .note-450gs3,
-.theme_light-3pFau {
+.theme_light-3pFau{
     color: var(--text-color)
 }
 
@@ -1277,7 +1277,7 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
     background: rgba(5, 5, 5, 0.616);
     color: hsl(0, 0%, 100%);
     border: 0;
-    box-shadow: 0 1px 0 0 #2f3129 inset;
+    box-shadow: 0 1px 0 0 hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) inset;
 }
 
 .tooltip {
@@ -1518,11 +1518,11 @@ span.mention:hover {
 /*Custom CSS*/
 
 .ace_content {
-    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) ;;
 }
 
 .ace_layer.ace_gutter-layer.ace_folding-enabled {
-    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 /*Emoji Button*/

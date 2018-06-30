@@ -15,8 +15,8 @@
     --saturation: (1) + (-102%);
     --lightness: (1) + (-6%);
     --alpha: (1) + (0);
-    --text-color: hsl(343, 38%, 40%);
-    /*text,accent,tooltips*/
+    --text-color: hsl(343, 38%, 40%); /*text,accent,tooltips*/
+    --selection-color: hsl(343, 38%, 40%); /*server channels*/
 }
 
 

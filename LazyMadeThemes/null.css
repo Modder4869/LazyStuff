@@ -351,7 +351,7 @@
     border: 1px solid hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .incomingCallInner-2rV0UJ,
+.theme-dark .incomingCallInner-2VmFiR,
 .theme-dark .item-1Yvehc:hover {
     background: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)))
 }
@@ -792,8 +792,8 @@
 .theme-light .verification-3RfWYC .title-wZCcDo,
 .theme-light .itemValue-JNy0LV,
 .theme-light .item-30Gz8g,
-.theme-light .incomingCallInner-2rV0UJ .members-2pafkj,
-.incomingCallInner-2rV0UJ .subtitle-2a0Uxx,
+#app-mount .members-2BNiuX,
+#app-mount .subtitle-1H8FPn,
 .option-96V44q-popout .btn-item:hover,
 .theme-light .inviteRowName-uHzNmr,
 .theme-light .username-2eM5se,
@@ -1533,3 +1533,5 @@ span.mention:hover {
 .emojiButtonNormal-TdumYh.emojiButton-3uL3Aw.emojiButton-2wRZts.button-38aScr.lookBlank-3eh9lL.colorBrand-3pXr91.grow-q77ONN {
     background: rgba(0, 0, 0, 0);
 }
+/*7-2-18*/
+

@@ -1039,7 +1039,6 @@
 .nameDefault-2DI02H,
 .nameMutedText-3Vj4bM,
 .nameMutedVoice-3oxyQZ,
-.nameDefaultText-24KCy5,
 .nameDefaultVoice-3WUH7s,
 .nameLockedText-3pqQcL,
 .nameLockedVoice-26MhB1,
@@ -1389,7 +1388,6 @@ span.mention:hover {
 .theme-dark .description-3_Ncsb,
 .theme-dark .labelDescriptor-1PqHgD,
 .bodyTitle-Y0qMQz,
-.nameDefaultText-24KCy5,
 .nameDefaultVoice-3WUH7s,
 .nameLockedText-3pqQcL,
 .nameLockedVoice-26MhB1,
@@ -1399,6 +1397,11 @@ span.mention:hover {
 .nameDefault-2DI02H,
 .membersGroup-v9BXpm {
     color: var(--text-color) !important;
+}
+
+.nameDefaultText-24KCy5,
+.nameDefaultVoice-3WUH7s {
+    color: var(--selection-color) !important;
 }
 
 .has-more button {

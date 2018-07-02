@@ -51,6 +51,7 @@ so if it is 50 then final result is for hue in hsla will be 100
     --lightness: (1) + (-13.5%);
     --alpha: (1) + (0);
     --text-color: hsl(292, 15%, 37%);
+    --selection-color: hsl(292, 15%, 37%);
 }
 ```
 ![Imgur](https://i.imgur.com/Sv8Q1IS.png)
@@ -63,6 +64,7 @@ so if it is 50 then final result is for hue in hsla will be 100
     --lightness: (1) + (-6%);
     --alpha: (1) + (0);
     --text-color: hsl(109, 38%, 40%);
+    --selection-color: hsl(109, 38%, 40%);
 }
 ```
 ![Imgur](https://i.imgur.com/nIyJ7Tq.png)
@@ -75,6 +77,7 @@ so if it is 50 then final result is for hue in hsla will be 100
     --lightness: (1) + (17%);
     --alpha: (1) + (-0);
     --text-color: hsl(207, 143%, 36%);
+    --selection-color: hsl(207, 143%, 36%);
 }
 ```
 ![Imgur](https://i.imgur.com/EEGcglI.png)
@@ -87,6 +90,7 @@ so if it is 50 then final result is for hue in hsla will be 100
     --lightness: 1 + -9%;
     --alpha: 1 + 0;
     --text-color: #3e3c3e;
+    --selection-color: #3e3c3e;
     }
 ```
 ![Imgur](https://i.imgur.com/8BgpzK3.png)

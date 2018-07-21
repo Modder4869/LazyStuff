@@ -17,7 +17,19 @@ Like This
 means  that original hue value will be mutiplied by 1 and get 0 added to it
 so if it is 50 then final result is for hue in hsla will be 100
 
-# Some examples
+# Some examples (ignore the names)
+#BlueAndWhite
+```css
+:root {
+    --hue: (1) + (380);
+    --saturation: (1) + (-102%);
+    --lightness: (1) + (-12%);
+    --alpha: (1) + (0);
+    --text-color: hsl(216, 76%, 57%);
+    --selection-color: white;
+}
+```
+![Imgur](https://i.imgur.com/Vmeuf2s.png)
 # Default
 
 ```css

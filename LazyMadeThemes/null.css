@@ -541,7 +541,7 @@
     background-color: hsla(calc(218 * var(--hue)), calc(5% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .quickMessage-1yeL4E {
+.theme-dark .quickMessage-1yeL4E,.theme-dark .messageGroupWrapper-o-Zw7G {
     background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     border-color: hsla(calc(214 * var(--hue)), calc(9% * var(--saturation)), calc(15% * var(--lightness)), calc(1 * var(--alpha)))
 }
@@ -622,7 +622,7 @@
     box-shadow: 0 0 6px 4pxhsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
-#app-mount .popout-3dRSmE .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group .actionButtons-1sUUug .jumpButton-3DTcS_,
+#app-mount .popout-3dRSmE .messagesPopoutWrap-1MQ1bW  .actionButtons-1sUUug .jumpButton-3DTcS_,
 #app-mount .search-results-wrap .actionButtons-1sUUug .jumpButton-3DTcS_,
     {
     background-color: hsla(calc(220 * var(--hue)), calc(3% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
@@ -1220,7 +1220,7 @@
     border-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-.mention {
+#app-mount .mention{
     background: rgba(0, 0, 0, 0.3) !important;
     color: var(--text-color)
 }
@@ -1230,7 +1230,7 @@ h2 {
     color: var(--text-color) !important
 }
 
-.theme-dark .message-group .mentioned .message-text {
+#app-mount .isMentioned-N-h9aa {
     background: rgba(0, 0, 0, 0.5) !important
 }
 
@@ -1284,12 +1284,12 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
     background: var(--text-color) !important;
 }
 
-span.mention {
+#app-mount .mention{
     background: none !important;
     color: var(--text-color)
 }
 
-span.mention:hover {
+#app-mount .mention:hover {
     color: hsla(226, 56%, 65%, 0.7) !important
 }
 

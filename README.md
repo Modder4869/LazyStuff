@@ -20,6 +20,8 @@
 
 [PluginRepo](https://github.com/mwittrien/BetterDiscordAddons/blob/master/Plugins/PluginRepo/PluginRepo.plugin.js)- DevilBro
 
+[ReverseImageSearch](https://github.com/mwittrien/BetterDiscordAddons/blob/master/Plugins/ReverseImageSearch/ReverseImageSearch.plugin.js)-DevilBro
+
 [ChatAliases](https://github.com/mwittrien/BetterDiscordAddons/blob/master/Plugins/ChatAliases/ChatAliases.plugin.js)- DevilBro
 
 [RepoControls](https://github.com/mwittrien/BetterDiscordAddons/blob/master/Plugins/RepoControls/RepoControls.plugin.js)- DevilBro

@@ -1319,7 +1319,7 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
 .bda-dark .emojiPicker-3m1S-j .category-2U57w6,
 .emojiPicker-3m1S-j .scrollerWrap-2lJEkd .scroller-2FKFPG::-webkit-scrollbar-track-piece,
 .base-3dtUhz {
-    background: transparent !important
+    background: transparent !important;
 }
 
 .scrollerThemed-2oenus.themeLight-1_DWyY .scroller-2FKFPG::-webkit-scrollbar-thumb,
@@ -1540,7 +1540,7 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
     box-shadow: 0 0 0 1px hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(14% * var(--lightness)), calc(0.6 * var(--alpha))) !important;
 
 }
-#app-mount a {
+#app-mount .markup-2BOw-j a {
     color: var(--text-color);
 }
 
@@ -1548,4 +1548,3 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
       fill:hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
 
 }
-

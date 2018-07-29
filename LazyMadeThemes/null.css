@@ -716,7 +716,7 @@
     background-color: hsla(calc(210 * var(--hue)), calc(10% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.bd-modal-wrapper .bd-modal-body {
+.bd-modal-wrapper .bd-modal-body{
     background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
@@ -1535,3 +1535,10 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
 }
 /*7-2-18*/
 
+/* toast */
+.bd-toasts .bd-toast{
+    background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    border-color:var(--text-color);
+    box-shadow: 0 0px 1px hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important;
+
+}

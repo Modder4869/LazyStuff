@@ -174,13 +174,13 @@
     fill: hsla(calc(218 * var(--hue)), calc(4% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .message-group .comment .markup pre {
+.theme-dark .container-1YxwTf .markup-2BOw-j pre {
     background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
     border-color: hsla(calc(217 * var(--hue)), calc(9% * var(--saturation)), calc(17% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .message-group .comment .markup code.inline,
-.theme-dark .message-group .comment .markup pre code,
+.theme-dark .container-1YxwTf .markup-2BOw-j code.inline,
+.theme-dark .container-1YxwTf .markup-2BOw-j pre code,
 .theme-dark .sidebar-1-SQro,
 .guilds-wrapper .guild-separator:after,
 .theme-dark .quickSelectPopout-X1hvgV,
@@ -864,7 +864,7 @@
 .theme-dark .theme-light .calendarPicker-2yf6Ci .react-datepicker__current-month,
 .theme-light .calendarPicker-2yf6Ci .react-datepicker__current-month,
 .messagesPopout-24nkyi.channelSeparator-1MxuvT .channelName-3kBz6H,
-.message-group.compact .message .message-text .markup .user-name,
+.message-group.compact .message .message-text .markup-2BOw-j .user-name,
 .message-group h2 strong,
 .members-1998pB .member-3W1lQa.popout-3dRSmE-open,
 .members-1998pB .member-3W1lQa:hover,

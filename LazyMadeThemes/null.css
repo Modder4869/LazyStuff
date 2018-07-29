@@ -1534,11 +1534,10 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
     background: rgba(0, 0, 0, 0);
 }
 /*7-2-18*/
-
+/*0 0 0 1px hsla(216, 7%, 14%, 0.6), 0 2px 10px 0 rgba(0, 0, 0, 0.2)*/
 /* toast */
-.bd-toasts .bd-toast{
+.toast ,.bd-toasts .bd-toast{
     background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha))) !important;
-    border-color:var(--text-color);
-    box-shadow: 0 0px 1px hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important;
+    box-shadow: 0 0 0 1px hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(14% * var(--lightness)), calc(0.6 * var(--alpha))) !important;
 
 }

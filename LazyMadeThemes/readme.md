@@ -18,7 +18,7 @@ means  that original hue value will be mutiplied by 1 and get 0 added to it
 so if it is 50 then final result is for hue in hsla will be 100 , which is kinda wrong but whatever
 
 # Some examples (ignore the names)
-#BlueAndWhite
+# BlueAndWhite
 ```css
 :root {
     --hue: (1) + (380);

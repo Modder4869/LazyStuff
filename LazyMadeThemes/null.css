@@ -1267,7 +1267,7 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
 .barFill-23-gu-,
 .side-8zPYf6 .itemSelected-1qLhcL,
 #bd-settings-sidebar .ui-tab-bar-item.selected,
-.themeDefault-24hCdX.valueChecked-m-4IJZ {
+.themeDefault-24hCdX.valueChecked-m-4IJZ,#pubslayer .ui-tab-bar-item.selected {
     background: var(--text-color) !important;
 }
 

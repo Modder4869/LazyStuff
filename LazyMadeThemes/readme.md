@@ -106,3 +106,65 @@ so if it is 50 then final result is for hue in hsla will be 100
     }
 ```
 ![Imgur](https://i.imgur.com/8BgpzK3.png)
+
+# Background *just testing*
+```css
+:root{
+    --hue: (1) + (85);
+    --saturation: (1) + (1%);
+    --lightness: (1) + (-13%);
+    --alpha: (1) + (0);
+    --text-color: #8d1b46; /*text and accent color probably */
+    --selection-color: #EDE7F6; /*channel names mostly*/
+   --blurVal:0px; /*blur value , px is required */
+   --withBg: url("https://orig00.deviantart.net/b866/f/2016/197/1/9/megumin_wallpaper_by_kaazuma-daa79g7.png") 
+/* ^ credits */
+--opVal:0.8; /* opacity value 0-1 *
+}
+body::before {
+  z-index:-1;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  background: var(--withBg) no-repeat center center fixed;
+  filter: blur(var(--blurVal));
+}
+#app-mount{
+    opacity:var(--opVal);
+} 
+
+```
+![Imgur](https://i.imgur.com/AdOXZKo.png)
+
+# Blurred Background *just testing*
+```css
+:root{
+    --hue: (1) + (85);
+    --saturation: (1) + (1%);
+    --lightness: (1) + (-13%);
+    --alpha: (1) + (0);
+    --text-color: #8d1b46; /*text and accent color probably */
+    --selection-color: #EDE7F6; /*channel names mostly*/
+   --blurVal:0px; /*blur value , px is required */
+   --withBg: url("https://orig00.deviantart.net/b866/f/2016/197/1/9/megumin_wallpaper_by_kaazuma-daa79g7.png");
+/* ^ credits */
+  --opVal:0.8; /* opacity value 0-1 */
+}
+body::before {
+  z-index:-1;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  position: absolute;
+  background: var(--withBg) no-repeat center center fixed;
+  filter: blur(var(--blurVal));
+}
+#app-mount{
+    opacity:var(--opVal);
+} 
+
+```
+![Imgur](https://i.imgur.com/GVDe1d0.png)

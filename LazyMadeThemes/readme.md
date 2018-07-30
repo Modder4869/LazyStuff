@@ -1,11 +1,11 @@
-# Null - Theme [Dark] [Default Discord](https://github.com/Modder4869/LazyStuff/blob/master/LazyMadeThemes/readme.md#default)
+# Null - Theme [Dark]
 Customizable default discord theme ***Not User Friendly*** 
 
 `Download it , Copy it to themes folder , Reload Discord (Ctrl +R), Enable it`
 **Edit the vars in theme fille or copy one of the example to custom css and click save then update** 
 
-If you want easier way to decide values then after you enable theme , press `Ctrl` + `Shift` + `I` then click on `<html`
-and change values (use mouse wheel or something) then select that and copy it to theme file or custom css whatever
+ `Ctrl` + `Shift` + `I` then click on `<html`
+and change values then copy it to custom css
 
 Like This
 
@@ -15,7 +15,7 @@ Like This
 ```
 
 means  that original hue value will be mutiplied by 1 and get 0 added to it
-so if it is 50 then final result is for hue in hsla will be 100
+so if it is 50 then final result is for hue in hsla will be 100 , which is kinda wrong but whatever
 
 # Some examples (ignore the names)
 #BlueAndWhite
@@ -119,7 +119,7 @@ so if it is 50 then final result is for hue in hsla will be 100
    --blurVal:0px; /*blur value , px is required */
    --withBg: url("https://orig00.deviantart.net/b866/f/2016/197/1/9/megumin_wallpaper_by_kaazuma-daa79g7.png") 
 /* ^ credits */
---opVal:0.8; /* opacity value 0-1 *
+--opVal:0.8; /* opacity value 0-1 */
 }
 body::before {
   z-index:-1;
@@ -150,7 +150,7 @@ body::before {
    --blurVal:0px; /*blur value , px is required */
    --withBg: url("https://orig00.deviantart.net/b866/f/2016/197/1/9/megumin_wallpaper_by_kaazuma-daa79g7.png");
 /* ^ credits */
-  --opVal:0.8; /* opacity value 0-1 */
+--opVal:0.8; /* opacity value 0-1 */
 }
 body::before {
   z-index:-1;

@@ -182,7 +182,7 @@
 .theme-dark .container-1YxwTf .markup-2BOw-j code.inline,
 .theme-dark .container-1YxwTf .markup-2BOw-j pre code,
 .theme-dark .sidebar-1-SQro,
-.guilds-wrapper .guild-separator:after,
+ .guildsWrapper-5TJh6A .guildSeparator-1X4GQ1:after,
 .theme-dark .quickSelectPopout-X1hvgV,
 .theme-dark .ui-standard-sidebar-view .sidebar-region,
 .guildInner-8UFXi4,
@@ -497,7 +497,7 @@
 .theme-dark .private-channel-call,
 .theme-dark .mediaBarInteraction-37i2O4,
 .mediaBarInteractionDragging-2QurIZ,
-.guilds-wrapper,
+ .guildsWrapper-5TJh6A,
 .noticePremium-12Zvj9,
 .notice-RSKmnp,
 .buttonInner-1stGzH,
@@ -519,7 +519,7 @@
 .theme-light .theme-dark .lookInverted-2D7oAl.hoverPrimary-2D1j2r.hasHover-3X1-zV:active,
 .theme-light .theme-light .lookInverted-2D7oAl.hoverPrimary-2D1j2r.hasHover-3X1-zV:active,
 .theme-light .lookInverted-2D7oAl.colorPrimary-3b3xI6:active {
-    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
+    background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 
 .theme-dark.contextMenu-HLZMGh,
@@ -1237,7 +1237,7 @@ h2 {
 #memberCount,
 .theme-dark .private-channel-recipients-invite .friend,
 #dv-mount,
-.guilds-wrapper .guilds .guild .guild-inner {
+ .guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ .guildInner-3DSoA4 {
     background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
@@ -1434,7 +1434,7 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
 
 .need-help-modal.deprecated .header,
 .need-help-modal.deprecated .footer,
-.guilds-wrapper .guilds-add,
+ .guildsWrapper-5TJh6A .guilds-add,
 .regionSelectModal-12e-57,
 .form-deprecated .form-actions,
 .form.deprecated .form-actions,

@@ -346,7 +346,7 @@
     background-color: hsla(calc(216 * var(--hue)), calc(7% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .chat .hasMore-sul95G button,
+.theme-dark .chat-3bRxxu .hasMore-sul95G button,
 .theme-dark .popout-3dRSmE .hasMore-sul95G button {
     border: 1px solid hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
 }
@@ -382,7 +382,7 @@
 }
 
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
-.theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb,
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-thumb,
 .theme-dark .bottomSeparator-dSVoAY,
 .private-channels .channel:hover .status,
 .theme-dark .iconBadge-2dji3k,
@@ -391,15 +391,15 @@
 }
 
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-track-piece,
-.theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-track-piece,
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-track-piece,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar .track,
-.theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar .track {
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap .scrollbar .track {
     background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
     border-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar .thumb,
-.theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar .thumb {
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap.polyfill .scrollbar .thumb {
     background-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     border-color: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
@@ -409,23 +409,24 @@
 }
 
 .theme-dark .themed-popout .header,
-.theme-dark .friends-table .messages .divider:before,
-.theme-dark .friends-table .messages .divider span,
-.theme-dark .messages-wrapper .messages .divider:before,
-.theme-dark .messages-wrapper .messages .divider span,
+.theme-dark .friends-table .messages-3amgkR .divider:before,
+.theme-dark .friends-table .messages-3amgkR .divider span,
+.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .divider:before,
+.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .divider span,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar:after,
-.theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar,
-.theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar:after,
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap.polyfill .scrollbar,
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap.polyfill .scrollbar:after,
 .theme-dark .friends-table,
 .theme-dark .messages-wrapper,
 .app.fake,
 .onboarding-slide.claim-account .claim-success,
 .onboarding-navigation .onboarding-navigation-controls,
 .onboarding-navigation,
-.theme-dark .chat>.content,
-.theme-dark .chat form,
-.theme-dark .chat,
+.theme-dark .chat-3bRxxu,
+.content-yTz4x3,
+.theme-dark .chat-3bRxxu form,
+.theme-dark .chat-3bRxxu,
 .theme-dark .activityFeed-HeiGwL,
 .theme-dark .sectionLine-3fsQAf,
 .theme-dark .card-7JP0BX,
@@ -532,7 +533,7 @@
 }
 
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
-.theme-dark .messages-wrapper .scroller-wrap ::-webkit-scrollbar-thumb {
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap ::-webkit-scrollbar-thumb {
     background-color: hsla(calc(210 * var(--hue)), calc(9% * var(--saturation)), calc(13% * var(--lightness)), calc(1 * var(--alpha)));
     border-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
 }
@@ -541,7 +542,7 @@
     background-color: hsla(calc(218 * var(--hue)), calc(5% * var(--saturation)), calc(47% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.theme-dark .quickMessage-1yeL4E,.theme-dark .messageGroupWrapper-o-Zw7G {
+.theme-dark .quickMessage-1yeL4E,.theme-dark .messageGroupWrapper-o-Zw7G ,.theme-dark .messagesWrapper-3lZDfY{
     background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     border-color: hsla(calc(214 * var(--hue)), calc(9% * var(--saturation)), calc(15% * var(--lightness)), calc(1 * var(--alpha)))
 }
@@ -569,11 +570,11 @@
     background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(0.9 * var(--alpha)))
 }
 
-.theme-dark .chat .jump-to-present-bar {
+.theme-dark .chat-3bRxxu .jump-to-present-bar {
     background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(0.9 * var(--alpha)))
 }
 
-.theme-dark .chat .jump-to-present-bar:hover {
+.theme-dark .chat-3bRxxu .jump-to-present-bar:hover {
     background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
@@ -675,10 +676,10 @@
 .theme-dark .status-2s6iDp,
 .theme-dark .private-channel-recipients-invite .friend .avatar-small .status,
 .theme-dark .members-1998pB .avatar-small .status,
-.theme-dark .friends-table .messages .message-group-blocked.revealed,
-.theme-dark .messages-wrapper .messages .message-group-blocked.revealed,
-.theme-dark .friends-table .messages .message-group-blocked,
-.theme-dark .messages-wrapper .messages .message-group-blocked,
+.theme-dark .friends-table .messages-3amgkR .messageGroupBlocked-3wrQQX.revealed-1_RKsf,
+.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .messageGroupBlocked-3wrQQX.revealed-1_RKsf,
+.theme-dark .friends-table .messages-3amgkR .messageGroupBlocked,
+.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .messageGroupBlocked,
 .theme-dark .emptyState-2-sT0o,
 .theme-dark .avatarStatus-3jMZl_ {
     border-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)))
@@ -1165,9 +1166,9 @@
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar .thumb,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar:after,
-.theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar,
-.theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar .thumb,
-.theme-dark .messages-wrapper .scroller-wrap.polyfill .scrollbar:after,
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap.polyfill .scrollbar,
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap.polyfill .scrollbar .thumb,
+.theme-dark .messagesWrapper-3lZDfY .scroller-wrap.polyfill .scrollbar:after,
 .app.fake .channels-wrap,
 .channels-Ie2l6A,
 .theme-dark .content-YDiGuN,
@@ -1241,14 +1242,14 @@ h2 {
     background: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
-.theme-dark .friends-table .messages .message-group-blocked.revealed,
-.theme-dark .messages-wrapper .messages .message-group-blocked.revealed {
+.theme-dark .friends-table .messages-3amgkR .messageGroupBlocked-3wrQQX.revealed-1_RKsf,
+.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .messageGroupBlocked-3wrQQX.revealed-1_RKsf {
     background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
     border-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha))) !important
 }
 
-.theme-dark .friends-table .messages .message-group-blocked .message-group-blocked-btn,
-.theme-dark .messages-wrapper .messages .message-group-blocked .message-group-blocked-btn {
+.theme-dark .friends-table .messages-3amgkR .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh-,
+.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .messageGroupBlocked-3wrQQX .messageGroupBlockedBtn-1PBBh- {
     background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
     color: var(--text-color)
 }
@@ -1548,3 +1549,4 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
       fill:hsla(calc(217 * var(--hue)), calc(8% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
 
 }
+/* 4-8 */

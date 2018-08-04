@@ -147,7 +147,7 @@ body::before {
     --alpha: (1) + (0);
     --text-color: #8d1b46; /*text and accent color probably */
     --selection-color: #EDE7F6; /*channel names mostly*/
-   --blurVal:0px; /*blur value , px is required */
+   --blurVal:5px; /*blur value , px is required */
    --withBg: url("https://orig00.deviantart.net/b866/f/2016/197/1/9/megumin_wallpaper_by_kaazuma-daa79g7.png");
 /* ^ credits */
 --opVal:0.8; /* opacity value 0-1 */

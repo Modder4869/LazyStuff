@@ -408,8 +408,8 @@
 }
 
 .theme-dark .themed-popout .header,
-.theme-dark .friends-table .messages-3amgkR .divider:before,
-.theme-dark .friends-table .messages-3amgkR .divider span,
+.theme-dark .friends-table .messages-3amgkR .divider-3gKybi:before,
+.theme-dark .friends-table .messages-3amgkR .divider-3gKybi span,
 .theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .divider:before,
 .theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .divider span,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar,
@@ -566,15 +566,15 @@
     background-color: hsla(calc(227 * var(--hue)), calc(1% * var(--saturation)), calc(33% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
-.chat .new-messages-bar {
+.chat-3bRxxu .newMessagesBar-mujexs, .da-newMessageBar {
     background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(0.9 * var(--alpha)))
 }
 
-.theme-dark .chat-3bRxxu .jump-to-present-bar {
+.theme-dark .chat-3bRxxu .jumpToPresentBar {
     background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(0.9 * var(--alpha)))
 }
 
-.theme-dark .chat-3bRxxu .jump-to-present-bar:hover {
+.theme-dark .chat-3bRxxu .jumpToPresentBar:hover {
     background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
@@ -610,7 +610,7 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
-.chat .new-messages-bar:hover {
+.chat-3bRxxu .new-messages-bar:hover {
     background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
@@ -1405,7 +1405,7 @@ button.button-1Pkqso.button-38aScr.lookOutlined-3sRXeN.colorWhite-rEQuAQ.sizeSma
     color: var(--selection-color) !important;
 }
 
-.has-more button {
+.hasMore-3e72_v button {
     background: hsla(calc(217 * var(--hue)), calc(7% * var(--saturation)), calc(21% * var(--lightness)), calc(1 * var(--alpha))) !important;
 }
 

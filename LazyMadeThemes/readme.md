@@ -126,7 +126,7 @@ body::before {
   content: " ";
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: cover !important;
   position: absolute;
   background: var(--withBg) no-repeat center center fixed;
   filter: blur(var(--blurVal));
@@ -157,7 +157,7 @@ body::before {
   content: " ";
   width: 100%;
   height: 100%;
-  background-size: cover;
+  background-size: cover !important;
   position: absolute;
   background: var(--withBg) no-repeat center center fixed;
   filter: blur(var(--blurVal));
@@ -168,3 +168,34 @@ body::before {
 
 ```
 ![Imgur](https://i.imgur.com/GVDe1d0.png)
+
+# another blurry variant i guess?*
+```css
+:root{
+    --hue: (1) + (1068);
+    --saturation: (1) + (-24%);
+    --lightness: (1) + (13%);
+    --alpha: (1) + (0);
+    --text-color: #a58bac; /*text and accent color probably */
+    --selection-color: #bec1d1; /*channel names mostly*/
+    --blurVal: 4px; /*blur value , px is required */
+    --withBg: url("http://mocah.org/uploads/posts/4528024-kono-subarashii-sekai-ni-shukufuku-wo-aqua-konosuba-darkness-konosuba-megumin-sat-kazuma-kono-subarashii-sekai-ni-shukufuku-wo-wizu-konosuba-minimalism.png");
+/* ^ credits */
+    --opVal:0.8; /* opacity value 0-1 */
+}
+body::before {
+  z-index:-1;
+  content: " ";
+  width: 100%;
+  height: 100%;
+  background-size: cover !important;
+  position: absolute;
+  background: var(--withBg) no-repeat center center fixed;
+  filter: blur(var(--blurVal));
+}
+#app-mount{
+    opacity:var(--opVal);
+} 
+
+```
+![Imgur](https://i.imgur.com/Z9dgu9m.png)

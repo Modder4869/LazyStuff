@@ -610,7 +610,7 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
-.chat-3bRxxu .new-messages-bar:hover {
+.chat-3bRxxu .newMessagesBar:hover {
     background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(1 * var(--alpha)))
 }
 

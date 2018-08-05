@@ -642,7 +642,7 @@
 
 .premiumPaymentModal-3SpIbo {
     background: var(--text-color);
-    filter: saturate(0)
+/*     filter: saturate(0); */
 }
 
 .bf-toolbar:before,

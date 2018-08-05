@@ -105,8 +105,9 @@ so if it is 50 then final result is for hue in hsla will be 100 , which is kinda
     --selection-color: #3e3c3e;
     }
 ```
-![Imgur](https://i.imgur.com/8BgpzK3.png)
 
+![Imgur](https://i.imgur.com/8BgpzK3.png)
+# Some Other Stuff probably broken ..*
 # Background *just testing*
 ```css
 :root{

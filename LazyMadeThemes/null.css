@@ -529,7 +529,8 @@
 }
 
 .theme-dark .search-results-wrap .search-result .hit {
-    background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)))
+     box-shadow: 0 0 10px 6px  hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
+    background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
 .theme-dark .friends-table .scroller-wrap ::-webkit-scrollbar-thumb,
@@ -544,8 +545,12 @@
 
 .theme-dark .quickMessage-1yeL4E,.theme-dark .messageGroupWrapper-o-Zw7G ,.theme-dark .messagesWrapper-3lZDfY{
     background-color: hsla(calc(220 * var(--hue)), calc(8% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
-    border-color: hsla(calc(214 * var(--hue)), calc(9% * var(--saturation)), calc(15% * var(--lightness)), calc(1 * var(--alpha)))
+    border-color: hsla(calc(214 * var(--hue)), calc(9% * var(--saturation)), calc(15% * var(--lightness)), calc(1 * var(--alpha)));
 }
+.theme-dark .messageGroupWrapper-o-Zw7G:hover {
+      border-color: hsla(calc(208 * var(--hue)), calc(21% * var(--saturation)), calc(14% * var(--lightness)), calc(0.8 * var(--alpha)));
+}
+
 
 .theme-dark .card-FDVird:before {
     background-color: rgba(0, 0, 0, 0.05);
@@ -570,11 +575,11 @@
     background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(0.9 * var(--alpha)))
 }
 
-.theme-dark .chat-3bRxxu .jumpToPresentBar {
+.theme-dark .chat-3bRxxu .da-jumpToPresentBar {
     background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(0.9 * var(--alpha)))
 }
 
-.theme-dark .chat-3bRxxu .jumpToPresentBar:hover {
+.theme-dark .chat-3bRxxu .da-jumpToPresentBar:hover {
     background-color: hsla(calc(212 * var(--hue)), calc(10% * var(--saturation)), calc(50% * var(--lightness)), calc(1 * var(--alpha)))
 }
 
@@ -616,17 +621,15 @@
 
 .theme-dark .popout-3dRSmE .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi.message-group:hover .actionButtons-1sUUug,
 .search-results-wrap .actionButtons-1sUUug,
-.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group:hover .actionButtons-1sUUug,
-.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .message-group:hover .actionButtons-1sUUug {
+.theme-dark .messagesPopoutWrap-1MQ1bW .messagesPopout-24nkyi .messageGroupWrapper-o-Zw7G:hover .actionButtons-1sUUug {
     -webkit-box-shadow: 0 0 6px 4px hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     background-color: hsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
     box-shadow: 0 0 6px 4pxhsla(calc(218 * var(--hue)), calc(7% * var(--saturation)), calc(23% * var(--lightness)), calc(1 * var(--alpha)));
 }
 
-#app-mount .popout-3dRSmE .messagesPopoutWrap-1MQ1bW  .actionButtons-1sUUug .jumpButton-3DTcS_,
-#app-mount .search-results-wrap .actionButtons-1sUUug .jumpButton-3DTcS_,
+#app-mount .actionButtons-1sUUug .jumpButton-3DTcS_
     {
-    background-color: hsla(calc(220 * var(--hue)), calc(3% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha)));
+    background-color: hsla(calc(220 * var(--hue)), calc(3% * var(--saturation)), calc(34% * var(--lightness)), calc(1 * var(--alpha))) !im;
     color: hsla(0, 0%, 100%, .6);
 }
 
@@ -634,7 +637,7 @@
 #app-mount .messagesPopoutWrap-1MQ1bW .header-ykumBX {
     -webkit-box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0 * var(--saturation)), calc(0 * var(--lightness)), calc(0.2 * var(--alpha)));
     background-color: hsla(calc(223 * var(--hue)), calc(7% * var(--saturation)), calc(20% * var(--lightness)), calc(1 * var(--alpha)));
-    box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0 * var(--saturation)), calc(0 * var(--lightness)), calc(0.2 * var(--alpha)))
+    box-shadow: 0 1px 0 hsla(calc(0 * var(--hue)), calc(0 * var(--saturation)), calc(0 * var(--lightness)), calc(0.2 * var(--alpha)));
 }
 
 .premiumPaymentModal-3SpIbo {

@@ -410,8 +410,8 @@
 .theme-dark .themed-popout .header,
 .theme-dark .friends-table .messages-3amgkR .divider-3gKybi:before,
 .theme-dark .friends-table .messages-3amgkR .divider-3gKybi span,
-.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .divider:before,
-.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .divider span,
+.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .divider-3gKybi:before,
+.theme-dark .messagesWrapper-3lZDfY .messages-3amgkR .divider-3gKybi span,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar,
 .theme-dark .friends-table .scroller-wrap.polyfill .scrollbar:after,
 .theme-dark .messagesWrapper-3lZDfY .scroller-wrap.polyfill .scrollbar,
@@ -610,7 +610,7 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
-.chat-3bRxxu .newMessagesBar:hover {
+.chat-3bRxxu .newMessagesBar-mujexs:hover,.da-chat, .da-newMessageBar:hover{
     background-color: hsla(calc(227 * var(--hue)), calc(58% * var(--saturation)), calc(65% * var(--lightness)), calc(1 * var(--alpha)))
 }
 

@@ -1,4 +1,5 @@
 # Null - Theme [Dark]
+# NO LONGER UPDATED , you can check my WIP Random theme (null rewrite)[here](https://github.com/Modder4869/BdBrokenStuff/tree/master/Themes/v1)
 Customizable default discord theme ***Not User Friendly*** 
 
 `Download it , Copy it to themes folder , Reload Discord (Ctrl +R), Enable it`

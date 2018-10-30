@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.0.9';
+        return '0.1.0';
     }
     getAuthor() {
         return 'Modder4869';
@@ -31,6 +31,7 @@ class DeveloperUtils {
             }
         };
         this.settings = this.defaultSettings;
+        this.panel;
     }
     loadSettings() {
         this.settings = PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
@@ -43,23 +44,22 @@ class DeveloperUtils {
 
     }
     start() {
-        var libraryScript = document.getElementById('zeresLibraryScript');
-        if (!libraryScript) {
-            libraryScript = document.createElement('script');
-            libraryScript.setAttribute('type', 'text/javascript');
-            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BetterDiscordAddons/Plugins/PluginLibrary.js');
-            libraryScript.setAttribute('id', 'zeresLibraryScript');
+        let libraryScript = document.getElementById("ZLibraryScript");
+        if (!libraryScript || !window.ZLibrary) {
+            if (libraryScript) libraryScript.parentElement.removeChild(libraryScript);
+            libraryScript = document.createElement("script");
+            libraryScript.setAttribute("type", "text/javascript");
+            libraryScript.setAttribute("src", "https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js");
+            libraryScript.setAttribute("id", "ZLibraryScript");
             document.head.appendChild(libraryScript);
         }
 
-        if (typeof window.ZeresLibrary !== 'undefined') this.initialize();
-        else libraryScript.addEventListener('load', () => {
-            this.initialize();
-        });
+        if (window.ZLibrary) this.initialize();
+        else libraryScript.addEventListener("load", () => { this.initialize(); });
     }
 
     initialize() {
-        PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
+        ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
         this.loadSettings();
         this.addContextMenuEvent()
         this.initialized = true;
@@ -141,6 +141,12 @@ class DeveloperUtils {
                     setTimeout(() => {
                         debugger
                     }, this.settings.DevUtils.delay)
+                }
+            }),
+            new PluginContextMenu.TextItem("Settings", {
+                callback: () => {
+                    var panel = $(".app").addClass("form").css("width", "100%");
+                    this.generateSettings(panel);
                 }
             })
 

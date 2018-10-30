@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.0.9';
+        return '0.1.1 ';
     }
     getAuthor() {
         return 'Modder4869';
@@ -33,33 +33,22 @@ class DeveloperUtils {
         this.settings = this.defaultSettings;
     }
     loadSettings() {
-        this.settings = PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
+        this.settings = ZLibrary.PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
     }
 
     saveSettings() {
-        PluginUtilities.saveSettings(this.getName(), this.settings);
+        ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);
     }
     load() {
 
     }
     start() {
-        var libraryScript = document.getElementById('zeresLibraryScript');
-        if (!libraryScript) {
-            libraryScript = document.createElement('script');
-            libraryScript.setAttribute('type', 'text/javascript');
-            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BetterDiscordAddons/Plugins/PluginLibrary.js');
-            libraryScript.setAttribute('id', 'zeresLibraryScript');
-            document.head.appendChild(libraryScript);
-        }
-
-        if (typeof window.ZeresLibrary !== 'undefined') this.initialize();
-        else libraryScript.addEventListener('load', () => {
-            this.initialize();
-        });
+        if (!global.ZeresPluginLibrary) return window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);
+      this.initialize()
     }
 
     initialize() {
-        PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
+        ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
         this.loadSettings();
         this.addContextMenuEvent()
         this.initialized = true;
@@ -98,9 +87,9 @@ class DeveloperUtils {
         if (!CSSRules) return;
         let CSSRule = CSSRules.item(CSSRules.length - 1);
         let currentWin = this.currentWindow;
-        let subMenu = new PluginContextMenu.SubMenuItem("DevUtils", new PluginContextMenu.Menu(false).addItems(
+        let subMenu = new ZLibrary.ContextMenu.SubMenuItem("DevUtils", new ZLibrary.ContextMenu.Menu(false).addItems(
 
-            new PluginContextMenu.TextItem("Debugger", {
+            new ZLibrary.ContextMenu.TextItem("Debugger", {
                 callback: () => {
                     if (!currentWin.isDevToolsOpened()) {
                         currentWin.openDevTools()
@@ -112,31 +101,31 @@ class DeveloperUtils {
                     debugger;
                 }
             }),
-            new PluginContextMenu.TextItem("Copy Selector", {
+            new ZLibrary.ContextMenu.TextItem("Copy Selector", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.selectorText);
                     $(context).hide();
                 }
             }),
-            new PluginContextMenu.TextItem("Copy Declaration", {
+            new ZLibrary.ContextMenu.TextItem("Copy Declaration", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.style.cssText);
                     $(context).hide();
                 }
             }),
-            new PluginContextMenu.TextItem("Copy Rule-Set", {
+            new ZLibrary.ContextMenu.TextItem("Copy Rule-Set", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.cssText);
                     $(context).hide();
                 }
             }),
-            new PluginContextMenu.TextItem("Inspect", {
+            new ZLibrary.ContextMenu.TextItem("Inspect", {
                 callback: () => {
                     this.inspectAt(e);
                     $(context).hide();
                 }
             }),
-            new PluginContextMenu.TextItem("Debugger (timeout)", {
+            new ZLibrary.ContextMenu.TextItem("Debugger (timeout)", {
                 callback: () => {
                     setTimeout(() => {
                         debugger
@@ -146,8 +135,8 @@ class DeveloperUtils {
 
         ));
 
-        let testGroup = new PluginContextMenu.ItemGroup().addItems(subMenu);
-        let newMenu = new PluginContextMenu.Menu();
+        let testGroup = new ZLibrary.ContextMenu.ItemGroup().addItems(subMenu);
+        let newMenu = new ZLibrary.ContextMenu.Menu();
 
         if (!context) {
             context = newMenu.element;

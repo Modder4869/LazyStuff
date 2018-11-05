@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.1.1 ';
+        return '0.1.2 ';
     }
     getAuthor() {
         return 'Modder4869';
@@ -54,8 +54,8 @@ class DeveloperUtils {
         this.initialized = true;
     }
     addContextMenuEvent() {
-        $(document).on('contextmenu.' + this.getName(), (e) => {
-            this.addContextMenuItems(e);
+        $(document).on('contextmenu.' + this.getName(), (e) => {process.nextTick(()=> {
+            this.addContextMenuItems(e)});
             if (!this.settings.DevUtils.KeyCombinationEnabled) {
                 return;
             }
@@ -83,7 +83,7 @@ class DeveloperUtils {
 
     addContextMenuItems(e) {
         let CSSRules = getMatchedCSSRules(e.toElement);
-        let context = document.querySelector('.contextMenu-HLZMGh');
+            let context = document.querySelector('.contextMenu-HLZMGh');
         if (!CSSRules) return;
         let CSSRule = CSSRules.item(CSSRules.length - 1);
         let currentWin = this.currentWindow;

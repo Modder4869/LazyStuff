@@ -1,4 +1,5 @@
-//META{"name":"ThemePreview"}*//
+//META{"name":"ThemePreview","source":"https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/ThemePreview.plugin.js","website":"https://www.github.com/Modder4869"}*//
+
 class ThemePreview {
     getName() {
         return 'ThemePreview';
@@ -15,7 +16,7 @@ class ThemePreview {
         return panel[0];
     }
     getVersion() {
-        return '0.0.3';
+        return '0.0.4';
     }
     getAuthor() {
         return 'Modder4869';
@@ -52,7 +53,7 @@ class ThemePreview {
         if (!libraryScript) {
             libraryScript = document.createElement('script');
             libraryScript.setAttribute('type', 'text/javascript');
-            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BetterDiscordAddons/Plugins/PluginLibrary.js');
+            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/plugins/0PluginLibrary/index.js');
             libraryScript.setAttribute('id', 'zeresLibraryScript');
             document.head.appendChild(libraryScript);
         }
@@ -61,8 +62,8 @@ class ThemePreview {
         else libraryScript.addEventListener('load', () => this.initialize());
     }
     initialize() {
-        PluginUtilities.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
-        PluginUtilities.loadSettings(this.getName(), this.settings);
+        ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
+        ZLibrary.PluginUtilities.loadSettings(this.getName(), this.settings);
         this.addListeners();
         this.initialized = true;
     }
@@ -90,12 +91,12 @@ class ThemePreview {
             url: url
         }, (error, response, body) => {
             this.themeCSS = body.substring(body.indexOf("\n") + 1);
-            PluginUtilities.showToast('loaded', {
+            ZLibrary.Toasts.show('loaded', {
                 type: "success"
             });
             this.previewSheet.innerHTML = this.themeCSS;
             if (error) {
-                PluginUtilities.showToast(error, {
+                ZLibrary.Toasts.show(error, {
                     type: "danger"
                 });
                 return;
@@ -119,7 +120,7 @@ class ThemePreview {
         const context = document.querySelector('.contextMenu-HLZMGh');
         let item;
         if (this.previewSheet.innerHTML.length === 0) {
-            item = new PluginContextMenu.TextItem('Preview Theme', {
+            item = new ZLibrary.ContextMenu.TextItem('Preview Theme', {
                 callback: () => {
                     if (context) {
                         $(context).hide();
@@ -133,7 +134,7 @@ class ThemePreview {
                 }
             });
         } else {
-            item = new PluginContextMenu.TextItem('Disable Preview', {
+            item = new ZLibrary.ContextMenu.TextItem('Disable Preview', {
                 callback: () => {
                     if (context) {
                         $(context).hide();
@@ -146,18 +147,18 @@ class ThemePreview {
         $(context).find('.itemGroup-1tL0uz').first().append(item.element);
     }
     generatePanel(panel) {
-        new PluginSettings.ControlGroup('Preview Settings', () => PluginUtilities.saveSettings(this.getName(), this.settings)).appendTo(panel).append(
-            new PluginSettings.Checkbox('Preview Reset', 'Automatically reset the Theme Preview after a delay.', this.settings.delay, (i) => {
+        new ZLibrary.Settings.SettingGroup('Preview Settings', () => ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings)).appendTo(panel).append(
+            new ZLibrary.Settings.Switch('Preview Reset', 'Automatically reset the Theme Preview after a delay.', this.settings.delay, (i) => {
                 this.settings.delay = i;
                 this.removeListeners();
                 this.addListeners();
             }),
-            new PluginSettings.Slider('Preview Reset Delay', 'How long to wait before resetting the Theme Preview. Default is 3000ms, 1000ms = 1 second.', 0, 10000, 500, this.settings.ms, (i) => {
+            new ZLibrary.Settings.Slider('Preview Reset Delay', 'How long to wait before resetting the Theme Preview. Default is 3000ms, 1000ms = 1 second. Units of measurement are currently bugged.', 0, 10000, 500, this.settings.ms, (i) => {
                 this.settings.ms = i;
                 this.removeListeners();
                 this.addListeners();
             })
-            .setLabelUnit('ms')
+            //.setLabelUnit('ms') /*Can't change a slider's unit of measurement for now, so says Zere.*/
         );
 
         const resetButton = $('<button>', {
@@ -168,7 +169,7 @@ class ThemePreview {
             for (const key in this.default) {
                 this.settings[key] = this.default[key];
             }
-            PluginUtilities.saveSettings(this.getName(), this.settings);
+            ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);
             panel.empty();
             this.generatePanel(panel);
         });

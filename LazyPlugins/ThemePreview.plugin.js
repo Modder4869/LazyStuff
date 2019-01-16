@@ -54,7 +54,7 @@ class ThemePreview {
         if (!libraryScript) {
             libraryScript = document.createElement('script');
             libraryScript.setAttribute('type', 'text/javascript');
-            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/plugins/0PluginLibrary/index.js');
+            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
             libraryScript.setAttribute('id', 'ZeresPluginLibrary');
             document.head.appendChild(libraryScript);
         }

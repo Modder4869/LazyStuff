@@ -1,4 +1,4 @@
-//META{"name":"ThemePreview","source":"https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/ThemePreview.plugin.js","website":"https://www.github.com/Modder4869"}*//
+//META{"name":"ThemePreview","source":"https://github.com/Modder4869/LazyStuff/blob/master/LazyPlugins/ThemePreview.plugin.js","website":"https://www.github.com/Modder4869"}*//
 
 class ThemePreview {
     getName() {

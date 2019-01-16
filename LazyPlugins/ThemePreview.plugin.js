@@ -40,7 +40,9 @@ class ThemePreview {
         this.themeUrl;
     }
     load() { /*Borrowing from Zere here, b/c I made a mistake.*/
-        window.BdApi.alert("Library Missing",`The library plugin needed for ` + this.getName() + ` is missing.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);
+        if (!ZLibrary) {
+            window.BdApi.alert("Library Missing",`The library plugin needed for ` + this.getName() + ` is missing.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);
+        }
     }
     start() {
         let libraryScript = document.getElementById('ZeresPluginLibrary');
@@ -93,6 +95,7 @@ class ThemePreview {
             url: url
         }, (error, response, body) => {
             this.themeCSS = body.substring(body.indexOf("\n") + 1);
+            console.log(body); /*Added by completelyunbelievable to make the full text of the document visable in console so I don't have to download the document.*/
             ZLibrary.Toasts.show('loaded', {
                 type: "success"
             });

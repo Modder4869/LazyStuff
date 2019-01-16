@@ -43,7 +43,8 @@ class ThemePreview {
 
     }
     start() {
-        let libraryScript = document.getElementById('zeresLibraryScript');
+        let libraryScript = document.getElementById('ZeresPluginLibrary');
+        let legacyLibScript = document.getElementById('ZeresLegacyPluginLibrary');
         this.previewSheet = document.getElementById('ThemePreview');
         if (!this.previewSheet) {
             this.previewSheet = document.createElement('style');
@@ -54,11 +55,18 @@ class ThemePreview {
             libraryScript = document.createElement('script');
             libraryScript.setAttribute('type', 'text/javascript');
             libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/plugins/0PluginLibrary/index.js');
-            libraryScript.setAttribute('id', 'zeresLibraryScript');
+            libraryScript.setAttribute('id', 'ZeresPluginLibrary');
             document.head.appendChild(libraryScript);
         }
+        if (!legacyLibScript) {
+            legacyLibScript = document.createElement('script');
+            legacyLibScript.setAttribute('type', 'text/javascript');
+            legacyLibScript.setAttribute('src', 'https://rauenzi.github.io/BetterDiscordAddons/Plugins/PluginLibrary.js');
+            legacyLibScript.setAttribute('id', 'ZeresLegacyPluginLibrary');
+            document.head.appendChild(legacyLibScript);
+        }
 
-        if (typeof window.ZeresLibrary !== 'undefined') this.initialize();
+        if (typeof window.ZeresPluginLibrary !== 'undefined') this.initialize();
         else libraryScript.addEventListener('load', () => this.initialize());
     }
     initialize() {
@@ -91,6 +99,7 @@ class ThemePreview {
             url: url
         }, (error, response, body) => {
             this.themeCSS = body.substring(body.indexOf("\n") + 1);
+            console.log(body); /*Added by completelyunbelievable to make the full text of the document visable in console so I don't have to download the document.*/
             ZLibrary.Toasts.show('loaded', {
                 type: "success"
             });
@@ -147,18 +156,18 @@ class ThemePreview {
         $(context).find('.itemGroup-1tL0uz').first().append(item.element);
     }
     generatePanel(panel) {
-        new ZLibrary.Settings.SettingGroup('Preview Settings', () => ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings)).appendTo(panel).append(
-            new ZLibrary.Settings.Switch('Preview Reset', 'Automatically reset the Theme Preview after a delay.', this.settings.delay, (i) => {
+        new PluginSettings.ControlGroup('Preview Settings', () => PluginUtilities.saveSettings(this.getName(), this.settings)).appendTo(panel).append(
+            new PluginSettings.Checkbox('Preview Reset', 'Automatically reset the Theme Preview after a delay.', this.settings.delay, (i) => {
                 this.settings.delay = i;
                 this.removeListeners();
                 this.addListeners();
             }),
-            new ZLibrary.Settings.Slider('Preview Reset Delay', 'How long to wait before resetting the Theme Preview. Default is 3000ms, 1000ms = 1 second. Units of measurement are currently bugged.', 0, 10000, 500, this.settings.ms, (i) => {
+            new PluginSettings.Slider('Preview Reset Delay', 'How long to wait before resetting the Theme Preview. Default is 3000ms, 1000ms = 1 second.', 0, 10000, 500, this.settings.ms, (i) => {
                 this.settings.ms = i;
                 this.removeListeners();
                 this.addListeners();
             })
-            //.setLabelUnit('ms') /*Can't change a slider's unit of measurement for now, so says Zere.*/
+            .setLabelUnit('ms')
         );
 
         const resetButton = $('<button>', {
@@ -169,7 +178,7 @@ class ThemePreview {
             for (const key in this.default) {
                 this.settings[key] = this.default[key];
             }
-            ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);
+            PluginUtilities.saveSettings(this.getName(), this.settings);
             panel.empty();
             this.generatePanel(panel);
         });

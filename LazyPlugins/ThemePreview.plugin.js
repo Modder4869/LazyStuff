@@ -39,8 +39,8 @@ class ThemePreview {
         this.themeCSS;
         this.themeUrl;
     }
-    load() {
-
+    load() { /*Borrowing from Zere here, b/c I made a mistake.*/
+        window.BdApi.alert("Library Missing",`The library plugin needed for ` + this.getName() + ` is missing.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);
     }
     start() {
         let libraryScript = document.getElementById('ZeresPluginLibrary');
@@ -51,13 +51,7 @@ class ThemePreview {
             this.previewSheet.setAttribute('id', 'ThemePreview');
             document.body.appendChild(this.previewSheet);
         }
-        if (!libraryScript) {
-            libraryScript = document.createElement('script');
-            libraryScript.setAttribute('type', 'text/javascript');
-            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
-            libraryScript.setAttribute('id', 'ZeresPluginLibrary');
-            document.head.appendChild(libraryScript);
-        }
+
         if (!legacyLibScript) {
             legacyLibScript = document.createElement('script');
             legacyLibScript.setAttribute('type', 'text/javascript');

@@ -39,30 +39,42 @@ class ThemePreview {
         this.themeCSS;
         this.themeUrl;
     }
-    load() { /*Borrowing from Zere here, b/c I made a mistake.*/
-        if (!ZLibrary) {
-            window.BdApi.alert("Library Missing",`The library plugin needed for ` + this.getName() + ` is missing.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);
+    load() {
+        let libraryScript = document.getElementById('zeresLibraryScript');
+        let legacyLibScript = document.getElementById('zeresLegacyLibraryScript');
+
+        if (!libraryScript) {
+            libraryScript = document.createElement('script');
+            libraryScript.setAttribute('type', 'text/javascript');
+            /*Borrowed from Zere, so it redirects the user to download the Lib if it does not load correctly and the user does not have it.*/
+            libraryScript.onload = function() {if(typeof ZLibrary === "undefined") {window.BdApi.alert("Library Missing",`The library plugin needed for ` + 'ThemePreview' + ` is missing and could not be loaded.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}};
+            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
+            libraryScript.setAttribute('id', 'zeresLibraryScript');
+            document.head.appendChild(libraryScript);
         }
+
+        if (!legacyLibScript) {
+            legacyLibScript = document.createElement('script');
+            legacyLibScript.setAttribute('type', 'text/javascript');
+            legacyLibScript.onload = function() {if(typeof PluginUtilities === "undefined") {window.BdApi.alert("Legacy Library Missing",`ThemePreview relies on a depricated library to operate it's settings panel, the settings panel for the plugin will not be operable until this is remedied. If you want to remove whatever settings were set for ThemePreview, goto your plugins folder and delete the file named, 'ThemePreview.config.json'.`);}};
+            legacyLibScript.setAttribute('src', 'https://rauenzi.github.io/BetterDiscordAddons/Plugins/PluginLibrary.js');
+            legacyLibScript.setAttribute('id', 'zeresLegacyLibraryScript');
+            document.head.appendChild(legacyLibScript);
+        }
+        
     }
     start() {
-        let libraryScript = document.getElementById('ZeresPluginLibrary');
-        let legacyLibScript = document.getElementById('ZeresLegacyPluginLibrary');
+        let libraryScript = document.getElementById('zeresLibraryScript');
+        let legacyLibScript = document.getElementById('zeresLegacyLibraryScript');
         this.previewSheet = document.getElementById('ThemePreview');
+
         if (!this.previewSheet) {
             this.previewSheet = document.createElement('style');
             this.previewSheet.setAttribute('id', 'ThemePreview');
             document.body.appendChild(this.previewSheet);
         }
 
-        if (!legacyLibScript) {
-            legacyLibScript = document.createElement('script');
-            legacyLibScript.setAttribute('type', 'text/javascript');
-            legacyLibScript.setAttribute('src', 'https://rauenzi.github.io/BetterDiscordAddons/Plugins/PluginLibrary.js');
-            legacyLibScript.setAttribute('id', 'ZeresLegacyPluginLibrary');
-            document.head.appendChild(legacyLibScript);
-        }
-
-        if (typeof window.ZeresPluginLibrary !== 'undefined') this.initialize();
+        if (typeof window.ZLibrary !== "undefined") this.initialize();
         else libraryScript.addEventListener('load', () => this.initialize());
     }
     initialize() {

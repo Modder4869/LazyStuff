@@ -8,7 +8,7 @@ class ThemePreview {
         return 'ThemePreview';
     }
     getDescription() {
-        return 'Preview themes posted in #Theme-repo , and  direct links that ends with CSS including directly uploaded files or [https://betterdiscord.net/ghdl?id=] link using context menu';
+        return 'Preview themes posted in #Theme-repo, and direct links that ends with CSS including directly uploaded files or [https://betterdiscord.net/ghdl?id=] link using context menu.';
     }
     getSettingsPanel() {
         const panel = $('<form>').addClass('form').css('width', '100%');
@@ -26,7 +26,9 @@ class ThemePreview {
     }
     constructor() {
         this.request = require('request');
-        this.initialized = false;
+		this.initialized = false;
+		this.minimumMilliseconds = 1000; //For easy modifiction for the settings panel.
+		this.maximumMilliseconds = 10000; //For easy modifiction for the settings panel.
         this.default = {
             delay: false,
             ms: 3000
@@ -41,31 +43,18 @@ class ThemePreview {
     }
     load() {
         let libraryScript = document.getElementById('zeresLibraryScript');
-        let legacyLibScript = document.getElementById('zeresLegacyLibraryScript');
-
         if (!libraryScript) {
             libraryScript = document.createElement('script');
             libraryScript.setAttribute('type', 'text/javascript');
-            /*Borrowed from Zere, so it redirects the user to download the Lib if it does not load correctly and the user does not have it.*/
+            /*In part borrowed from Zere, so it redirects the user to download the Lib if it does not load correctly and the user does not have it.*/
             libraryScript.onload = function() {if(typeof ZLibrary === "undefined") {window.BdApi.alert("Library Missing",`The library plugin needed for ` + 'ThemePreview' + ` is missing and could not be loaded.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}};
             libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
             libraryScript.setAttribute('id', 'zeresLibraryScript');
             document.head.appendChild(libraryScript);
-        }
-
-        if (!legacyLibScript) {
-            legacyLibScript = document.createElement('script');
-            legacyLibScript.setAttribute('type', 'text/javascript');
-            legacyLibScript.onload = function() {if(typeof PluginUtilities === "undefined") {window.BdApi.alert("Legacy Library Missing",`ThemePreview relies on a depricated library to operate it's settings panel, the settings panel for the plugin will not be operable until this is remedied. If you want to remove whatever settings were set for ThemePreview, goto your plugins folder and delete the file named, 'ThemePreview.config.json'.`);}};
-            legacyLibScript.setAttribute('src', 'https://rauenzi.github.io/BetterDiscordAddons/Plugins/PluginLibrary.js');
-            legacyLibScript.setAttribute('id', 'zeresLegacyLibraryScript');
-            document.head.appendChild(legacyLibScript);
-        }
-        
+        }        
     }
     start() {
         let libraryScript = document.getElementById('zeresLibraryScript');
-        let legacyLibScript = document.getElementById('zeresLegacyLibraryScript');
         this.previewSheet = document.getElementById('ThemePreview');
 
         if (!this.previewSheet) {
@@ -78,8 +67,8 @@ class ThemePreview {
         else libraryScript.addEventListener('load', () => this.initialize());
     }
     initialize() {
-        ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
-        ZLibrary.PluginUtilities.loadSettings(this.getName(), this.settings);
+		ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
+		this.loadSettings();
         this.addListeners();
         this.initialized = true;
     }
@@ -107,6 +96,7 @@ class ThemePreview {
             url: url
         }, (error, response, body) => {
             this.themeCSS = body.substring(body.indexOf("\n") + 1);
+            console.log(body); /*Added by completelyunbelievable to make the full text of the document visable in console so I don't have to download the document.*/
             ZLibrary.Toasts.show('loaded', {
                 type: "success"
             });
@@ -161,21 +151,37 @@ class ThemePreview {
             });
         }
         $(context).find('.itemGroup-1tL0uz').first().append(item.element);
-    }
-    generatePanel(panel) {
-        new PluginSettings.ControlGroup('Preview Settings', () => PluginUtilities.saveSettings(this.getName(), this.settings)).appendTo(panel).append(
-            new PluginSettings.Checkbox('Preview Reset', 'Automatically reset the Theme Preview after a delay.', this.settings.delay, (i) => {
-                this.settings.delay = i;
+	}
+	saveSettings() {
+		ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);
+	}
+	loadSettings() {
+		ZLibrary.PluginUtilities.loadSettings(this.getName(), this.settings);
+	}
+    generatePanel(panel) { //does not use the SettingGroup callback so it can check/limit inputs.
+        new ZLibrary.Settings.SettingGroup('Preview Settings', {collapsible: true, shown: true}).appendTo(panel).append(
+            new ZLibrary.Settings.Switch('Preview Reset', 'Automatically reset the Theme Preview after a delay.', this.settings.delay, (i) => {
+				this.settings.delay = i;
+				this.saveSettings();
                 this.removeListeners();
                 this.addListeners();
-            }),
-            new PluginSettings.Slider('Preview Reset Delay', 'How long to wait before resetting the Theme Preview. Default is 3000ms, 1000ms = 1 second.', 0, 10000, 500, this.settings.ms, (i) => {
-                this.settings.ms = i;
-                this.removeListeners();
-                this.addListeners();
-            })
-            .setLabelUnit('ms')
-        );
+			}),
+			new ZLibrary.Settings.Textbox('Preview Reset Delay', 'How long to wait before resetting the Theme Preview. 1000ms = 1 second, for a minimum of 1 second and a maximum of 10 seconds.', this.settings.ms, (i) => {
+				let x = parseInt(i, 10);
+				this.removeListeners();
+				this.addListeners();
+				switch(true) {
+					case x !== NaN && this.minimumMilliseconds <= x && x <= this.maximumMilliseconds: //Restricts inputs to numbers and limits (min/max) the seconds the user can input.
+						this.settings.ms = i;
+						this.saveSettings();
+						break;
+					case i === '' || x < this.minimumMilliseconds: //Allows the textbox to be empty and below the minimum amount without regenerating the panel, removing a bit of irritation.
+						break;
+					default: //Regenerate the panel when on incorrect input, if you have got a better way go for it.
+						this.regeneratePanel(panel);
+						break; //Not needed, just a good habbit.
+				}
+			}));
 
         const resetButton = $('<button>', {
             type: 'button',
@@ -185,9 +191,7 @@ class ThemePreview {
             for (const key in this.default) {
                 this.settings[key] = this.default[key];
             }
-            PluginUtilities.saveSettings(this.getName(), this.settings);
-            panel.empty();
-            this.generatePanel(panel);
+			this.regeneratePanel(panel);
         });
 
         panel.append(resetButton);
@@ -198,5 +202,12 @@ class ThemePreview {
         }
         this.removeListeners();
         this.initialized = false;
-    }
+	}
+	regeneratePanel(panel) {
+		if (panel !== undefined) {
+			this.saveSettings();
+			panel.empty();
+			this.generatePanel(panel);
+		}
+	}
 }

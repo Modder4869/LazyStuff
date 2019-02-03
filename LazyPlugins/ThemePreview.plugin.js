@@ -42,18 +42,18 @@ class ThemePreview {
         this.themeCSS;
         this.themeUrl;
     }
-    load() {
-        let libraryScript = document.getElementById('zeresLibraryScript');
-        if (!libraryScript) {
-            libraryScript = document.createElement('script');
-            libraryScript.setAttribute('type', 'text/javascript');
-            /*In part borrowed from Zere, so it redirects the user to download the Lib if it does not load correctly and the user does not have it.*/
-            libraryScript.onload = function() {if(typeof ZLibrary === "undefined") {window.BdApi.alert("Library Missing",`The library plugin needed for ` + 'ThemePreview' + ` is missing and could not be loaded.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}};
-            libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
-            libraryScript.setAttribute('id', 'zeresLibraryScript');
-            document.head.appendChild(libraryScript);
-        }        
-    }
+	load() {
+		let libraryScript = document.getElementById('zeresLibraryScript'), self = this;
+		if (!libraryScript) {
+			libraryScript = document.createElement('script');
+			libraryScript.setAttribute('type', 'text/javascript');
+			/*In part borrowed from Zere, so it redirects the user to download the Lib if it does not load correctly and the user does not have it.*/
+			libraryScript.onload = function() {if(typeof ZLibrary === "undefined") {window.BdApi.alert("Library Missing",`The library plugin needed for ${self.getName()} is missing and could not be loaded.<br /><br /> <a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}};
+			libraryScript.setAttribute('src', 'https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
+			libraryScript.setAttribute('id', 'zeresLibraryScript');
+			document.head.appendChild(libraryScript);
+		}
+	}
     start() {
         let libraryScript = document.getElementById('zeresLibraryScript');
         this.previewSheet = document.getElementById('ThemePreview');

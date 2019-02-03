@@ -96,7 +96,8 @@ class ThemePreview {
             url: url
         }, (error, response, body) => {
             this.themeCSS = body.substring(body.indexOf("\n") + 1);
-		ZLibrary.Toasts.show('loaded', {
+            console.log(body); /*Added by completelyunbelievable to make the full text of the document visable in console so I don't have to download the document.*/
+            ZLibrary.Toasts.show('loaded', {
                 type: "success"
             });
             this.previewSheet.innerHTML = this.themeCSS;
@@ -169,16 +170,12 @@ class ThemePreview {
 				let x = parseInt(i, 10);
 				this.removeListeners();
 				this.addListeners();
-				switch(true) {
-					case x !== NaN && this.minimumMilliseconds <= x && x <= this.maximumMilliseconds: //Restricts inputs to numbers and limits (min/max) the seconds the user can input.
-						this.settings.ms = i;
-						this.saveSettings();
-						break;
-					case i === '' || x < this.minimumMilliseconds: //Allows the textbox to be empty and below the minimum amount without regenerating the panel, removing a bit of irritation.
-						break;
-					default: //Regenerate the panel when on incorrect input, if you have got a better way go for it.
-						this.regeneratePanel(panel);
-						break; //Not needed, just a good habbit.
+				if (x !== NaN && this.minimumMilliseconds <= x && x <= this.maximumMilliseconds) { //Restricts inputs to numbers and limits (min/max) the seconds the user can input.
+					this.settings.ms = i;
+					this.saveSettings();
+				}else if (i === '' || x < this.minimumMilliseconds) {//Allows the textbox to be empty and below the minimum amount without regenerating the panel, removing a bit of irritation.
+				}else{ //Regenerate the panel when on incorrect input, if you have got a better way go for it.
+					this.regeneratePanel(panel);
 				}
 			}));
 

@@ -29,6 +29,7 @@ class ThemePreview {
 		this.initialized = false;
 		this.minimumMilliseconds = 1000; //For easy modifiction for the settings panel.
 		this.maximumMilliseconds = 10000; //For easy modifiction for the settings panel.
+		this.bodyShowLog = false; //Just console logs the contents of the themes, that are previewed. Good for looking at the contents of a theme without downloading it as a file.
         this.default = {
             delay: false,
             ms: 3000
@@ -96,7 +97,8 @@ class ThemePreview {
             url: url
         }, (error, response, body) => {
             this.themeCSS = body.substring(body.indexOf("\n") + 1);
-		ZLibrary.Toasts.show('loaded', {
+            if(this.bodyShowLog === true){console.log(body);}
+            ZLibrary.Toasts.show('loaded', {
                 type: "success"
             });
             this.previewSheet.innerHTML = this.themeCSS;

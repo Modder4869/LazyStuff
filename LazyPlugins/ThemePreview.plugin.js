@@ -96,8 +96,7 @@ class ThemePreview {
             url: url
         }, (error, response, body) => {
             this.themeCSS = body.substring(body.indexOf("\n") + 1);
-            console.log(body); /*Added by completelyunbelievable to make the full text of the document visable in console so I don't have to download the document.*/
-            ZLibrary.Toasts.show('loaded', {
+		ZLibrary.Toasts.show('loaded', {
                 type: "success"
             });
             this.previewSheet.innerHTML = this.themeCSS;

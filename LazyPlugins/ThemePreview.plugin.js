@@ -37,7 +37,7 @@ class ThemePreview {
 	}
 	get default(){ //when regenerating settings, the settings panel likes to change the default settings for some reason. This is the fix.
 		return{
-            delay:false,
+			delay:false,
 			ms:3000,
 			showBodyLog:false
 		}

@@ -43,7 +43,7 @@ class ThemePreview {
 		}
 	}
 	load() {
-		let libraryScript=document.getElementById('zeresLibraryScript'),self=this;
+		let libraryScript=document.getElementById('zeresLibraryScript');
 		if(!libraryScript){
 			libraryScript=document.createElement('script');
 			libraryScript.setAttribute('type','text/javascript');

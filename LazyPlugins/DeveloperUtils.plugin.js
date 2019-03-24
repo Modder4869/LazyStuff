@@ -85,19 +85,16 @@ class DeveloperUtils {
     }
 
     inspectAt(e) {
-        let x = parseInt(e.clientX * window.devicePixelRatio);
-        let y = parseInt(e.clientY * window.devicePixelRatio);
+        let x=parseInt(e.clientX * window.devicePixelRatio),y=parseInt(e.clientY * window.devicePixelRatio);
         this.currentWindow.inspectElement(x, y);
     }
 
 
     addContextMenuItems(e) {
-        let CSSRules = this.getMatchedCSSRules(e.toElement);
-        let context = document.querySelector('.contextMenu-HLZMGh');
+        let CSSRules=this.getMatchedCSSRules(e.toElement),context=document.querySelector('.contextMenu-HLZMGh');
 		if(!CSSRules.length)return;
-        let CSSRule = CSSRules[CSSRules.length-1];
-        let currentWin = this.currentWindow;
-        let subMenu = new ZLibrary.ContextMenu.SubMenuItem("DevUtils", new ZLibrary.ContextMenu.Menu(false).addItems(
+        let CSSRule=CSSRules[CSSRules.length-1],currentWin=this.currentWindow,
+        subMenu = new ZLibrary.ContextMenu.SubMenuItem("DevUtils", new ZLibrary.ContextMenu.Menu(false).addItems(
 
             new ZLibrary.ContextMenu.TextItem("Debugger", {
                 callback: () => {

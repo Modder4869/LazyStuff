@@ -23,42 +23,47 @@ class DeveloperUtils {
         this.currentWindow = require('electron').remote.getCurrentWindow();
         this.initialized = false;
         this.remote = require('electron').remote;
-        this.clipboard = require('electron').clipboard;
-        this.defaultSettings = {
-            DevUtils: {
+		this.clipboard = require('electron').clipboard;
+		this.milliseconds={ //For easy modifiction for the settings panel.
+			min:1000,
+			max:10000
+		}
+	}
+	get defaultSettings(){ //When regenerating settings, the settings panel likes to change the default settings for some reason. This is the fix.
+		return{
+			DevUtils: {
                 KeyCombinationEnabled: true,
                 delay: 3000
             }
-        };
-        this.settings = this.defaultSettings;
-    }
+		}
+	}
     loadSettings() {
-        this.settings = ZLibrary.PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
+        this.settings=window.ZLibrary.PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
     }
 
     saveSettings() {
-        ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);
+        window.ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);
     }
     load() {
-		let libraryScript=document.getElementById('zeresLibraryScript');
-		if(!libraryScript){
+		let libraryScript=document.getElementById('ZLibraryScript');
+		if(!window.ZLibrary&&!libraryScript){
 			libraryScript=document.createElement('script');
 			libraryScript.setAttribute('type','text/javascript');
 			/*In part borrowed from Zere, so it redirects the user to download the Lib if it does not load correctly and the user does not have the plugin version of the lib.*/
-			libraryScript.addEventListener("error",function(){if(typeof ZLibrary==="undefined"){window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing and could not be loaded.<br /><br /><a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}}.bind(this));
+			libraryScript.addEventListener("error",function(){if(typeof window.ZLibrary==="undefined"){window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing and could not be loaded.<br /><br /><a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}}.bind(this));
 			libraryScript.setAttribute('src','https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
-			libraryScript.setAttribute('id','zeresLibraryScript');
+			libraryScript.setAttribute('id','ZLibraryScript');
 			document.head.appendChild(libraryScript);
 		}
     }
     start() {
-		let libraryScript=document.getElementById('zeresLibraryScript');
-		if(typeof ZLibrary==="object")this.initialize();
+		let libraryScript=document.getElementById('ZLibraryScript');
+		if(typeof window.ZLibrary==="object")this.initialize();
 		else libraryScript.addEventListener('load',()=>this.initialize());
     }
 
     initialize() {
-        ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
+		window.ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
         this.loadSettings();
         this.addContextMenuEvent()
         this.initialized = true;
@@ -94,9 +99,9 @@ class DeveloperUtils {
         let CSSRules=this.getMatchedCSSRules(e.toElement),context=document.querySelector('.contextMenu-HLZMGh');
 		if(!CSSRules.length)return;
         let CSSRule=CSSRules[CSSRules.length-1],currentWin=this.currentWindow,
-        subMenu = new ZLibrary.ContextMenu.SubMenuItem("DevUtils", new ZLibrary.ContextMenu.Menu(false).addItems(
+        subMenu = new window.ZLibrary.ContextMenu.SubMenuItem("DevUtils", new window.ZLibrary.ContextMenu.Menu(false).addItems(
 
-            new ZLibrary.ContextMenu.TextItem("Debugger", {
+            new window.ZLibrary.ContextMenu.TextItem("Debugger", {
                 callback: () => {
                     if (!currentWin.isDevToolsOpened()) {
                         currentWin.openDevTools()
@@ -108,31 +113,31 @@ class DeveloperUtils {
                     debugger;
                 }
             }),
-            new ZLibrary.ContextMenu.TextItem("Copy Selector", {
+            new window.ZLibrary.ContextMenu.TextItem("Copy Selector", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.selectorText);
                     $(context).hide();
                 }
             }),
-            new ZLibrary.ContextMenu.TextItem("Copy Declaration", {
+            new window.ZLibrary.ContextMenu.TextItem("Copy Declaration", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.style.cssText);
                     $(context).hide();
                 }
             }),
-            new ZLibrary.ContextMenu.TextItem("Copy Rule-Set", {
+            new window.ZLibrary.ContextMenu.TextItem("Copy Rule-Set", {
                 callback: () => {
                     this.clipboard.writeText(CSSRule.cssText);
                     $(context).hide();
                 }
             }),
-            new ZLibrary.ContextMenu.TextItem("Inspect", {
+            new window.ZLibrary.ContextMenu.TextItem("Inspect", {
                 callback: () => {
                     this.inspectAt(e);
                     $(context).hide();
                 }
             }),
-            new ZLibrary.ContextMenu.TextItem("Debugger (timeout)", {
+            new window.ZLibrary.ContextMenu.TextItem("Debugger (timeout)", {
                 callback: () => {
                     setTimeout(() => {
                         debugger
@@ -142,8 +147,8 @@ class DeveloperUtils {
 
         ));
 
-        let testGroup = new ZLibrary.ContextMenu.ItemGroup().addItems(subMenu);
-        let newMenu = new ZLibrary.ContextMenu.Menu();
+        let testGroup = new window.ZLibrary.ContextMenu.ItemGroup().addItems(subMenu);
+        let newMenu = new window.ZLibrary.ContextMenu.Menu();
 
         if (!context) {
             context = newMenu.element;
@@ -182,27 +187,41 @@ class DeveloperUtils {
 		return matching;
 	}//Modified, based on https://stackoverflow.com/questions/2952667/find-all-css-rules-that-apply-to-an-element
 
+	regeneratePanel(panel) {
+		if (panel!==undefined) {
+			panel.empty();
+			this.generateSettings(panel);
+		}
+	}
+
     getSettingsPanel() {
-        var panel = $("<form>").addClass("form").css("width", "100%");
+        let panel = $("<form>").addClass("form").css("width", "100%");
         if (this.initialized) this.generateSettings(panel);
         return panel[0];
     }
 
     generateSettings(panel) {
-        new PluginSettings.ControlGroup("Settings", () => {
-            this.saveSettings();
-        }, {
-            shown: true
-        }).appendTo(panel).append(
-            new PluginSettings.PillButton("Shortcut", "use shortcut for quick inspect", " Context Menu Only", " Key + rightClick",
-                this.settings.DevUtils.KeyCombinationEnabled, (checked) => {
-                    this.settings.DevUtils.KeyCombinationEnabled = checked;
-                }),
-            new PluginSettings.Slider("Timeout", "set value for the delay before it pauses , default is 3000 = 3 sec", 0, 10000, 500,
-                this.settings.DevUtils.delay, (val) => {
-                    this.settings.DevUtils.delay = val;
-                }).setLabelUnit('ms')
+		new window.ZLibrary.Settings.SettingGroup('Settings',{callback:()=>{this.saveSettings();},collapsible:false,shown:true}).appendTo(panel).append(
+			new window.ZLibrary.Settings.Switch('Quick Inspect Shortcut','Use the shortcut to quickly inspect an element without opening the context menu. (Alt + rightClick)',this.settings.DevUtils.KeyCombinationEnabled,(i)=>{
+				this.settings.DevUtils.KeyCombinationEnabled=i;
+			}),
+			new window.ZLibrary.Settings.Textbox('Timeout','Timeout pause delay in milliseconds. For a minimum of 1 second and a maximum of 10 seconds.',this.settings.DevUtils.delay,(i)=>{
+				let x=parseInt(i,10);
+				//Restricts inputs to numbers and limits (min/max) the seconds the user can input.
+				if (x!==NaN&&this.milliseconds.min<=x&&x<=this.milliseconds.max){this.settings.DevUtils.delay=i;}
+				//Allows the textbox to be empty and below the minimum amount without regenerating the panel, removing a bit of irritation.
+				else if(i===''||x<this.milliseconds.min){}
+				//Regenerate the panel when on incorrect input, if you have got a better way go for it.
+				else{this.regeneratePanel(panel);}
+			})
+		);
 
-        );
+		const resetButton=$('<button>',{type:'button',text:'Reset To Default',style:'float: right;'})
+		.click(function(){
+			this.settings=this.defaultSettings;
+			this.saveSettings();
+			this.regeneratePanel(panel);
+		}.bind(this));
+		panel.append(resetButton);
     }
 }

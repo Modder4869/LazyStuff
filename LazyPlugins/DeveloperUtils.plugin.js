@@ -181,6 +181,7 @@ class DeveloperUtils {
 				loopRules(sheet.cssRules);
 			}catch(e){
 				//Easiest way to fix an issue of a stylesheet not having a cssRules property; I have yet to find any other solution.
+			}
 		}
 		//console.log(matching); //Debug.
 		return matching;

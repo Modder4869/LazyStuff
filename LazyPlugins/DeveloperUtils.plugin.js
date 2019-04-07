@@ -180,8 +180,7 @@ class DeveloperUtils {
 			try{
 				loopRules(sheet.cssRules);
 			}catch(e){
-				//Easiest way to fix an issue of a stylesheet not having a cssRules property. Unless you want to check every property name it has with object keys.
-			}
+				//Easiest way to fix an issue of a stylesheet not having a cssRules property; I have yet to find any other solution.
 		}
 		//console.log(matching); //Debug.
 		return matching;

@@ -11,7 +11,7 @@ class ThemePreview {
 		return 'Preview themes posted in #Theme-repo, and direct links that ends with CSS including directly uploaded files or [https://betterdiscord.net/ghdl?id=] link using context menu.';
 	}
 	getSettingsPanel() {
-		const panel = $('<form>').addClass('form').css('width', '100%');
+		let panel = $('<form>').addClass('form').css('width', '100%');
 		if (this.initialized) this.generatePanel(panel);
 		return panel[0];
 	}
@@ -43,19 +43,19 @@ class ThemePreview {
 		}
 	}
 	load() {
-		let libraryScript=document.getElementById('zeresLibraryScript');
-		if(!libraryScript){
+		let libraryScript=document.getElementById('ZLibraryScript');
+		if(!window.ZLibrary&&!libraryScript){
 			libraryScript=document.createElement('script');
 			libraryScript.setAttribute('type','text/javascript');
 			/*In part borrowed from Zere, so it redirects the user to download the Lib if it does not load correctly and the user does not have the plugin version of the lib.*/
-			libraryScript.addEventListener("error",function(){if(typeof ZLibrary==="undefined"){window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing and could not be loaded.<br /><br /><a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}}.bind(this));
+			libraryScript.addEventListener("error",function(){if(typeof window.ZLibrary==="undefined"){window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing and could not be loaded.<br /><br /><a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}}.bind(this));
 			libraryScript.setAttribute('src','https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
-			libraryScript.setAttribute('id','zeresLibraryScript');
+			libraryScript.setAttribute('id','ZLibraryScript');
 			document.head.appendChild(libraryScript);
 		}
 	}
 	start() {
-		let libraryScript = document.getElementById('zeresLibraryScript');
+		let libraryScript = document.getElementById('ZLibraryScript');
 		this.previewSheet = document.getElementById('ThemePreview');
 
 		if (!this.previewSheet) {
@@ -64,14 +64,21 @@ class ThemePreview {
 			document.body.appendChild(this.previewSheet);
 		}
 
-		if (typeof window.ZLibrary !== "undefined") this.initialize();
-		else libraryScript.addEventListener('load', () => this.initialize());
+		if (typeof window.ZLibrary!=="undefined")this.initialize();
+		else libraryScript.addEventListener('load',()=>this.initialize());
 	}
 	initialize() {
-		ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
+		window.ZLibrary.PluginUpdater.checkForUpdate(this.getName(), this.getVersion(), this.getLink());
 		this.loadSettings();
 		this.addListeners();
 		this.initialized = true;
+	}
+	stop() {
+		if (document.contains(this.previewSheet)) {
+			this.previewSheet.remove();
+		}
+		this.removeListeners();
+		this.initialized = false;
 	}
 	addListeners() {
 		$(document).on(`keydown.${this.getName()}`, (e) => {
@@ -98,12 +105,12 @@ class ThemePreview {
 		}, (error, response, body) => {
 			this.themeCSS = body.substring(body.indexOf("\n") + 1);
 			if(this.settings.showBodyLog === true){console.log(body);}
-			ZLibrary.Toasts.show('loaded', {
+			window.ZLibrary.Toasts.show('loaded', {
 				type: "success"
 			});
 			this.previewSheet.innerHTML = this.themeCSS;
 			if (error) {
-				ZLibrary.Toasts.show(error, {
+				window.ZLibrary.Toasts.show(error, {
 					type: "danger"
 				});
 				return;
@@ -127,7 +134,7 @@ class ThemePreview {
 		const context = document.querySelector('.contextMenu-HLZMGh');
 		let item;
 		if (this.previewSheet.innerHTML.length === 0) {
-			item = new ZLibrary.ContextMenu.TextItem('Preview Theme', {
+			item = new window.ZLibrary.ContextMenu.TextItem('Preview Theme', {
 				callback: () => {
 					if (context) {
 						$(context).hide();
@@ -141,7 +148,7 @@ class ThemePreview {
 				}
 			});
 		} else {
-			item = new ZLibrary.ContextMenu.TextItem('Disable Preview', {
+			item = new window.ZLibrary.ContextMenu.TextItem('Disable Preview', {
 				callback: () => {
 					if (context) {
 						$(context).hide();
@@ -154,34 +161,27 @@ class ThemePreview {
 		$(context).find('.itemGroup-1tL0uz').first().append(item.element);
 	}
 	saveSettings() {
-		ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);
+		window.ZLibrary.PluginUtilities.saveSettings(this.getName(), this.settings);
 	}
 	loadSettings() {
-		this.settings=ZLibrary.PluginUtilities.loadSettings(this.getName(), this.default);
+		this.settings=window.ZLibrary.PluginUtilities.loadSettings(this.getName(), this.default);
 	}
 	generatePanel(panel) { //does not use the SettingGroup callback so it can check/limit inputs.
-		new ZLibrary.Settings.SettingGroup('Preview Settings',{collapsible:true,shown:true}).appendTo(panel).append(
-			new ZLibrary.Settings.Switch('Preview Reset','Automatically reset the Theme Preview after a delay.',this.settings.delay,(i)=>{
-				this.settings.delay = i;
-				this.saveSettings();
-				this.removeListeners();
-				this.addListeners();
+		new window.ZLibrary.Settings.SettingGroup('Preview Settings',{callback:()=>{this.saveSettings();this.removeListeners();this.addListeners();},collapsible:false,shown:true}).appendTo(panel).append(
+			new window.ZLibrary.Settings.Switch('Preview Reset','Automatically reset the Theme Preview after a delay.',this.settings.delay,(i)=>{
+				this.settings.delay=i;
 			}),
-			new ZLibrary.Settings.Textbox('Preview Reset Delay','How long to wait before resetting the Theme Preview. 1000ms = 1 second, for a minimum of 1 second and a maximum of 10 seconds.',this.settings.ms,(i)=>{
-				let x = parseInt(i, 10);
-				if (x!==NaN&&this.milliseconds.min<=x&&x<=this.milliseconds.max) { //Restricts inputs to numbers and limits (min/max) the seconds the user can input.
-					this.settings.ms = i;
-					this.saveSettings();
-					this.removeListeners();
-					this.addListeners();
-				}else if(i===''||x<this.milliseconds.min) {//Allows the textbox to be empty and below the minimum amount without regenerating the panel, removing a bit of irritation.
-				}else{ //Regenerate the panel when on incorrect input, if you have got a better way go for it.
-					this.regeneratePanel(panel);
-				}
+			new window.ZLibrary.Settings.Textbox('Preview Reset Delay','How many milliseconds to wait before resetting the Theme Preview. 1000ms = 1 second, for a minimum of 1 second and a maximum of 10 seconds.',this.settings.ms,(i)=>{
+				let x=parseInt(i,10);
+				//Restricts inputs to numbers and limits (min/max) the seconds the user can input.
+				if (x!==NaN&&this.milliseconds.min<=x&&x<=this.milliseconds.max){this.settings.ms=i;}
+				//Allows the textbox to be empty and below the minimum amount without regenerating the panel, removing a bit of irritation.
+				else if(i===''||x<this.milliseconds.min){}
+				//Regenerate the panel when on incorrect input, if you have got a better way go for it.
+				else{this.regeneratePanel(panel);}
 			}),
-			new ZLibrary.Settings.Switch('Log Theme File In Console','Logs the theme file that is previewed in the developer tools console.',this.settings.showBodyLog,(i)=>{
+			new window.ZLibrary.Settings.Switch('Log Theme File In Console','Logs the theme file that is previewed in the developer tools console.',this.settings.showBodyLog,(i)=>{
 				this.settings.showBodyLog = i;
-				this.saveSettings();
 			})
 		);
 
@@ -193,15 +193,8 @@ class ThemePreview {
 		}.bind(this));
 		panel.append(resetButton);
 	}
-	stop() {
-		if (document.contains(this.previewSheet)) {
-			this.previewSheet.remove();
-		}
-		this.removeListeners();
-		this.initialized = false;
-	}
 	regeneratePanel(panel) {
-		if (panel !== undefined) {
+		if (panel!==undefined) {
 			this.saveSettings();
 			panel.empty();
 			this.generatePanel(panel);

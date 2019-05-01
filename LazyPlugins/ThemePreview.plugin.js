@@ -47,7 +47,6 @@ class ThemePreview {
 		if(!window.ZLibrary&&!libraryScript){
 			libraryScript=document.createElement('script');
 			libraryScript.setAttribute('type','text/javascript');
-			/*In part borrowed from Zere, so it redirects the user to download the Lib if it does not load correctly and the user does not have the plugin version of the lib.*/
 			libraryScript.addEventListener("error",function(){if(typeof window.ZLibrary==="undefined"){window.BdApi.alert("Library Missing",`The library plugin needed for ${this.getName()} is missing and could not be loaded.<br /><br /><a href="https://betterdiscord.net/ghdl?url=https://raw.githubusercontent.com/rauenzi/BDPluginLibrary/master/release/0PluginLibrary.plugin.js" target="_blank">Click here to download the library!</a>`);}}.bind(this));
 			libraryScript.setAttribute('src','https://rauenzi.github.io/BDPluginLibrary/release/ZLibrary.js');
 			libraryScript.setAttribute('id','ZLibraryScript');
@@ -55,8 +54,8 @@ class ThemePreview {
 		}
 	}
 	start() {
-		let libraryScript = document.getElementById('ZLibraryScript');
-		this.previewSheet = document.getElementById('ThemePreview');
+		let libraryScript=document.getElementById('ZLibraryScript');
+		this.previewSheet=document.getElementById('ThemePreview');
 
 		if (!this.previewSheet) {
 			this.previewSheet = document.createElement('style');
@@ -95,28 +94,30 @@ class ThemePreview {
 	}
 	getThemeCSS() {
 
-		if (this.themeUrl.includes('github.com')) {
-			this.themeUrl = this.themeUrl.replace('github.com', 'raw.githubusercontent.com').replace('/blob/', '/');
-
-		}
-		let url = this.themeUrl;
+		if(this.themeUrl.includes('github.com'))this.themeUrl=this.themeUrl.replace('github.com','raw.githubusercontent.com').replace('/blob/','/');
+		let url=this.themeUrl;
 		this.request({
 			url: url
 		}, (error, response, body) => {
-			this.themeCSS = body.substring(body.indexOf("\n") + 1);
-			if(this.settings.showBodyLog === true){console.log(body);}
-			window.ZLibrary.Toasts.show('loaded', {
-				type: "success"
-			});
-			this.previewSheet.innerHTML = this.themeCSS;
-			if (error) {
-				window.ZLibrary.Toasts.show(error, {
-					type: "danger"
-				});
+
+			//grab the first line of the file for checking later, make it lowercase so it is effectively case insensitive.
+			let firstLine=body.split('\n')[0].toLowerCase();
+			//If it has meta, then it's a theme file, so remove the first line containing the meta.
+			if(firstLine.includes('meta{'))this.themeCSS=body.substring(body.indexOf("\n")+1);
+			//If it has no meta, then it's not a theme file, so don't remove the first line.
+			else{this.themeCSS=body;}
+
+			//Log the full contents of the file if the setting is enabled.
+			if(this.settings.showBodyLog===true){console.log(body);}
+
+			window.ZLibrary.Toasts.show('loaded',{type: "success"});
+			this.previewSheet.innerHTML=this.themeCSS;
+
+			if(error){
+				window.ZLibrary.Toasts.show(error,{type:"danger"});
 				return;
 			}
-
-		})
+		});
 
 	}
 	removeListeners() {

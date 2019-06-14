@@ -11,7 +11,21 @@ class ThemePreview{
 		return '0.0.5';
 	}
 	getAuthor(){
-		return 'Modder#4869';
+		return 'Modder4869';
+	}
+	getLink(){
+		return `https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/${this.getName()}.plugin.js`;
+	}
+	getSettingsPanel(){
+		const panel=$('<form>').addClass('form').css('width','100%');
+		if(this.initialized)this.generateSettings(panel);
+		return panel[0];
+	}
+	loadSettings(){
+		this.settings=window.ZLibrary.PluginUtilities.loadSettings(this.getName(),this.default);
+	}
+	saveSettings(){
+		window.ZLibrary.PluginUtilities.saveSettings(this.getName(),this.settings);
 	}
 	load(){
 		let libraryScript=document.getElementById('ZLibraryScript');
@@ -49,7 +63,7 @@ class ThemePreview{
 			},
 		};
 	}
-	get default(){//When regenerating settings,the settings panel likes to change the default settings for some reason. This is the fix.
+	get default(){//When regenerating settings, the settings panel likes to change the default settings for some reason. This is the fix.
 		return{
 			themePreview:{
 				delay:false,
@@ -68,6 +82,18 @@ class ThemePreview{
 		if(typeof window.ZLibrary==="object")this.initialize();
 		else libraryScript.addEventListener('load',()=>this.initialize());
 	}
+	initialize(){
+		window.ZLibrary.PluginUpdater.checkForUpdate(this.getName(),this.getVersion(),this.getLink());
+		this.loadSettings();
+		this.addListeners();
+		this.initialized=true;
+	}
+	stop(){
+		if(document.contains(this.CSSCode.previewSheet))this.CSSCode.previewSheet.remove();
+		if(document.contains(this.themePreview.previewSheet))this.themePreview.previewSheet.remove();
+		this.removeListeners();
+		this.initialized=false;
+	}
 	AppendStyleElements(){
 		this.CSSCode.previewSheet=document.getElementById('CSSCode');
 		if(!this.CSSCode.previewSheet){
@@ -82,32 +108,6 @@ class ThemePreview{
 			document.body.appendChild(this.themePreview.previewSheet);
 		}
 	}
-	initialize(){
-		window.ZLibrary.PluginUpdater.checkForUpdate(this.getName(),this.getVersion(),this.getLink());
-		this.loadSettings();
-		this.addListeners();
-		this.initialized=true;
-	}
-	stop(){
-		if(document.contains(this.CSSCode.previewSheet))this.CSSCode.previewSheet.remove();
-		if(document.contains(this.themePreview.previewSheet))this.themePreview.previewSheet.remove();
-		this.removeListeners();
-		this.initialized=false;
-	}
-	getSettingsPanel(){
-		const panel=$('<form>').addClass('form').css('width','100%');
-		if(this.initialized)this.generateSettings(panel);
-		return panel[0];
-	}
-	loadSettings(){
-		this.settings=window.ZLibrary.PluginUtilities.loadSettings(this.getName(),this.default);
-	}
-	saveSettings(){
-		window.ZLibrary.PluginUtilities.saveSettings(this.getName(),this.settings);
-	}
-	getLink(){
-		return `https://raw.githubusercontent.com/Modder4869/LazyStuff/master/LazyPlugins/${this.getName()}.plugin.js`;
-	}
 	addListeners(){
 		$(document).on(`keydown.${this.getName()}`,(e)=>{
 			if(e.altKey){
@@ -117,11 +117,15 @@ class ThemePreview{
 		});
 		$(document).on(`contextmenu.${this.getName()}`,this.addContextMenuItems.bind(this));
 	}
+	removeListeners(){
+		$(document).off(`contextmenu.${this.getName()}`);
+		$(document).off(`keydown.${this.getName()}`);
+	}
 	addContextMenuItems(e){
 		if(!document.contains(this.CSSCode.previewSheet)|| !document.contains(this.themePreview.previewSheet))this.AppendStyleElements();
-		//context is the context menu element,this.contextMenu is the internal instance of the contextMenu and it seems to help with inconsistant contextMenu detection.
+		//context is the context menu element, this.contextMenu is the internal instance of the contextMenu and it seems to help with inconsistant contextMenu detection.
 		const context=document.getElementsByClassName(window.ZLibrary.DiscordClasses.ContextMenu.contextMenu.value.split(' ')[0])[0],contextMenu=this.contextMenu,target=this.contextMenu.getContextMenu().target;
-		let item,element=(target.className.includes(`hljs`)&&!target.classList.contains(`hljs`)&&target.closest(`code`)!== null)? target.closest(`code`):target;
+		let item,element=(target.className.includes(`hljs`)&&!target.classList.contains(`hljs`)&&target.closest(`code`)!==null)? target.closest(`code`):target;
 		//CSSCodeBlock
 		if(element.tagName==='CODE'&&element.className.toLowerCase().includes('css')&&this.CSSCode.regex.test(element.innerText)){
 			if(this.CSSCode.previewSheet.innerText.length===0){
@@ -135,7 +139,7 @@ class ThemePreview{
 						if(this.settings.CSSCode.delay)setTimeout(this.clearCSSPreview.bind(this),this.settings.CSSCode.ms);
 					}.bind(this)
 				});
-				//Disable preview of CSSCodeBlock
+			//Disable preview of CSSCodeBlock
 			}else{
 				item=new window.ZLibrary.ContextMenu.TextItem('Disable Preview',{
 					callback:function(){
@@ -159,7 +163,7 @@ class ThemePreview{
 						if(this.settings.themePreview.delay)setTimeout(this.clearThemePreview.bind(this),this.settings.themePreview.ms);
 					}.bind(this)
 				});
-				//Disable preview of Theme Preview
+			//Disable preview of Theme Preview
 			}else{
 				item=new window.ZLibrary.ContextMenu.TextItem('Disable Preview',{
 					callback:function(){
@@ -194,18 +198,14 @@ class ThemePreview{
 	}
 	checkForMeta(styles){
 		if(styles&&styles.constructor===String){
-			//grab the first line of the file for checking later,make it lowercase so it is effectively case insensitive.
+			//grab the first line of the file for checking later, make it lowercase so it is effectively case insensitive.
 			let firstLine=styles.split('\n')[0].toLowerCase();
-			//If it has meta,then it's a theme file,so remove the first line containing the meta.
+			//If it has meta, then it's a theme file, so remove the first line containing the meta.
 			if(firstLine.includes('meta{'))styles=styles.substring(styles.indexOf("\n")+ 1);//Should really replace this with a regex,but this works for now.
-			//If it has no meta,then it's not a theme file,so don't remove the first line.
+			//If it has no meta, then it's not a theme file, so don't remove the first line.
 			return styles;
 		}
 		return null;
-	}
-	removeListeners(){
-		$(document).off(`contextmenu.${this.getName()}`);
-		$(document).off(`keydown.${this.getName()}`);
 	}
 	clearCSSPreview(){
 		if(document.contains(this.CSSCode.previewSheet)&&this.CSSCode.previewSheet.innerText.length!==0){
@@ -222,7 +222,6 @@ class ThemePreview{
 		}
 	}
 	generateSettings(panel){
-		//CSSCode
 		new window.ZLibrary.Settings.SettingGroup('Theme Preview Settings',{callback:()=>{this.saveSettings();this.removeListeners();this.addListeners();},collapsible:true,shown:true}).appendTo(panel).append(
 			new window.ZLibrary.Settings.Switch('Theme Preview Reset','Automatically reset the Theme Preview after a delay.',this.settings.themePreview.delay,(i)=>{
 				this.settings.themePreview.delay=i;
@@ -230,7 +229,7 @@ class ThemePreview{
 			new window.ZLibrary.Settings.Textbox('Theme Preview Reset Delay','How many milliseconds to wait before resetting the Theme Preview. 1000ms = 1 second, for a minimum of 1 second and a maximum of 10 seconds.',this.settings.themePreview.ms,(i)=>{
 				let x=parseInt(i,10);
 				//Restricts inputs to numbers and limits (min/max)the seconds the user can input.
-				if(x!==NaN&&this.themePreview.milliseconds.min <= x&&x <= this.themePreview.milliseconds.max){this.settings.themePreview.ms=i;}
+				if(x!==NaN&&this.themePreview.milliseconds.min<=x&&x<=this.themePreview.milliseconds.max){this.settings.themePreview.ms=i;}
 				//Allows the textbox to be empty and below the minimum amount without regenerating the panel,removing a bit of irritation.
 				else if(i===''||x<this.themePreview.milliseconds.min){}
 				//Regenerate the panel when on incorrect input,if you have got a better way go for it.

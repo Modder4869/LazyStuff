@@ -10,7 +10,7 @@ class DeveloperUtils {
         return 'allows you to inspect elements with alt + rightclick , and adds shortcut in context menu';
     }
     getVersion() {
-        return '0.1.3 ';
+        return '0.1.2 ';
     }
     getAuthor() {
         return 'Modder4869';
@@ -30,7 +30,7 @@ class DeveloperUtils {
                 delay: 3000
             }
         };
-        this.settings = this.defaultSettings;	
+        this.settings = this.defaultSettings;
     }
     loadSettings() {
         this.settings = ZLibrary.PluginUtilities.loadSettings(this.getName(), this.defaultSettings);
@@ -82,10 +82,10 @@ class DeveloperUtils {
 
 
     addContextMenuItems(e) {
-        let CSSRules = this.css(e.toElement);
+        let CSSRules = getMatchedCSSRules(e.toElement);
             let context = document.querySelector('.contextMenu-HLZMGh');
         if (!CSSRules) return;
-        let CSSRule = CSSRules[CSSRules.length - 1];
+        let CSSRule = CSSRules.item(CSSRules.length - 1);
         let currentWin = this.currentWindow;
         let subMenu = new ZLibrary.ContextMenu.SubMenuItem("DevUtils", new ZLibrary.ContextMenu.Menu(false).addItems(
 
@@ -155,36 +155,20 @@ class DeveloperUtils {
     }
 
     generateSettings(panel) {
-        new ZLibrary.Settings.SettingGroup("Settings", () => {
+        new PluginSettings.ControlGroup("Settings", () => {
             this.saveSettings();
         }, {
             shown: true
         }).appendTo(panel).append(
-            new ZLibrary.Settings.Switch("Shortcut", "use shortcut for quick inspect", " Context Menu Only", " Key + rightClick",
+            new PluginSettings.PillButton("Shortcut", "use shortcut for quick inspect", " Context Menu Only", " Key + rightClick",
                 this.settings.DevUtils.KeyCombinationEnabled, (checked) => {
                     this.settings.DevUtils.KeyCombinationEnabled = checked;
                 }),
-            new ZLibrary.Settings.Slider("Timeout", "set value for the delay before it pauses , default is 3000 = 3 sec", 0, 10000, 500,
+            new PluginSettings.Slider("Timeout", "set value for the delay before it pauses , default is 3000 = 3 sec", 0, 10000, 500,
                 this.settings.DevUtils.delay, (val) => {
                     this.settings.DevUtils.delay = val;
-                })
+                }).setLabelUnit('ms')
 
         );
     }
-	//copy paste rip
-css(el) {
-    var sheets = document.styleSheets, ret = [];
-    el.matches = el.matches || el.webkitMatchesSelector || el.mozMatchesSelector 
-        || el.msMatchesSelector || el.oMatchesSelector;
-    for (var i in sheets) {
-      if (i ==2){i++}
-        var rules = sheets[i].rules || sheets[i].cssRules;
-        for (var r in rules) {
-            if (el.matches(rules[r].selectorText)) {
-                ret.push(rules[r]);
-            }
-        }
-    }
-    return ret;
-}
 }
